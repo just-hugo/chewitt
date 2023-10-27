@@ -382,7 +382,7 @@ input:checked + .slider:before {
 .sidenav {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  height: 70vh;
+  height: 70dvh;
   width: 0; /* 0 width - change this with JavaScript */
   margin-top: 15%;
   position: fixed; /* Stay in place */
