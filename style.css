@@ -155,8 +155,22 @@ body {
   color: rgba(0, 0, 0, 0.35);
 }
 .logo-inner {
-  color: #cfaf5c92;
-  margin: 0%;
+  stroke: rgba(181, 158, 94, 0.75);
+  fill: rgba(255, 255, 255, 0.1);
+  stroke-width: 3.3;
+  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
+}
+.logo-cutout-ring {
+  stroke: rgba(0, 0, 0, 0.5);
+  fill: rgba(255, 255, 255, 0.05);
+  stroke-width: 6;
+  filter: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
+}
+.logo-initials {
+  stroke: rgba(255, 255, 255, 0.3);
+  fill: rgba(181, 158, 94, 0.75);
+  stroke-width: 0.5;
+  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
 }
 .name {
   font-family: "peignot";
@@ -499,4 +513,8 @@ input:checked + .slider:before {
   text-align: center;
   color: rgb(0, 0, 0);
   letter-spacing: 0.1em;
+}
+.test {
+  fill: red;
+  stroke: red;
 }
