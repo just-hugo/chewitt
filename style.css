@@ -45,7 +45,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 10rem;
 }
 .nav {
@@ -55,8 +55,7 @@ body {
   min-height: 10vh;
   max-height: 10vh;
   width: 80vw;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  margin-top: 1rem;
   padding-top: 2vh;
   z-index: 2;
   box-shadow: var(--glass-shadow);
@@ -104,6 +103,7 @@ body {
   margin-bottom: 3.5rem;
   padding: 2rem;
   border-radius: 24px;
+  scroll-margin-top: 17vh;
 }
 @media (min-width: 500px) {
   .card {
@@ -397,7 +397,6 @@ input:checked + .slider:before {
 /* The navigation menu links */
 .sidenav a {
   padding: 0.75rem 2rem;
-
   text-decoration: none;
   font-size: 1.2em;
   display: block;
