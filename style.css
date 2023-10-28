@@ -24,6 +24,14 @@
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: rgba(255, 255, 255, 0.6);
   --text-shadow: 0 2px 2px #e0bf6c24, 0 1px 3px rgba(0, 0, 0, 0.5);
+  --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
+  --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
+  --logo-initials-stroke: rgba(181, 158, 94, 0.75);
+  --logo-inner-fill: rgba(255, 255, 255, 0.1);
+  --logo-inner-stroke: rgba(181, 158, 94, 0.75);
+  --logo-cutout-stroke: rgba(0, 0, 0, 0.5);
+  --logo-cutout-fill: rgba(255, 255, 255, 0.05);
 }
 :root[color-mode="light"] {
   --bg-img: url("/assets/saturn1.webp");
@@ -51,6 +59,14 @@
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: rgba(0, 0, 0, 1);
   --text-shadow: 0 2px 3px #e0bf6c42, 0 1px 3px rgba(0, 0, 0, 0.3);
+  --logo-inner-shadow: drop-shadow(1px 2px 1px rgba(255, 255, 255, 0.3));
+  --logo-inner-fill: rgba(255, 255, 255, 0.25);
+  --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
+  --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  --logo-initials-stroke: rgba(0, 0, 0, 0.5);
+  --logo-inner-stroke: rgba(151, 132, 80, 0.8);
+  --logo-cutout-stroke: rgba(0, 0, 0, 0.15);
+  --logo-cutout-fill: rgba(0, 0, 0, 0.15);
 }
 body {
   display: flex;
@@ -155,29 +171,38 @@ body {
   color: rgba(0, 0, 0, 0.35);
 }
 .logo-inner {
-  stroke: rgba(181, 158, 94, 0.75);
-  fill: rgba(255, 255, 255, 0.1);
+  stroke: var(--logo-inner-stroke);
+  fill: var(--logo-inner-fill);
   stroke-width: 3.3;
-  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: var(--logo-inner-shadow);
 }
 .logo-cutout-ring {
-  stroke: rgba(0, 0, 0, 0.5);
-  fill: rgba(255, 255, 255, 0.05);
+  stroke: var(--logo-cutout-stroke);
+  fill: var(--logo-cutout-fill);
   stroke-width: 6;
-  filter: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
+  filter: var(--logo-cutout-shadow);
 }
 .logo-initials {
-  stroke: rgba(255, 255, 255, 0.3);
-  fill: rgba(181, 158, 94, 0.75);
+  stroke: var(--logo-initials-stroke);
+  fill: var(--logo-initials-stroke);
   stroke-width: 0.5;
-  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: var(--logo-initials-shadow);
 }
 .name {
   font-family: "peignot";
   font-size: 2rem;
   margin-top: 0%;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   text-align: center;
+  color: var(--text-color);
+  letter-spacing: 0.1em;
+  text-shadow: var(--text-shadow);
+}
+.llc {
+  font-family: "peignot";
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
   color: var(--text-color);
   letter-spacing: 0.1em;
   text-shadow: var(--text-shadow);
@@ -347,6 +372,9 @@ select:-webkit-autofill:focus {
   align-self: stretch;
   fill: rgba(255, 255, 255, 0.5);
   filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 1));
+}
+.moon-icon:hover {
+  filter: drop-shadow(-2px -3px 3px #ba9e58);
 }
 .hidden {
   visibility: hidden;
