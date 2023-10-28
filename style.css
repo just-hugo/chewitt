@@ -150,7 +150,7 @@ body {
 .logo {
   width: 8rem;
   height: 8rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
   color: rgba(0, 0, 0, 0.35);
 }
@@ -255,6 +255,7 @@ select:-webkit-autofill:focus {
 }
 .glass {
   background: var(--glass-bg-color);
+  -webkit-box-shadow: var(--glass-shadow);
   box-shadow: var(--glass-shadow);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
