@@ -72,6 +72,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  overflow-x: hidden;
 }
 .parallax-bg {
   background: var(--bg-img);
@@ -89,6 +90,7 @@ body {
   width: 100%;
   margin-top: 8rem;
   margin-bottom: 10rem;
+  overflow: hidden;
 }
 .nav {
   float: left;
