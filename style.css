@@ -90,7 +90,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 31rem;
   margin-bottom: 10rem;
 }
 .nav {
@@ -145,7 +145,7 @@ body {
 .masthead {
   height: 45vh;
   width: 85vw;
-  margin-bottom: 3.5rem;
+  margin: 15vh 0;
   padding: 1rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
@@ -199,13 +199,13 @@ body {
   font-family: "peignot";
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   color: var(--text-color);
   letter-spacing: 0.1em;
   text-shadow: var(--text-shadow);
 }
 .tagline {
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-family: "Poiret";
   font-size: 1.25rem;
   font-weight: bold;
@@ -586,14 +586,19 @@ input:checked + .slider:before {
     z-index: 2;
   }
   .masthead {
-    min-height: 50vh;
-    max-height: 50vh;
+    min-height: 52vh;
+    max-height: 52vh;
     margin: 16vh 5vw;
+    padding-bottom: 15%;
   }
   .nav {
     margin: 2vh 5vw;
   }
-  .tagline {
+  .logo {
+    margin-top: 5vh;
+  }
+  .llc {
+    margin-bottom: 0%;
   }
   .parallax-content {
     margin-top: 70vh;
