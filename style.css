@@ -75,6 +75,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  overflow-x: hidden;
 }
 .parallax-bg {
   background: var(--bg-img);
@@ -567,13 +568,17 @@ input:checked + .slider:before {
     width: 80vw;
   }
 }
-@media (min-width: 992px) {
+/* XL phones and XS tablets */
+@media (min-width: 650px) {
+  .parallax-content {
+    padding: 0 10vw;
+  }
+}
+/* Small tablets */
+@media (min-width: 960px) {
   .parallax-bg {
     background: var(--bg-img-desktop);
     background-size: cover;
-  }
-  body {
-    justify-content: left;
   }
   .left-panel {
     float: left;
@@ -586,13 +591,13 @@ input:checked + .slider:before {
     z-index: 2;
   }
   .masthead {
+    width: 100%;
     min-height: 52vh;
     max-height: 52vh;
-    margin: 16vh 5vw;
+    margin: 16vh 0vw;
     padding-bottom: 15%;
   }
   .nav {
-    margin: 2vh 5vw;
   }
   .logo {
     margin-top: 5vh;
@@ -602,13 +607,14 @@ input:checked + .slider:before {
   }
   .parallax-content {
     margin-top: 70vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 7vw;
+    margin-right: 2vw;
+    padding: 0 0;
   }
   .card {
     width: 27vw;
     height: 10 vh;
-    margin: 1vw;
+    margin: 2vh 1vw;
   }
   .contact {
     width: 35vw;
