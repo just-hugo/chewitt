@@ -548,3 +548,33 @@ input:checked + .slider:before {
   fill: red;
   stroke: red;
 }
+@media (min-height: 992px) {
+  .services {
+    margin: 2.3rem;
+  }
+  .card {
+    width: 30%;
+    padding: 1rem 2rem;
+  }
+  .header {
+    color: var(--text-color);
+    font-family: Peignot;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    font-size: 2rem;
+    text-shadow: var(--text-shadow);
+  }
+  .copy {
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+  }
+  .icon {
+    fill: rgba(0, 0, 0, 0.438);
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
