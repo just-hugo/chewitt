@@ -1,7 +1,5 @@
-/* Main style optimized for 500px wide, 710px high */
 :root[color-mode="dark"] {
   --bg-img: url("/assets/saturn2.webp");
-  --bg-img-desktop: url("/assets/img/saturn2.jpg");
   --glass-bg-color: rgba(76, 76, 76, 0.3);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
@@ -13,7 +11,7 @@
     inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
     inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
     3px 2px 4px rgb(255, 255, 255, 0.5);
-  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.5),
+  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.7),
     inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
     -0.2em 0 0.2em rgba(255, 255, 255, 0.5),
     inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
@@ -37,7 +35,6 @@
 }
 :root[color-mode="light"] {
   --bg-img: url("/assets/saturn1.webp");
-  --bg-img-desktop: url("/assets/img/saturn1.jpg");
   --glass-bg-color: rgba(255, 255, 255, 0.1);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
@@ -90,7 +87,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  margin-top: 31rem;
+  margin-top: 8rem;
   margin-bottom: 10rem;
 }
 .nav {
@@ -99,7 +96,7 @@ body {
   position: fixed;
   min-height: 10vh;
   max-height: 10vh;
-  width: 85vw;
+  width: 80vw;
   margin-top: 1rem;
   padding-top: 2vh;
   z-index: 2;
@@ -142,29 +139,35 @@ body {
   box-shadow: inset 1px 2px 1px rgba(255, 255, 255, 0.5),
     1px 2px 3px rgba(0, 0, 0, 1);
 }
-.masthead {
-  height: 45vh;
-  width: 85vw;
-  margin: 15vh 0;
-  padding: 1rem;
-  border-radius: 24px;
-  scroll-margin-top: 17vh;
-  text-align: start;
-}
 .card {
   height: 70vh;
   width: 85vw;
   margin-bottom: 3.5rem;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
-  text-align: start;
+}
+@media (min-width: 500px) {
+  .card {
+    height: 70vh;
+    width: 80vw;
+    margin-bottom: 3.5rem;
+    padding: 3.25rem;
+    border-radius: 24px;
+  }
+  .header {
+    margin-top: 1%;
+  }
+  .copy {
+    padding: 1%;
+    margin: 1%;
+  }
 }
 .logo {
-  width: 7.5rem;
-  height: 7.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
+  width: 8rem;
+  height: 8rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   color: rgba(0, 0, 0, 0.35);
 }
 .logo-inner {
@@ -199,13 +202,13 @@ body {
   font-family: "peignot";
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 2rem;
   color: var(--text-color);
   letter-spacing: 0.1em;
   text-shadow: var(--text-shadow);
 }
 .tagline {
-  margin: 1rem 0;
+  margin-bottom: 2rem;
   font-family: "Poiret";
   font-size: 1.25rem;
   font-weight: bold;
@@ -225,11 +228,10 @@ body {
 }
 .copy {
   font-family: Helvetica, sans-serif;
-  letter-spacing: 0.01em;
-  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  font-size: 1.06rem;
   font-weight: 500;
-  margin-bottom: 0.5rem;
-  padding: 0 1.2rem;
+  margin-bottom: 0.3rem;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
 }
@@ -244,16 +246,11 @@ body {
   text-align: left;
   margin: 5%;
 }
-.contact-form {
+.contact {
   margin-left: 5%;
   margin-right: 5%;
 }
 .contact-field {
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 5%;
-}
-.message-field {
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 5%;
@@ -349,10 +346,6 @@ select:-webkit-autofill:focus {
   height: 30px;
   box-shadow: var(--glass-cutout-shadow-high-contrast);
 }
-.switch:hover {
-  width: 62px;
-  height: 32px;
-}
 .toggle-icon-row {
   height: 30px;
   width: 59px;
@@ -364,15 +357,12 @@ select:-webkit-autofill:focus {
   width: 23px;
   align-self: stretch;
   margin-top: 6%;
-  margin-right: 5%;
+  margin-right: 6%;
   padding: 0%;
-  filter: drop-shadow(-2px -3px 3px #ba9e58);
+  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 1));
 }
 .sun-icon:hover {
-  height: 28px;
-  width: 28px;
-  top: 0.15rem;
-  bottom: 0.15rem;
+  filter: drop-shadow(-2px -3px 3px #ba9e58);
 }
 .moon-icon {
   height: 23px;
@@ -384,10 +374,7 @@ select:-webkit-autofill:focus {
   filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 1));
 }
 .moon-icon:hover {
-  height: 28px;
-  width: 28px;
-  top: 0.15rem;
-  bottom: 0.15rem;
+  filter: drop-shadow(-2px -3px 3px #ba9e58);
 }
 .hidden {
   visibility: hidden;
@@ -428,13 +415,13 @@ select:-webkit-autofill:focus {
   box-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
     inset -1px 2px 2px rgba(255, 255, 255, 0.3), 3px 2px 3px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .slider:hover::before {
-  background-color: rgba(255, 255, 255, 0.65);
-  height: 27px;
-  width: 27px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 26px;
+  width: 26px;
   top: 0.15rem;
   bottom: 0.15rem;
 }
@@ -501,6 +488,15 @@ input:checked + .slider:before {
   font-size: 36px;
   margin-left: 50px;
 }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
 @font-face {
   font-family: "Better Regular";
   src: url("assets/fonts/better.regular.otf") format("opentype");
@@ -549,83 +545,4 @@ input:checked + .slider:before {
 .test {
   fill: red;
   stroke: red;
-}
-/* Short phone screens */
-@media (max-height: 667px) {
-  .card {
-    height: 77vh;
-  }
-  .nav {
-    min-height: 12vh;
-    max-height: 12vh;
-  }
-}
-/* Long phone screens + x-small tablets */
-@media (min-height: 844px) and (max-height: 960px) {
-  .card {
-    height: 65vh;
-    width: 80vw;
-  }
-}
-@media (min-width: 992px) {
-  .parallax-bg {
-    background: var(--bg-img-desktop);
-    background-size: cover;
-  }
-  body {
-    justify-content: left;
-  }
-  .left-panel {
-    float: left;
-    width: 25vw;
-    display: flex;
-    position: fixed;
-    min-height: 59vh;
-    max-height: 59vh;
-    margin: 16vh 5vw;
-    z-index: 2;
-  }
-  .masthead {
-    min-height: 52vh;
-    max-height: 52vh;
-    margin: 16vh 5vw;
-    padding-bottom: 15%;
-  }
-  .nav {
-    margin: 2vh 5vw;
-  }
-  .logo {
-    margin-top: 5vh;
-  }
-  .llc {
-    margin-bottom: 0%;
-  }
-  .parallax-content {
-    margin-top: 70vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-  .card {
-    width: 27vw;
-    height: 10 vh;
-    margin: 1vw;
-  }
-  .contact {
-    width: 35vw;
-    min-height: 65vh;
-    max-height: 65vh;
-    margin: 10vh 1vw;
-    padding: 1.5rem;
-  }
-  .contact-form {
-    margin-left: 1.5rem;
-  }
-  .contact-field {
-    width: 20vw;
-    margin: 0%;
-  }
-  .message-field {
-    width: 30vw;
-    margin: 0%;
-  }
 }
