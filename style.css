@@ -103,21 +103,26 @@ body {
   max-height: 10vh;
   width: 80vw;
   margin-top: 1rem;
-  padding-top: 2vh;
+  padding: 0.8rem 0;
   z-index: 2;
   box-shadow: var(--glass-shadow);
   border-radius: 24px;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
+.logo-nav-icon {
+  height: 3.75rem;
+  width: 3.75rem;
+}
 .burger-menu {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
-  padding-left: 0.7rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding-left: 0.8rem;
   padding-right: 0.2rem;
+  margin-bottom: 0.5rem;
   background-color: var(--glass-cutout-bg);
   border: 0px;
   box-shadow: var(--glass-cutout-shadow);
@@ -138,7 +143,7 @@ body {
 .burger-line2,
 .burger-line3 {
   height: 0.18rem;
-  margin: 0.17rem 0.55rem;
+  margin: 0.19rem 0.55rem;
   background-color: rgba(255, 255, 255, 0.3);
   transition: 0.4s;
   box-shadow: inset 1px 2px 1px rgba(255, 255, 255, 0.5),
@@ -146,8 +151,8 @@ body {
 }
 .card {
   height: 70vh;
-  width: 85vw;
-  margin-bottom: 3.5rem;
+  width: 80vw;
+  margin-bottom: 2.5rem;
   padding: 2rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
@@ -196,20 +201,21 @@ body {
   text-shadow: var(--text-shadow);
 }
 .tagline {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  padding: 0 0.5rem;
   font-family: "Poiret";
   font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
   color: var(--text-color);
-  letter-spacing: 0.07em;
+  letter-spacing: 0.05em;
   text-shadow: var(--text-shadow);
 }
 .masthead {
   width: 80vw;
   min-height: 50vh;
   max-height: 50vh;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 .header {
   color: var(--text-color);
