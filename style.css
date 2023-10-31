@@ -443,6 +443,9 @@ input:checked + .slider:before {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
+.sidenav-menu {
+  margin-top: 1.75rem;
+}
 /* The navigation menu links */
 .sidenav a {
   padding: 1rem 2rem;
@@ -462,9 +465,9 @@ input:checked + .slider:before {
   position: absolute;
   top: 0;
   right: 1%;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-left: 50px;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 @font-face {
   font-family: "Better Regular";
