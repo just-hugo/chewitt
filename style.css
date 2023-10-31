@@ -579,7 +579,7 @@ input:checked + .slider:before {
   }
 }
 /* Small tablets */
-@media (min-width: 960px) {
+@media (min-width: 900px) {
   .parallax-bg {
     background: var(--bg-img-desktop);
     background-size: cover;
@@ -631,5 +631,12 @@ input:checked + .slider:before {
   .message-field {
     width: 30vw;
     margin: 0%;
+  }
+  .masthead {
+    width: 100vw;
+    min-height: 50vh;
+    max-height: 50vh;
+    margin-bottom: 3.5rem;
+    margin-left: 0;
   }
 }
