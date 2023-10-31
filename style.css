@@ -1,5 +1,6 @@
 :root[color-mode="dark"] {
   --bg-img: url("/assets/saturn2.webp");
+  --bg-img-desktop: url("/assets/img/saturn2.jpg");
   --glass-bg-color: rgba(76, 76, 76, 0.3);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
@@ -35,6 +36,7 @@
 }
 :root[color-mode="light"] {
   --bg-img: url("/assets/saturn1.webp");
+  --bg-img-desktop: url("/assets/img/saturn1.jpg");
   --glass-bg-color: rgba(255, 255, 255, 0.1);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
@@ -72,6 +74,7 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
+  overflow-x: hidden;
 }
 .parallax-bg {
   background: var(--bg-img);
@@ -81,6 +84,7 @@ body {
   position: fixed;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 .parallax-content {
   position: absolute;
@@ -89,6 +93,7 @@ body {
   width: 100%;
   margin-top: 8rem;
   margin-bottom: 10rem;
+  overflow: hidden;
 }
 .nav {
   float: left;
@@ -147,27 +152,10 @@ body {
   border-radius: 24px;
   scroll-margin-top: 17vh;
 }
-@media (min-width: 500px) {
-  .card {
-    height: 70vh;
-    width: 80vw;
-    margin-bottom: 3.5rem;
-    padding: 3.25rem;
-    border-radius: 24px;
-  }
-  .header {
-    margin-top: 1%;
-  }
-  .copy {
-    padding: 1%;
-    margin: 1%;
-  }
-}
 .logo {
   width: 8rem;
   height: 8rem;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 3.5rem;
   color: rgba(0, 0, 0, 0.35);
 }
 .logo-inner {
@@ -216,6 +204,12 @@ body {
   color: var(--text-color);
   letter-spacing: 0.07em;
   text-shadow: var(--text-shadow);
+}
+.masthead {
+  width: 80vw;
+  min-height: 50vh;
+  max-height: 50vh;
+  margin-bottom: 3.5rem;
 }
 .header {
   color: var(--text-color);
@@ -488,6 +482,22 @@ input:checked + .slider:before {
   font-size: 36px;
   margin-left: 50px;
 }
+@media (min-width: 500px) {
+  .card {
+    height: 70vh;
+    width: 80vw;
+    margin-bottom: 3.5rem;
+    padding: 3.25rem;
+    border-radius: 24px;
+  }
+  .header {
+    margin-top: 1%;
+  }
+  .copy {
+    padding: 1%;
+    margin: 1%;
+  }
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -545,4 +555,108 @@ input:checked + .slider:before {
 .test {
   fill: red;
   stroke: red;
+}
+/* Short/xs phones */
+@media (max-height: 667px) {
+  .card {
+    height: 77vh;
+  }
+  .nav {
+    min-height: 12vh;
+    max-height: 12vh;
+  }
+}
+/* Long phone screens + x-small tablets */
+@media (min-height: 844px) and (max-height: 960px) {
+  .card {
+    height: 65vh;
+    width: 80vw;
+  }
+}
+/* XL phones and XS tablets */
+@media (min-width: 650px) {
+  .parallax-content {
+    padding: 0 10vw;
+  }
+}
+/* Small tablets & phone landscape */
+@media (min-width: 1024px) {
+  .parallax-bg {
+    background: var(--bg-img-desktop);
+    background-size: cover;
+  }
+  .parallax-content {
+    margin-top: 15vh;
+    margin-left: 3.5vw;
+    margin-right: 2vw;
+    padding: 0 0;
+  }
+  .left-panel {
+    float: left;
+    width: 25vw;
+    display: flex;
+    position: fixed;
+    min-height: 59vh;
+    max-height: 59vh;
+    margin: 16vh 5vw;
+    z-index: 2;
+  }
+
+  .nav {
+    width: 100%;
+    margin-left: 0;
+  }
+  .logo {
+    margin-top: 5vh;
+  }
+  .llc {
+    margin-bottom: 0%;
+  }
+  .icon {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-left: 40%;
+    margin-right: 50%;
+  }
+  .header {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  .copy {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .card {
+    width: 30vw;
+    height: 55vh;
+    margin: 1vh 1vw;
+    padding: 1rem 2.5rem;
+  }
+  .contact {
+    width: 30vw;
+    min-height: 70vh;
+    max-height: 70vh;
+    margin: 10vh 1vw;
+    padding: 1.5rem;
+  }
+  .contact-form {
+    margin-left: 1.5rem;
+  }
+  .contact-field {
+    width: 20vw;
+    margin: 0%;
+  }
+  .message-field {
+    width: 30vw;
+    margin: 0%;
+  }
+  .masthead {
+    width: 93vw;
+    min-height: 45vh;
+    max-height: 45vh;
+    margin-bottom: 1rem;
+    margin-left: 1vw;
+  }
 }
