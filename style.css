@@ -518,8 +518,8 @@ input:checked + .slider:before {
     height: 77vh;
   }
   .logo {
-    height: 17vh;
-    width: 17vh;
+    height: 16vh;
+    width: 16vh;
     margin-top: 1.75rem;
   }
   .tagline {
