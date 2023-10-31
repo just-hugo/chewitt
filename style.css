@@ -635,9 +635,9 @@ input:checked + .slider:before {
     padding: 1rem 2.5rem;
   }
   .contact {
-    width: 35vw;
-    min-height: 65vh;
-    max-height: 65vh;
+    width: 30vw;
+    min-height: 70vh;
+    max-height: 70vh;
     margin: 10vh 1vw;
     padding: 1.5rem;
   }
