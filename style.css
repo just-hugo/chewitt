@@ -101,7 +101,7 @@ body {
   position: fixed;
   min-height: 10vh;
   max-height: 10vh;
-  width: 80vw;
+  width: 85vw;
   margin-top: 1rem;
   padding: 0.8rem 0;
   z-index: 2;
@@ -150,10 +150,10 @@ body {
     1px 2px 3px rgba(0, 0, 0, 1);
 }
 .card {
-  height: 70vh;
+  height: 75vh;
   width: 85vw;
   margin-bottom: 2.5rem;
-  padding: 1rem;
+  padding: 1rem 1.75rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
 }
@@ -212,7 +212,7 @@ body {
   text-shadow: var(--text-shadow);
 }
 .masthead {
-  width: 80vw;
+  width: 85vw;
   min-height: 50vh;
   max-height: 50vh;
   margin-bottom: 2.5rem;
@@ -220,10 +220,11 @@ body {
 .header {
   color: var(--text-color);
   font-family: Peignot;
-  letter-spacing: 0.01em;
-  font-size: 2rem;
-  margin: 0.7rem 0;
+  letter-spacing: 0.06em;
+  font-size: 1.8rem;
+  margin: 0.3rem 0;
   text-shadow: var(--text-shadow);
+  text-align: center;
 }
 .copy {
   font-family: Helvetica, sans-serif;
@@ -237,6 +238,9 @@ body {
 .icon {
   fill: rgba(0, 0, 0, 0.438);
   text-align: center;
+  margin: 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 .subheader {
   font-size: 1.1rem;
