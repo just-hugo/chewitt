@@ -151,9 +151,9 @@ body {
 }
 .card {
   height: 70vh;
-  width: 80vw;
+  width: 85vw;
   margin-bottom: 2.5rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
 }
