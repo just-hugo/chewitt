@@ -621,7 +621,7 @@ input:checked + .slider:before {
   }
 }
 /* Medium phone screens ie iphone 11, iPhone 12 Pro, or google pixel 3XL or google pixel 5 */
-@media (min-height: 844px) {
+@media (min-height: 823px) {
   .card {
     height: 79vh;
     width: 85vw;
@@ -664,7 +664,7 @@ input:checked + .slider:before {
     margin: 0.4rem;
   }
   .service-more {
-    margin-top: 0.25rem;
+    margin-top: 0.27rem;
   }
 }
 /* XS tablets */
