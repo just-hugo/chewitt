@@ -270,119 +270,31 @@
           </h2>
         </div>
       </div>
-      <!-- Test flip card 1 -->
-      <div class="row align-items-stretch">
-        <div
-          class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
-        >
-          <div class="flipper">
-            <div class="front">
-              <div class="row">
-                <svg
-                  class="icon col"
-                  fill="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 472.615 472.615"
-                  xml:space="preserve"
-                >
-                  <g>
-                    <g>
-                      <path
-                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
-			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
-                      />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path
-                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
-			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <div class="row">
-                <h1 class="header">Card Flip 1</h1>
-                <p class="copy">
-                  You need a website, but you’re unsure where to start. Or maybe
-                  you have a concept but need help translating it to code. No
-                  matter your starting point, I’ll collaborate with you to make
-                  your vision a reality.
-                </p>
-                <p class="copy">
-                  Once we’ve found a design, I’ll begin coding. From start to
-                  finish, I’ll keep you looped in - you can expect a prototype
-                  website to demo on your own devices within the first week.
-                  We’ll keep collaborating until the website is complete.
-                </p>
-                <button class="service-more">Read more</button>
-              </div>
-            </div>
-
-            <div class="back">
-              <div class="row">
-                <svg
-                  class="icon col"
-                  fill="#000000"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  version="1.1"
-                  id="Layer_1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 0 472.615 472.615"
-                  xml:space="preserve"
-                >
-                  <g>
-                    <g>
-                      <path
-                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
-			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
-                      />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path
-                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
-			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
-                      />
-                    </g>
-                  </g>
-                </svg>
-              </div>
-              <div class="row">
-                <h1 class="header">Web Development</h1>
-                <p class="copy">
-                  You need a website, but you’re unsure where to start. Or maybe
-                  you have a concept but need help translating it to code. No
-                  matter your starting point, I’ll collaborate with you to make
-                  your vision a reality.
-                </p>
-                <p class="copy">
-                  Once we’ve found a design, I’ll begin coding. From start to
-                  finish, I’ll keep you looped in - you can expect a prototype
-                  website to demo on your own devices within the first week.
-                  We’ll keep collaborating until the website is complete.
-                </p>
-                <button class="service-more">Read more</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- Service cards -->
       <div class="row align-items-stretch">
-        <!-- Web Dev Card -->
+        <!-- Test card again -->
+        <div class="card glass round">
+          <div class="card-inner">
+            <img
+              src="https://via.placeholder.com/1000x300"
+              class="card-img"
+              alt="..."
+            />
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p class="card-text">Last updated 3 mins ago</p>
+            </div>
+            <div>test</div>
+          </div>
+        </div>
 
+        <!-- Web Dev Card -->
         <!--Front of card-->
         <div
           class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
@@ -6109,23 +6021,20 @@
       }
     </script>
 
-    <!-- Card Flip animation -->
+    <!-- Card Flip take 3 -->
     <script>
-      // Get all elements with class name 'flipper'
-      var flippers = document.querySelectorAll(".card .flipper");
+      // Get card element
+      const card = document.querySelectorAll(".card");
 
-      // Iterate through each 'flipper' element
-      flippers.forEach(function (flipper) {
-        // Add an event listener for 'click' events
-        flipper.addEventListener("click", function () {
-          // Find the closest ancestor element with class name 'card' and toggle the class 'hover'
-          this.closest(".card").classList.toggle("hover");
-          // Set the CSS style for the 'transform' property to rotate 180 degrees along the Y-axis
-          this.style.transform = "rotateY(180deg)";
-          var front = document.querySelector(".front");
-          front.classList.add("hidden");
+      // Loop through cards.
+      // This is so you can have multiple cards on a page.
+      for (let i = 0; i < card.length; i++) {
+        // Add a click event listener to each card.
+        card[i].addEventListener("click", function () {
+          // Toggle active class on card
+          card[i].classList.toggle("active");
         });
-      });
+      }
     </script>
 
     <!-- Card Flip Take two -->
