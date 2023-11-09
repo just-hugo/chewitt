@@ -27,7 +27,9 @@
   <body>
     <div class="parallax-bg" id="background"></div>
 
-    <nav class="nav container glass animate__animated animate__fadeInDown">
+    <nav
+      class="nav container glass animate__animated animate__fadeInDown animate__slow"
+    >
       <div class="row text-center align-items-center">
         <div class="col-4">
           <!-- Logo home button -->
@@ -198,7 +200,10 @@
 
     <div class="parallax-content">
       <!-- Masthead Card -->
-      <div class="row align-items-stretch">
+      <div
+        class="row align-items-stretch animate__animated"
+        onscroll="cardScrollUp(this)"
+      >
         <div
           class="container masthead round glass blur-filter animate__animated animate__fadeInUp animate__slow"
         >
@@ -6133,7 +6138,7 @@
 
         card.classList.remove("animate__fadeInUp");
         card.classList.remove("animate__slow");
-        card.style.setProperty("--animate-duration", "1s");
+        card.style.setProperty("--animate-duration", ".7s");
         card.classList.add("animate__flipOutY");
 
         card.addEventListener("animationend", function (event) {
@@ -6158,6 +6163,15 @@
         card.classList.add("card-flipped");
         cardFront.classList.add("animate__flipInY");
       }
+    </script>
+
+    <!-- Card scroll up animation -->
+    <script>
+      var page = document.querySelector("html");
+      page.addEventListener("scroll", function cardScrollUp(card) {
+        console.log(card);
+        card.classList.add("animate__pulse");
+      });
     </script>
   </body>
 </html>
