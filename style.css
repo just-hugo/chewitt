@@ -158,6 +158,11 @@ body {
   border-radius: 24px;
   scroll-margin-top: 17vh;
 }
+.card-flipped {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .logo {
   width: 8rem;
   height: 8rem;
@@ -377,6 +382,7 @@ select:-webkit-autofill:focus {
 }
 .hidden {
   visibility: hidden;
+  display: none;
 }
 /* Hide default HTML checkbox */
 .switch input {
