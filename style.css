@@ -161,6 +161,7 @@ body {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.6s;
+  z-index: 3;
 }
 .card-flipped {
   position: absolute;
