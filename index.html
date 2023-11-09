@@ -274,7 +274,7 @@
       <!-- Service cards -->
       <div class="row align-items-stretch">
         <!-- Test card again -->
-        <div class="card glass round">
+        <div class="container card glass round">
           <div class="card-inner">
             <div class="card-front">
               <h5 class="card-title">Card title</h5>
@@ -285,11 +285,12 @@
               </p>
               <p class="card-text">Last updated 3 mins ago</p>
             </div>
+            <!-- back of card -->
             <div class="hidden">test</div>
           </div>
         </div>
 
-        <!-- Web Dev Card -->
+        <!-- test Dev Card -->
         <!--Front of card-->
         <div
           class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
@@ -6152,20 +6153,19 @@
 
         card.classList.toggle("active");
 
-      //   card.style.setProperty("--animate-duration", ".7s");
-      //   card.classList.add("animate__flipOutY");
+        //   card.style.setProperty("--animate-duration", ".7s");
+        //   card.classList.add("animate__flipOutY");
 
-      //   card.addEventListener("animationend", function (event) {
-      //     if (event.animationName === "flipOutY") {
-      //       card.classList.add("card-flipped");
-      //       cardBack.classList.remove("card-flipped");
-      //       cardBack.classList.remove("hidden");
-      //       cardBack.style.setProperty("--animate-duration", ".7s");
-      //       cardBack.classList.add("animate__flipInY");
-      //     }
-      //   });
-
-      // }
+        //   card.addEventListener("animationend", function (event) {
+        //     if (event.animationName === "flipOutY") {
+        //       card.classList.add("card-flipped");
+        //       cardBack.classList.remove("card-flipped");
+        //       cardBack.classList.remove("hidden");
+        //       cardBack.style.setProperty("--animate-duration", ".7s");
+        //       cardBack.classList.add("animate__flipInY");
+        //     }
+        //   });
+      }
 
       function flipCardtoFront(button) {
         var card = button.parentNode.parentNode;
