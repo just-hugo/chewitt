@@ -1,3 +1,4 @@
+/* Primary style formatted for iphone 13 mini: 375px x 812px */
 :root[color-mode="dark"] {
   --bg-img: url("/assets/saturn2.webp");
   --bg-img-desktop: url("/assets/img/saturn2.jpg");
@@ -150,10 +151,10 @@ body {
     1px 2px 3px rgba(0, 0, 0, 1);
 }
 .card {
-  height: 75vh;
+  height: 77vh;
   width: 85vw;
   margin-bottom: 2.5rem;
-  padding: 1rem 1.75rem;
+  padding: 1.15rem 1.7rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
 }
@@ -221,24 +222,24 @@ body {
   color: var(--text-color);
   font-family: Peignot;
   letter-spacing: 0.06em;
-  font-size: 1.8rem;
-  margin: 0.3rem 0;
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
   text-shadow: var(--text-shadow);
   text-align: center;
 }
 .copy {
   font-family: Helvetica, sans-serif;
   letter-spacing: 0.02em;
-  font-size: 1.06rem;
+  font-size: 1.05rem;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
 }
 .icon {
   fill: rgba(0, 0, 0, 0.438);
   text-align: center;
-  margin: 1rem;
+  margin: 0.65rem;
   height: 3.5rem;
   width: 3.5rem;
 }
@@ -248,6 +249,20 @@ body {
   letter-spacing: 0.1em;
   text-align: left;
   margin: 5%;
+}
+.service-more {
+  width: 37%;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0 0px 0.5px 0px;
+  border-color: rgba(255, 255, 255, 0.5);
+  font-family: Poiret;
+  font-size: 1.33rem;
+  font-weight: 650;
+  color: rgba(193, 179, 142, 0.75);
+  filter: drop-shadow(1px 1px 1px #ba9e58c8);
+  margin-left: 30%;
+  margin-top: 0.3rem;
+  padding: 0 0 0 0.2rem;
 }
 .contact {
   margin-left: 5%;
@@ -514,7 +529,7 @@ input:checked + .slider:before {
   font-weight: normal;
   font-style: normal;
 }
-/* Short/xs phones */
+/* Short/xs iphones 6-8 */
 @media (max-height: 667px) {
   .nav {
     min-height: 12vh;
@@ -534,8 +549,8 @@ input:checked + .slider:before {
   }
   .card {
     padding-top: 0.7rem;
-    padding-right: 1.3rem;
-    height: 78vh;
+    padding-right: 1.4rem;
+    height: 82vh;
   }
   .icon {
     margin-top: 0.85rem;
@@ -553,14 +568,106 @@ input:checked + .slider:before {
     font-weight: 520;
   }
 }
-/* Long phone screens + x-small tablets */
-@media (min-height: 844px) and (max-height: 960px) {
+/* Short/xs Android ie Samsung Edge series */
+@media (max-height: 665px) {
+  .nav {
+    min-height: 12vh;
+    max-height: 12vh;
+  }
+  .masthead {
+    height: 77vh;
+  }
+  .logo {
+    height: 16vh;
+    width: 16vh;
+    margin-top: 1.75rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+  }
   .card {
-    height: 65vh;
-    width: 80vw;
+    padding-top: 0.7rem;
+    padding-right: 1.5rem;
+    height: 87vh;
+  }
+  .icon {
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .header {
+    letter-spacing: 0.05em;
+    font-size: 1.7rem;
+  }
+  .copy {
+    letter-spacing: 0.009em;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+  }
+  .service-more {
+    width: 45%;
+    font-size: 1.3rem;
+    margin-left: 25%;
   }
 }
-/* XL phones and XS tablets */
+/*  Small Android phones such as Samsung Galaxy series */
+@media (min-height: 740px) {
+  .card {
+    height: 80vh;
+    width: 85vw;
+  }
+}
+/* Medium phone screens ie iphone 11, iPhone 12 Pro, or google pixel 3XL or google pixel 5 */
+@media (min-height: 844px) {
+  .card {
+    height: 79vh;
+    width: 85vw;
+    padding: 1rem 2.2rem;
+  }
+  .icon {
+    margin-top: 1.75rem;
+    margin-bottom: 0.7rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .header {
+    letter-spacing: 0.05em;
+    font-size: 2rem;
+  }
+  .copy {
+    letter-spacing: 0.01em;
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .service-more {
+    width: 45%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+    margin-left: 25%;
+  }
+}
+/* Large phone screens ie  */
+@media (min-height: 853px) {
+  .card {
+    height: 80vh;
+    width: 85vw;
+    padding: 1.15rem 2rem;
+  }
+  .copy {
+    letter-spacing: 0.02em;
+    font-size: 1.25rem;
+    margin: 0.4rem;
+  }
+  .service-more {
+    margin-top: 0.25rem;
+  }
+}
+/* XS tablets */
 @media (min-width: 650px) {
   .parallax-content {
     padding: 0 10vw;
