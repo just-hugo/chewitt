@@ -493,6 +493,49 @@ input:checked + .slider:before {
   margin-left: 50px;
   margin-bottom: 1rem;
 }
+/* flip the pane when hovered */
+
+.card.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+/* flip speed */
+
+.flipper {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.artist-1 {
+  background: url(http://img.bleacherreport.net/img/images/photos/003/556/940/edab30087cea36c0ca206fc61a4b10fa_crop_north.jpg?w=630&h=420&q=75)
+    center center no-repeat;
+  background-size: cover;
+}
+
 @font-face {
   font-family: "Better Regular";
   src: url("assets/fonts/better.regular.otf") format("opentype");
