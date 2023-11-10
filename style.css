@@ -150,7 +150,7 @@ body {
   box-shadow: inset 1px 2px 1px rgba(255, 255, 255, 0.5),
     1px 2px 3px rgba(0, 0, 0, 1);
 }
-.pane {
+.card {
   height: 77vh;
   width: 85vw;
   margin-bottom: 2.5rem;
@@ -356,7 +356,7 @@ select:-webkit-autofill:focus {
   width: 23px;
   align-self: stretch;
   margin-top: 6%;
-  margin-left: 50%;
+  margin-right: 6%;
   padding: 0%;
   filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 1));
 }
@@ -367,7 +367,6 @@ select:-webkit-autofill:focus {
   height: 23px;
   width: 23px;
   margin: 5%;
-  margin-right: 50%;
   padding: 0%;
   align-self: stretch;
   fill: rgba(255, 255, 255, 0.5);
@@ -378,7 +377,6 @@ select:-webkit-autofill:focus {
 }
 .hidden {
   visibility: hidden;
-  display: none;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -495,7 +493,6 @@ input:checked + .slider:before {
   margin-left: 50px;
   margin-bottom: 1rem;
 }
-
 @font-face {
   font-family: "Better Regular";
   src: url("assets/fonts/better.regular.otf") format("opentype");
@@ -550,7 +547,7 @@ input:checked + .slider:before {
     font-size: 1.2rem;
     margin: 0 1rem;
   }
-  .pane {
+  .card {
     padding-top: 0.7rem;
     padding-right: 1.4rem;
     height: 82vh;
@@ -589,7 +586,7 @@ input:checked + .slider:before {
     font-size: 1.2rem;
     margin: 0 1rem;
   }
-  .pane {
+  .card {
     padding-top: 0.7rem;
     padding-right: 1.5rem;
     height: 87vh;
@@ -618,14 +615,14 @@ input:checked + .slider:before {
 }
 /*  Small Android phones such as Samsung Galaxy series */
 @media (min-height: 740px) {
-  .pane {
+  .card {
     height: 80vh;
     width: 85vw;
   }
 }
 /* Medium phone screens ie iphone 11, iPhone 12 Pro, or google pixel 3XL or google pixel 5 */
 @media (min-height: 844px) {
-  .pane {
+  .card {
     height: 79vh;
     width: 85vw;
     padding: 1rem 2.2rem;
@@ -656,7 +653,7 @@ input:checked + .slider:before {
 }
 /* Large phone screens ie  */
 @media (min-height: 853px) {
-  .pane {
+  .card {
     height: 80vh;
     width: 85vw;
     padding: 1.15rem 2rem;
@@ -725,7 +722,7 @@ input:checked + .slider:before {
     font-size: 1rem;
     margin: 0;
   }
-  .pane {
+  .card {
     width: 30vw;
     height: 55vh;
     margin: 1vh 1vw;

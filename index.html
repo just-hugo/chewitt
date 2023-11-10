@@ -27,9 +27,7 @@
   <body>
     <div class="parallax-bg" id="background"></div>
 
-    <nav
-      class="nav container glass animate__animated animate__fadeInDown animate__slow"
-    >
+    <nav class="nav container glass animate__animated animate__fadeInDown">
       <div class="row text-center align-items-center">
         <div class="col-4">
           <!-- Logo home button -->
@@ -189,7 +187,9 @@
         >&times;</a
       >
       <div class="sidenav-menu">
-        <a href="index.html#dev" class=" " onclick="closeNav()">Web Design</a>
+        <a href="index.html#design" class=" " onclick="closeNav()"
+          >Web Design</a
+        >
         <a href="index.html#dev" class=" " onclick="closeNav()"
           >Web Development</a
         >
@@ -200,7 +200,7 @@
 
     <div class="parallax-content">
       <!-- Masthead Card -->
-      <div class="row align-items-stretch animate__animated">
+      <div class="row align-items-stretch">
         <div
           class="container masthead round glass blur-filter animate__animated animate__fadeInUp animate__slow"
         >
@@ -272,8 +272,8 @@
       <div class="row align-items-stretch">
         <!-- Web Dev Card -->
         <div
-          class="container pane round glass blur-filter animate__animated animate__fadeInUp animate__slow"
-          id="dev"
+          class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
+          id="design"
         >
           <div class="row">
             <svg
@@ -320,61 +320,13 @@
               website to demo on your own devices within the first week. We’ll
               keep collaborating until the website is complete.
             </p>
-            <button class="service-more" onclick="flipCardtoBack(this)">
-              Read more
-            </button>
-          </div>
-          class="container pane hidden round glass blur-filter
-          animate__animated" id="dev" >
-          <div class="row">
-            <svg
-              class="icon col"
-              fill="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 472.615 472.615"
-              xml:space="preserve"
-            >
-              <g>
-                <g>
-                  <path
-                    d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
-			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
-                  />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path
-                    d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
-			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
-                  />
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div class="row">
-            <h1 class="header">Web Development</h1>
-            <p class="copy">Test</p>
-            <p class="copy">
-              Once we’ve found a design, I’ll begin coding. From start to
-              finish, I’ll keep you looped in - you can expect a prototype
-              website to demo on your own devices within the first week. We’ll
-              keep collaborating until the website is complete.
-            </p>
-            <button class="service-more" onclick="flipCardtoFront(this)">
-              Read more
-            </button>
+            <button class="service-more">Read more</button>
           </div>
         </div>
 
         <!-- Content Card -->
         <div
-          class="container pane glass blur-filter animate__animated animate__fadeInUp animate__slow"
+          class="container card glass blur-filter animate__animated animate__fadeInUp animate__slow"
           id="copy"
         >
           <div class="row">
@@ -437,7 +389,7 @@
 
         <!-- Web Hosting Card -->
         <div
-          class="container pane round glass blur-filter animate__animated animate__fadeInUp animate__slow"
+          class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
           id="design"
         >
           <div class="row">
@@ -594,7 +546,7 @@
 
       <!-- Test Card -->
       <div
-        class="container pane glass blur-filter animate__animated animate__fadeInUp animate__slow"
+        class="container card glass blur-filter animate__animated animate__fadeInUp animate__slow"
         id="dev"
       >
         <div class="row">
