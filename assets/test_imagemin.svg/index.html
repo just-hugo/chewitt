@@ -6049,14 +6049,16 @@
       var flipCard = button.closest(".card");
 
       button.addEventListener("click", (e) => {
-        flipCard.classList.toggle("blur-filter");
-        flipCard.classList.toggle("glass");
+        flipCard.classList.remove("blur-filter");
+        flipCard.classList.remove("glass");
+
         flipCard.classList.toggle("active");
         flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
+
         flipCard.classList.toggle("blur-filter");
         flipCard.classList.toggle("glass");
       });
