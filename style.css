@@ -514,7 +514,7 @@ input:checked + .slider:before {
 /* Position the front and back side */
 .flip-box-front,
 .flip-box-back {
-  margin: 0;
+  margin-right: 0%;
   padding: 1.15rem 1.7rem;
   position: absolute;
   width: 100%;
