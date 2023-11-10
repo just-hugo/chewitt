@@ -278,6 +278,26 @@
 
       <!-- Service cards -->
       <div class="row align-items-stretch">
+        <!-- Test flip card-->
+        <div class="flip-box container card">
+          <div class="flip-box-inner glass round">
+            <div class="flip-box-front">
+              <img
+                src="img_paris.jpg"
+                alt="Paris"
+                style="width: 300px; height: 200px"
+              />
+              <button>Click me</button>
+            </div>
+            <div class="flip-box-back">
+              <h2>Paris</h2>
+              <p>What an amazing city</p>
+              <p>Hello?</p>
+              <button>Go back</button>
+            </div>
+          </div>
+        </div>
+
         <!-- Web Dev Card -->
         <div
           class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
@@ -5950,6 +5970,22 @@
           }
         });
       }
+    </script>
+
+    <!-- Flip card test -->
+    <script>
+      var button = document.querySelector(".flip-box-front button");
+      console.log(button.textContent);
+      var flipCard = button.closest(".flip-box");
+
+      button.addEventListener("click", (e) => {
+        flipCard.classList.toggle("active");
+        flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
+        flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
+          "visible";
+        flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
+          "visible";
+      });
     </script>
   </body>
 </html>
