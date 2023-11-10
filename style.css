@@ -541,6 +541,7 @@ input:checked + .slider:before {
   }
 }
 .fadeInUp-animation {
+  -webkit-animation: 1.75s fadeInUp;
   animation: 1.75s fadeInUp;
 }
 @keyframes fadeInDown {
@@ -564,6 +565,7 @@ input:checked + .slider:before {
   }
 }
 .fadeInDown-animation {
+  -webkit-animation: 1.75s fadeInDown;
   animation: 1.75s fadeInDown;
 }
 @font-face {
