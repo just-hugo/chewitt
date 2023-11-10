@@ -537,7 +537,12 @@ input:checked + .slider:before {
     opacity: 1;
   }
 }
-
+.animated {
+  animation-duration: 1.25s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+}
 .fadeInUp-animation {
   animation: 1.75s fadeInUp;
 }
@@ -551,7 +556,16 @@ input:checked + .slider:before {
     opacity: 1;
   }
 }
-
+@-webkit-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .fadeInDown-animation {
   animation: 1.75s fadeInDown;
 }
