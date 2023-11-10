@@ -200,10 +200,7 @@
 
     <div class="parallax-content">
       <!-- Masthead Card -->
-      <div
-        class="row align-items-stretch animate__animated"
-        onscroll="cardScrollUp(this)"
-      >
+      <div class="row align-items-stretch animate__animated">
         <div
           class="container masthead round glass blur-filter animate__animated animate__fadeInUp animate__slow"
         >
@@ -274,7 +271,6 @@
       <!-- Service cards -->
       <div class="row align-items-stretch">
         <!-- Web Dev Card -->
-        <!--Front of card-->
         <div
           class="container pane round glass blur-filter animate__animated animate__fadeInUp animate__slow"
           id="dev"
@@ -328,12 +324,8 @@
               Read more
             </button>
           </div>
-        </div>
-        <!-- Back of card-->
-        <div
-          class="container pane hidden round glass blur-filter animate__animated"
-          id="dev"
-        >
+          class="container pane hidden round glass blur-filter
+          animate__animated" id="dev" >
           <div class="row">
             <svg
               class="icon col"
@@ -5998,71 +5990,6 @@
           }
         });
       }
-    </script>
-
-    <!-- Card Flip take 3 -->
-    <script>
-      // Get card element
-      const card = document.querySelectorAll(".card");
-
-      // Loop through cards.
-      // This is so you can have multiple cards on a page.
-      for (let i = 0; i < card.length; i++) {
-        // Add a click event listener to each card.
-        card[i].addEventListener("click", function () {
-          // Toggle active class on card
-          card[i].classList.toggle("active");
-        });
-      }
-    </script>
-
-    <!-- Card Flip Take two -->
-    <script>
-      // on click of read more
-      // apply flip-horizontally class to card
-      function flipCardtoBack(button) {
-        var card = button.parentNode.parentNode;
-        var cardBack = card.nextElementSibling;
-
-        card.classList.remove("animate__fadeInUp");
-        card.classList.remove("animate__slow");
-
-        card.classList.toggle("active");
-
-        //   card.style.setProperty("--animate-duration", ".7s");
-        //   card.classList.add("animate__flipOutY");
-
-        //   card.addEventListener("animationend", function (event) {
-        //     if (event.animationName === "flipOutY") {
-        //       card.classList.add("card-flipped");
-        //       cardBack.classList.remove("card-flipped");
-        //       cardBack.classList.remove("hidden");
-        //       cardBack.style.setProperty("--animate-duration", ".7s");
-        //       cardBack.classList.add("animate__flipInY");
-        //     }
-        //   });
-      }
-
-      function flipCardtoFront(button) {
-        var card = button.parentNode.parentNode;
-        var cardFront = card.previousElementSibling;
-
-        card.classList.remove("animate__flipInY");
-        cardFront.classList.remove("animate__flipOutY");
-        cardFront.classList.remove("card-flipped");
-        card.classList.add("animate__flipOutY");
-        card.classList.add("card-flipped");
-        cardFront.classList.add("animate__flipInY");
-      }
-    </script>
-
-    <!-- Card scroll up animation -->
-    <script>
-      var page = document.querySelector("html");
-      page.addEventListener("scroll", function cardScrollUp(card) {
-        console.log(card);
-        card.classList.add("animate__pulse");
-      });
     </script>
   </body>
 </html>
