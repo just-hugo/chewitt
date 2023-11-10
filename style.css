@@ -154,7 +154,6 @@ body {
   height: 77vh;
   width: 85vw;
   margin-bottom: 2.5rem;
-  padding: 1.15rem 1.7rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
   background-color: rgba(0, 0, 0, 0);
@@ -498,6 +497,7 @@ input:checked + .slider:before {
 }
 /* This container is needed to position the front and back side */
 .flip-box-inner {
+  padding: 1.15rem 1.7rem;
   position: relative;
   width: 100%;
   height: 100%;
