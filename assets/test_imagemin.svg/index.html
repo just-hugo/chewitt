@@ -381,8 +381,8 @@
           class="container card animate__animated animate__fadeInUp animate__slow"
           id="content"
         >
-          <div class="flip-box-inner glass blur-filter round">
-            <div class="flip-box-front">
+          <div class="flip-box-inner round">
+            <div class="flip-box-front glass blur-filter">
               <div class="row">
                 <svg
                   class="icon col"
@@ -6049,18 +6049,12 @@
       var flipCard = button.closest(".card");
 
       button.addEventListener("click", (e) => {
-        flipCard.classList.remove("blur-filter");
-        flipCard.classList.remove("glass");
-
         flipCard.classList.toggle("active");
         flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
-
-        flipCard.classList.toggle("blur-filter");
-        flipCard.classList.toggle("glass");
       });
     </script>
   </body>
