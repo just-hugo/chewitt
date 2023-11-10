@@ -6187,10 +6187,9 @@
       }
     </script>
 
-    <!-- Flip card test -->
+    <!-- Flip card animations -->
     <script>
       function learnMore(button) {
-        console.log(button.textContent);
         var flipCard = button.closest(".card");
         flipCard.classList.toggle("active");
         flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
@@ -6199,7 +6198,6 @@
       }
 
       function goBack(button) {
-        var flipCard = button.closest(".card");
         flipCard.classList.toggle("active");
         flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
