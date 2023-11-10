@@ -157,7 +157,7 @@ body {
   margin-bottom: 2.5rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border: 0px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -525,6 +525,35 @@ input:checked + .slider:before {
 /* Style the back side */
 .flip-box-back {
   transform: rotateY(180deg);
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInUp-animation {
+  animation: 1.75s fadeInUp;
+}
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeInDown-animation {
+  animation: 1.75s fadeInDown;
 }
 @font-face {
   font-family: "Better Regular";
