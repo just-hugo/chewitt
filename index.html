@@ -282,6 +282,7 @@
         <div
           class="container card animate__animated animate__fadeInUp animate__slow"
           id="dev"
+          onclick="flipCard(this)"
         >
           <div class="flip-box-inner glass blur-filter round">
             <div class="flip-box-front">
@@ -330,8 +331,8 @@
                   website to demo on your own devices within the first week.
                   We’ll keep collaborating until the website is complete.
                 </p>
-                <button class="service-more">Read more</button>
               </div>
+              <button class="service-more">Read more</button>
             </div>
             <div class="flip-box-back">
               <div class="row">
@@ -376,10 +377,10 @@
         </div>
 
         <!-- Content Card -->
-
         <div
           class="container card animate__animated animate__fadeInUp animate__slow"
           id="content"
+          onclick="flipCard(this)"
         >
           <div class="flip-box-inner glass blur-filter round">
             <div class="flip-box-front">
@@ -441,8 +442,8 @@
                   website to demo on your own devices within the first week.
                   We’ll keep collaborating until the website is complete.
                 </p>
-                <button class="service-more">Read more</button>
               </div>
+              <button class="service-more">Read more</button>
             </div>
             <div class="flip-box-back">
               <div class="row">
@@ -485,6 +486,7 @@
             </div>
           </div>
         </div>
+
         <!-- Web Hosting Card -->
         <div
           class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
@@ -6044,18 +6046,16 @@
 
     <!-- Flip card test -->
     <script>
-      var button = document.querySelector(".flip-box-front button");
-      console.log(button.textContent);
-      var flipCard = button.closest(".card");
-
-      button.addEventListener("click", (e) => {
+      function flipCard(button) {
+        console.log(button.textContent);
+        var flipCard = button.closest(".card");
         flipCard.classList.toggle("active");
         flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
-      });
+      }
     </script>
   </body>
 </html>
