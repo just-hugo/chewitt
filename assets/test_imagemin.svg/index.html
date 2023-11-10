@@ -12,6 +12,12 @@
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Components style -->
     <link rel="stylesheet" href="style.css" />
 
@@ -21,25 +27,66 @@
   <body>
     <div class="parallax-bg" id="background"></div>
 
-    <nav class="nav container frost-filter">
+    <nav class="nav container glass animate__animated animate__fadeInDown">
       <div class="row text-center align-items-center">
         <div class="col-4">
           <!-- Logo home button -->
           <svg
+            class="logo-nav-icon col"
             xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-hexagon logo-nav-icon"
+            width="55"
+            viewBox="0 0 75 75"
+            height="55"
+            version="1.0"
           >
+            <defs>
+              <clipPath id="a">
+                <path d="M7.57 4h59.65v67H7.57Zm0 0" />
+              </clipPath>
+              <clipPath id="b">
+                <path
+                  d="m41.285 5.055 22.043 12.828a7.822 7.822 0 0 1 3.89 6.762v25.707a7.82 7.82 0 0 1-3.89 6.761L41.285 69.941a7.74 7.74 0 0 1-7.781 0L11.46 57.113a7.822 7.822 0 0 1-3.89-6.761V24.645a7.82 7.82 0 0 1 3.89-6.762L33.504 5.055a7.74 7.74 0 0 1 7.781 0Zm0 0"
+                />
+              </clipPath>
+              <clipPath id="c">
+                <path d="M13.613 10.578H61.38v53.844H13.613Zm0 0" />
+              </clipPath>
+              <clipPath id="d">
+                <path
+                  d="m41.383 11.973 16.105 9.367a7.83 7.83 0 0 1 3.89 6.762v18.793a7.825 7.825 0 0 1-3.89 6.761l-16.105 9.371a7.733 7.733 0 0 1-7.778 0L17.5 53.657a7.821 7.821 0 0 1-3.887-6.762V28.102c0-2.786 1.48-5.36 3.887-6.762l16.105-9.367a7.715 7.715 0 0 1 7.778 0Zm0 0"
+                />
+              </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+              <g clip-path="url(#b)">
+                <path
+                  class="logo-cutout-ring"
+                  fill="none"
+                  d="m41.285 5.055 22.043 12.828a7.822 7.822 0 0 1 3.89 6.762v25.707a7.82 7.82 0 0 1-3.89 6.761L41.285 69.941a7.74 7.74 0 0 1-7.781 0L11.46 57.113a7.822 7.822 0 0 1-3.89-6.761V24.645a7.82 7.82 0 0 1 3.89-6.762L33.504 5.055a7.74 7.74 0 0 1 7.781 0Zm0 0"
+                  stroke="#c9c9c9"
+                  stroke-width="7.5"
+                />
+              </g>
+            </g>
+            <g clip-path="url(#c)">
+              <g clip-path="url(#d)">
+                <path
+                  class="logo-inner"
+                  fill="none"
+                  d="m41.383 11.973 16.105 9.367a7.83 7.83 0 0 1 3.89 6.762v18.793a7.825 7.825 0 0 1-3.89 6.761l-16.105 9.371a7.733 7.733 0 0 1-7.778 0L17.5 53.657a7.821 7.821 0 0 1-3.887-6.762V28.102c0-2.786 1.48-5.36 3.887-6.762l16.105-9.367a7.715 7.715 0 0 1 7.778 0Zm0 0"
+                  stroke="#b59e5f"
+                  stroke-width="4.5"
+                />
+              </g>
+            </g>
             <path
-              d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-            ></path>
+              class="logo-initials"
+              d="M29.796 43.484c.688 0 1.446-.27 2.282-.812a18.28 18.28 0 0 0 2.437-1.906 27.33 27.33 0 0 0 2.172-2.266 32.72 32.72 0 0 0 1.484-1.844c.196-.289.383-.46.563-.515.187-.063.32-.036.406.078.094.105.125.277.094.515-.024.23-.121.493-.297.782-.156.273-.418.656-.781 1.156-.367.5-.797 1.047-1.297 1.64a26.32 26.32 0 0 1-1.703 1.797 20.915 20.915 0 0 1-1.985 1.672c-.687.5-1.402.91-2.14 1.235-.73.32-1.453.484-2.172.484-.98 0-1.797-.188-2.453-.563-.657-.363-1.18-.832-1.563-1.406a5.675 5.675 0 0 1-.812-1.922 9.69 9.69 0 0 1-.235-2.093c0-.688.153-1.54.453-2.563A11.69 11.69 0 0 1 25.64 34a9.203 9.203 0 0 1 2.313-2.438c.937-.675 2.039-1.015 3.312-1.015.707 0 1.313.246 1.813.734.507.492.75 1.156.718 2 0 .399-.07.793-.203 1.188-.125.386-.304.73-.531 1.031-.219.305-.48.543-.781.719a1.9 1.9 0 0 1-.985.265c-.293 0-.511-.101-.656-.312a1.86 1.86 0 0 1-.266-.735 3.531 3.531 0 0 1 0-.812c.04-.27.082-.453.125-.547a1.03 1.03 0 0 1 .36-.328c.133-.07.289-.148.469-.234a.789.789 0 0 0 .312-.297.825.825 0 0 0 .125-.438.564.564 0 0 0-.14-.39c-.086-.114-.227-.172-.422-.172-.2 0-.563.164-1.094.484-.524.313-1.055.79-1.594 1.422-.543.637-1.027 1.434-1.453 2.39-.43.962-.652 2.075-.672 3.344-.023.73.078 1.328.297 1.797.227.469.508.84.844 1.11.332.261.695.449 1.093.562.407.106.797.156 1.172.156Zm0 0"
+            />
+            <path
+              class="logo-initials"
+              d="M46.808 32.978c0-.363.18-.547.547-.547h1.031c.383 0 .578.184.578.547v12.906c0 .367-.195.547-.578.547h-1.031c-.367 0-.547-.18-.547-.547V40.29c0-.363-.203-.547-.61-.547h-5.406c-.605 0-.906.278-.906.829l.031 5.312c0 .367-.183.547-.546.547h-1.032c-.367 0-.547-.18-.547-.547V24.087c0-.383.18-.578.547-.578h1.032c.363 0 .546.195.546.578l-.03 13.875c0 .48.202.719.609.719h5.765c.281 0 .442-.02.485-.063.039-.05.062-.191.062-.421Zm0 0"
+            />
           </svg>
         </div>
         <div class="col-4">
@@ -139,41 +186,387 @@
 
     <!-- Navigation Side Menu -->
     <div class="sidenav-bg" id="mySidenav-bg"></div>
-    <div id="mySidenav" class="sidenav glass">
-      <a
-        href="javascript:void(0)"
-        class="closebtn onyx subheader"
-        onclick="closeNav()"
+    <div id="mySidenav" class="sidenav glass blur-filter round">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-      <a href="#" class="subheader onyx">Web Design</a>
-      <a href="#" class="subheader onyx">Web Development</a>
-      <a href="#" class="subheader onyx">Copywriting</a>
-      <a href="#" class="subheader onyx">Contact</a>
+      <div class="sidenav-menu">
+        <a href="index.html#dev" class=" " onclick="closeNav()"
+          >Web Development</a
+        >
+        <a href="index.html#content" class=" " onclick="closeNav()"
+          >Web Content</a
+        >
+        <a href="index.html#host" class=" " onclick="closeNav()">Hosting</a>
+        <a href="index.html#contact" class=" " onclick="closeNav()">Contact</a>
+      </div>
     </div>
 
     <div class="parallax-content">
       <!-- Masthead Card -->
-      <div class="container card glass frost-filter blur-filter">
-        <div class="row text-center align-items-center">
+      <div class="row align-items-stretch">
+        <div
+          class="container masthead round glass blur-filter animate__animated animate__fadeInUp animate__slow"
+        >
+          <div class="row text-center align-items-center">
+            <svg
+              class="logo col"
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              viewBox="0 0 75 75"
+              height="100"
+              version="1.0"
+            >
+              <defs>
+                <clipPath id="a">
+                  <path d="M7.57 4h59.65v67H7.57Zm0 0" />
+                </clipPath>
+                <clipPath id="b">
+                  <path
+                    d="m41.285 5.055 22.043 12.828a7.822 7.822 0 0 1 3.89 6.762v25.707a7.82 7.82 0 0 1-3.89 6.761L41.285 69.941a7.74 7.74 0 0 1-7.781 0L11.46 57.113a7.822 7.822 0 0 1-3.89-6.761V24.645a7.82 7.82 0 0 1 3.89-6.762L33.504 5.055a7.74 7.74 0 0 1 7.781 0Zm0 0"
+                  />
+                </clipPath>
+                <clipPath id="c">
+                  <path d="M13.613 10.578H61.38v53.844H13.613Zm0 0" />
+                </clipPath>
+                <clipPath id="d">
+                  <path
+                    d="m41.383 11.973 16.105 9.367a7.83 7.83 0 0 1 3.89 6.762v18.793a7.825 7.825 0 0 1-3.89 6.761l-16.105 9.371a7.733 7.733 0 0 1-7.778 0L17.5 53.657a7.821 7.821 0 0 1-3.887-6.762V28.102c0-2.786 1.48-5.36 3.887-6.762l16.105-9.367a7.715 7.715 0 0 1 7.778 0Zm0 0"
+                  />
+                </clipPath>
+              </defs>
+              <g clip-path="url(#a)">
+                <g clip-path="url(#b)">
+                  <path
+                    class="logo-cutout-ring"
+                    fill="none"
+                    d="m41.285 5.055 22.043 12.828a7.822 7.822 0 0 1 3.89 6.762v25.707a7.82 7.82 0 0 1-3.89 6.761L41.285 69.941a7.74 7.74 0 0 1-7.781 0L11.46 57.113a7.822 7.822 0 0 1-3.89-6.761V24.645a7.82 7.82 0 0 1 3.89-6.762L33.504 5.055a7.74 7.74 0 0 1 7.781 0Zm0 0"
+                    stroke="#c9c9c9"
+                    stroke-width="7.5"
+                  />
+                </g>
+              </g>
+              <g clip-path="url(#c)">
+                <g clip-path="url(#d)">
+                  <path
+                    class="logo-inner"
+                    fill="none"
+                    d="m41.383 11.973 16.105 9.367a7.83 7.83 0 0 1 3.89 6.762v18.793a7.825 7.825 0 0 1-3.89 6.761l-16.105 9.371a7.733 7.733 0 0 1-7.778 0L17.5 53.657a7.821 7.821 0 0 1-3.887-6.762V28.102c0-2.786 1.48-5.36 3.887-6.762l16.105-9.367a7.715 7.715 0 0 1 7.778 0Zm0 0"
+                    stroke="#b59e5f"
+                    stroke-width="4.5"
+                  />
+                </g>
+              </g>
+              <path
+                class="logo-initials"
+                d="M29.796 43.484c.688 0 1.446-.27 2.282-.812a18.28 18.28 0 0 0 2.437-1.906 27.33 27.33 0 0 0 2.172-2.266 32.72 32.72 0 0 0 1.484-1.844c.196-.289.383-.46.563-.515.187-.063.32-.036.406.078.094.105.125.277.094.515-.024.23-.121.493-.297.782-.156.273-.418.656-.781 1.156-.367.5-.797 1.047-1.297 1.64a26.32 26.32 0 0 1-1.703 1.797 20.915 20.915 0 0 1-1.985 1.672c-.687.5-1.402.91-2.14 1.235-.73.32-1.453.484-2.172.484-.98 0-1.797-.188-2.453-.563-.657-.363-1.18-.832-1.563-1.406a5.675 5.675 0 0 1-.812-1.922 9.69 9.69 0 0 1-.235-2.093c0-.688.153-1.54.453-2.563A11.69 11.69 0 0 1 25.64 34a9.203 9.203 0 0 1 2.313-2.438c.937-.675 2.039-1.015 3.312-1.015.707 0 1.313.246 1.813.734.507.492.75 1.156.718 2 0 .399-.07.793-.203 1.188-.125.386-.304.73-.531 1.031-.219.305-.48.543-.781.719a1.9 1.9 0 0 1-.985.265c-.293 0-.511-.101-.656-.312a1.86 1.86 0 0 1-.266-.735 3.531 3.531 0 0 1 0-.812c.04-.27.082-.453.125-.547a1.03 1.03 0 0 1 .36-.328c.133-.07.289-.148.469-.234a.789.789 0 0 0 .312-.297.825.825 0 0 0 .125-.438.564.564 0 0 0-.14-.39c-.086-.114-.227-.172-.422-.172-.2 0-.563.164-1.094.484-.524.313-1.055.79-1.594 1.422-.543.637-1.027 1.434-1.453 2.39-.43.962-.652 2.075-.672 3.344-.023.73.078 1.328.297 1.797.227.469.508.84.844 1.11.332.261.695.449 1.093.562.407.106.797.156 1.172.156Zm0 0"
+              />
+              <path
+                class="logo-initials"
+                d="M46.808 32.978c0-.363.18-.547.547-.547h1.031c.383 0 .578.184.578.547v12.906c0 .367-.195.547-.578.547h-1.031c-.367 0-.547-.18-.547-.547V40.29c0-.363-.203-.547-.61-.547h-5.406c-.605 0-.906.278-.906.829l.031 5.312c0 .367-.183.547-.546.547h-1.032c-.367 0-.547-.18-.547-.547V24.087c0-.383.18-.578.547-.578h1.032c.363 0 .546.195.546.578l-.03 13.875c0 .48.202.719.609.719h5.765c.281 0 .442-.02.485-.063.039-.05.062-.191.062-.421Zm0 0"
+              />
+            </svg>
+          </div>
+          <h1 class="name">Cheyanne <span class="">hewitt</span></h1>
+          <h1 class="llc">LLC</h1>
+          <h2 class="tagline">
+            Web development, hosting,
+            <span class=""><br />&</span> content
+          </h2>
+        </div>
+      </div>
+
+      <!-- Service cards -->
+      <div class="row align-items-stretch">
+        <!-- Web Dev Card -->
+        <div
+          class="container card animate__animated animate__fadeInUp animate__slow"
+          id="dev"
+        >
+          <div class="flip-box-inner glass blur-filter round">
+            <div class="flip-box-front">
+              <div class="row">
+                <svg
+                  class="icon col"
+                  fill="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 472.615 472.615"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
+			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
+			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="row">
+                <h1 class="header">Web Development</h1>
+                <p class="copy">
+                  You need a website, but you’re unsure where to start. Or maybe
+                  you have a concept but need help translating it to code. No
+                  matter your starting point, I’ll collaborate with you to make
+                  your vision a reality.
+                </p>
+                <p class="copy">
+                  Once we’ve found a design, I’ll begin coding. From start to
+                  finish, I’ll keep you looped in - you can expect a prototype
+                  website to demo on your own devices within the first week.
+                  We’ll keep collaborating until the website is complete.
+                </p>
+                <button class="service-more">Learn more</button>
+              </div>
+            </div>
+            <div class="flip-box-back">
+              <div class="row">
+                <svg
+                  class="icon col"
+                  fill="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 472.615 472.615"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
+			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
+			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="row">
+                <h1 class="header">Web Development</h1>
+                <p class="copy">Yxfgdfgfg sghsgh sthdth th</p>
+                <p class="copy">dgadfgafhfhg nhtndhgndhm dhmdhnd sz</p>
+                <button class="service-more">Go back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Card -->
+
+        <div
+          class="container card animate__animated animate__fadeInUp animate__slow"
+          id="content"
+        >
+          <div class="flip-box-inner glass blur-filter round">
+            <div class="flip-box-front">
+              <div class="row">
+                <svg
+                  class="icon col"
+                  data-name="Layer 1"
+                  viewBox="0 0 93 72.723999"
+                  x="0px"
+                  y="0px"
+                  version="1.1"
+                  id="svg2"
+                  sodipodi:docname="noun-content-writing-5399831.svg"
+                  width="93"
+                  height="72.723999"
+                  inkscape:version="1.3 (0e150ed, 2023-07-21)"
+                  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:svg="http://www.w3.org/2000/svg"
+                >
+                  <defs id="defs2" />
+                  <sodipodi:namedview
+                    id="namedview2"
+                    pagecolor="#ffffff"
+                    bordercolor="#000000"
+                    borderopacity="0.25"
+                    inkscape:showpageshadow="2"
+                    inkscape:pageopacity="0.0"
+                    inkscape:pagecheckerboard="0"
+                    inkscape:deskcolor="#d1d1d1"
+                    inkscape:zoom="1.9873684"
+                    inkscape:cx="18.365996"
+                    inkscape:cy="43.273305"
+                    inkscape:window-width="1312"
+                    inkscape:window-height="449"
+                    inkscape:window-x="0"
+                    inkscape:window-y="0"
+                    inkscape:window-maximized="0"
+                    inkscape:current-layer="svg2"
+                  />
+                  <path
+                    d="m 93,20.344 -1.543,1.6 -3.183,-3.18 1.6,-1.543 z m -28.774,21.6 4.052,4.052 L 89.263,24.22 86,20.955 Z m -2.034,2.435 -0.657,4.308 4.308,-0.656 z M 77.977,8.429 H 6.207 V 1.6 A 1.6,1.6 0 0 1 7.807,0 h 68.569 a 1.6,1.6 0 0 1 1.6,1.6 z M 14.9,4.025 A 1.58,1.58 0 0 0 13.32,2.444 h -0.762 a 1.581,1.581 0 0 0 0,3.161 h 0.762 a 1.58,1.58 0 0 0 1.58,-1.58 z m 7.09,0 A 1.581,1.581 0 0 0 20.409,2.444 h -0.761 a 1.581,1.581 0 1 0 0,3.161 h 0.761 a 1.58,1.58 0 0 0 1.585,-1.58 z m 43.111,0 a 1.58,1.58 0 0 0 -1.58,-1.581 h -0.762 a 1.581,1.581 0 0 0 0,3.161 h 0.762 a 1.58,1.58 0 0 0 1.584,-1.58 z m 7.071,0 a 1.58,1.58 0 0 0 -1.273,-1.55 1.58,1.58 0 0 0 -3,0 1.58,1.58 0 0 0 0,3.1 1.58,1.58 0 0 0 3,0 1.581,1.581 0 0 0 1.277,-1.55 z M 3.26,66.075 A 4.755,4.755 0 0 1 3.046,64.664 V 6.464 H 1.6 A 1.6,1.6 0 0 0 0,8.064 v 63.06 a 1.6,1.6 0 0 0 1.6,1.6 h 68.569 a 1.6,1.6 0 0 0 1.6,-1.6 V 69.422 H 7.808 A 4.771,4.771 0 0 1 3.26,66.075 Z m 72.612,-23.406 2.105,-2.185 v 24.18 a 1.6,1.6 0 0 1 -1.6,1.6 H 7.808 a 1.6,1.6 0 0 1 -1.6,-1.6 V 11.586 h 71.77 v 12.71 l -2.105,2.029 V 23.38 a 1.581,1.581 0 0 0 -3.161,0 v 5.992 l -3.226,3.109 A 1.616,1.616 0 0 0 69.15,32.444 H 51.925 a 1.581,1.581 0 1 0 0,3.161 H 66.244 L 59.7,41.914 a 1.585,1.585 0 0 0 -0.466,0.9 l -0.1,0.66 H 46.515 a 1.581,1.581 0 1 0 0,3.161 H 58.65 l -0.359,2.354 h -2.659 a 1.581,1.581 0 1 0 0,3.161 h 13.517 a 1.58,1.58 0 0 0 0.538,-3.065 l 3.031,-3.145 a 1.58,1.58 0 0 0 3.154,-0.146 z m -46.7,6.32 a 1.581,1.581 0 1 0 0,3.161 h 20.209 a 1.581,1.581 0 0 0 0,-3.161 z m 3,-2.6 a 1.581,1.581 0 0 0 1.58,-1.58 V 28.754 a 1.58,1.58 0 0 0 -1.58,-1.58 h -15.41 a 1.58,1.58 0 0 0 -1.581,1.58 v 16.057 a 1.581,1.581 0 0 0 1.581,1.58 z m 5.351,0.244 h 2.744 a 1.581,1.581 0 0 0 0,-3.161 H 37.52 a 1.581,1.581 0 1 0 0,3.161 z m 0,-8.676 a 1.581,1.581 0 1 0 0,3.161 H 59.01 a 1.581,1.581 0 1 0 0,-3.161 z m 0,-2.354 h 8.154 a 1.581,1.581 0 0 0 0,-3.161 H 37.52 a 1.581,1.581 0 1 0 0,3.161 z m 33.209,-7.095 a 1.58,1.58 0 0 0 -1.58,-1.581 H 37.52 a 1.581,1.581 0 1 0 0,3.161 h 31.629 a 1.58,1.58 0 0 0 1.58,-1.578 z M 40.215,24.575 h 20.8 a 1.581,1.581 0 0 0 0,-3.161 h -20.8 a 1.581,1.581 0 0 0 0,3.161 z m 30.514,-1.58 a 1.58,1.58 0 0 0 -1.58,-1.581 h -1.883 a 1.581,1.581 0 1 0 0,3.161 h 1.883 a 1.58,1.58 0 0 0 1.58,-1.58 z M 26.778,17.48 a 1.58,1.58 0 0 0 1.58,1.58 h 40.791 a 1.581,1.581 0 0 0 0,-3.161 H 28.358 a 1.58,1.58 0 0 0 -1.58,1.581 z m -13.323,0 a 1.58,1.58 0 0 0 1.58,1.58 h 7.072 a 1.581,1.581 0 0 0 0,-3.161 h -7.072 a 1.58,1.58 0 0 0 -1.58,1.581 z m 0,5.515 a 1.58,1.58 0 0 0 1.58,1.58 h 18.929 a 1.581,1.581 0 1 0 0,-3.161 H 15.035 a 1.58,1.58 0 0 0 -1.58,1.581 z m 0,27.575 a 1.58,1.58 0 0 0 1.58,1.58 h 7.881 a 1.581,1.581 0 0 0 0,-3.161 h -7.881 a 1.58,1.58 0 0 0 -1.58,1.581 z m 0,5.515 a 1.58,1.58 0 0 0 1.58,1.58 H 32.67 a 1.58,1.58 0 1 0 0,-3.16 H 15.035 a 1.58,1.58 0 0 0 -1.58,1.58 z M 61.4,61.6 A 1.581,1.581 0 0 0 59.819,60.019 H 15.035 a 1.581,1.581 0 0 0 0,3.161 H 59.819 A 1.58,1.58 0 0 0 61.4,61.6 Z m 9.329,0 a 1.58,1.58 0 0 0 -1.58,-1.581 H 66.07 a 1.581,1.581 0 0 0 0,3.161 h 3.079 a 1.58,1.58 0 0 0 1.58,-1.58 z m 0,-5.515 a 1.58,1.58 0 0 0 -1.58,-1.58 H 38.921 a 1.58,1.58 0 1 0 0,3.16 h 30.228 a 1.58,1.58 0 0 0 1.58,-1.58 z M 18.342,43.23 H 30.588 V 30.334 H 18.342 Z"
+                    id="path1"
+                  />
+                </svg>
+              </div>
+              <div class="row">
+                <h1 class="header">Web Content</h1>
+                <p class="copy">
+                  You need a website, but you’re unsure where to start. Or maybe
+                  you have a concept but need help translating it to code. No
+                  matter your starting point, I’ll collaborate with you to make
+                  your vision a reality.
+                </p>
+                <p class="copy">
+                  Once we’ve found a design, I’ll begin coding. From start to
+                  finish, I’ll keep you looped in - you can expect a prototype
+                  website to demo on your own devices within the first week.
+                  We’ll keep collaborating until the website is complete.
+                </p>
+                <button class="service-more">Learn more</button>
+              </div>
+            </div>
+            <div class="flip-box-back">
+              <div class="row">
+                <svg
+                  class="icon col"
+                  fill="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 472.615 472.615"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
+			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
+			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="row">
+                <h1 class="header">Web Development</h1>
+                <p class="copy">Yxfgdfgfg sghsgh sthdth th</p>
+                <p class="copy">dgadfgafhfhg nhtndhgndhm dhmdhnd sz</p>
+                <button class="service-more">Go back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Web Hosting Card -->
+        <div
+          class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
+          id="host"
+        >
+          <div class="row">
+            <svg
+              class="icon col"
+              fill="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 472.615 472.615"
+              xml:space="preserve"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
+			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
+                  />
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
+			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="row">
+            <h1 class="header text-center">Web Hosting</h1>
+            <p class="copy">
+              You have your site built. Now what? To get it on the web, you need
+              a host. Some people prefer to set up and manage their own hosts —
+              if that’s you, I’ll supply you with your website code in a zip
+              file that you can upload and extract to your host's servers.
+            </p>
+            <p class="copy">
+              If you’d rather not deal with the hassle of setting up the host
+              yourself, I'll do it for you. Once I've set it up, I’ll also
+              maintain the hosting account and resolve any outages or other
+              technical issues that occur.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Card -->
+      <div
+        class="container contact round glass blur-filter animate__animated animate__fadeInUp animate__slow"
+        id="contact"
+      >
+        <div class="row">
           <svg
-            class="logo col"
-            width="42.40625"
-            zoomAndPan="magnify"
-            viewBox="0 0 31.804688 36.60742"
-            height="48.809895"
-            preserveAspectRatio="xMidYMid"
-            version="1.0"
-            id="svg16"
-            sodipodi:docname="Untitled design (3).svg"
+            class="icon"
+            height="60px"
+            height="50px"
+            data-name="Layer 1"
+            viewBox="0 0 88 80.03067"
+            x="0px"
+            y="0px"
+            version="1.1"
+            id="svg4"
+            sodipodi:docname="noun-bubble-text-4084702.svg"
+            width="88"
+            height="80.03067"
             inkscape:version="1.3 (0e150ed, 2023-07-21)"
             xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
             xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svg="http://www.w3.org/2000/svg"
           >
+            <defs id="defs4" />
             <sodipodi:namedview
-              id="namedview16"
+              id="namedview4"
               pagecolor="#ffffff"
               bordercolor="#000000"
               borderopacity="0.25"
@@ -181,228 +574,79 @@
               inkscape:pageopacity="0.0"
               inkscape:pagecheckerboard="0"
               inkscape:deskcolor="#d1d1d1"
-              inkscape:zoom="4.72"
-              inkscape:cx="21.504237"
-              inkscape:cy="24.788136"
+              inkscape:zoom="1.9666667"
+              inkscape:cx="43.983051"
+              inkscape:cy="51.864407"
               inkscape:window-width="1312"
               inkscape:window-height="449"
-              inkscape:window-x="0"
+              inkscape:window-x="-18"
               inkscape:window-y="0"
               inkscape:window-maximized="0"
-              inkscape:current-layer="svg16"
+              inkscape:current-layer="svg4"
             />
-            <defs id="defs8">
-              <clipPath id="fc6390ef02">
-                <path
-                  d="m 4.371094,2.238281 h 28.5 v 32.902344 h -28.5 z m 0,0"
-                  clip-rule="nonzero"
-                  id="path1"
-                />
-              </clipPath>
-              <clipPath id="9a9ae78468">
-                <path
-                  d="m 19.261719,2.480469 12.96875,7.546875 c 0.394531,0.230468 0.640625,0.652344 0.640625,1.113281 v 15.097656 c 0,0.457031 -0.246094,0.882813 -0.640625,1.113281 l -12.96875,7.546876 c -0.398438,0.230468 -0.886719,0.230468 -1.28125,0 L 5.011719,27.351562 C 4.617188,27.121094 4.371094,26.695312 4.371094,26.238281 V 11.140625 c 0,-0.460937 0.246094,-0.882813 0.640625,-1.113281 L 17.980469,2.480469 C 18.375,2.25 18.863281,2.25 19.261719,2.480469 Z m 0,0"
-                  clip-rule="nonzero"
-                  id="path2"
-                />
-              </clipPath>
-              <clipPath id="3798ad9d6f">
-                <path
-                  d="M 2.601562,0 H 34.40625 V 37 H 2.601562 Z m 0,0"
-                  clip-rule="nonzero"
-                  id="path3"
-                />
-              </clipPath>
-              <clipPath id="6a868b6f1b">
-                <path
-                  d="m 19.144531,0.371094 14.621094,8.507812 c 0.394531,0.230469 0.640625,0.65625 0.640625,1.113282 v 17.023437 c 0,0.457031 -0.246094,0.882813 -0.640625,1.113281 l -14.621094,8.503906 c -0.398437,0.230469 -0.886719,0.230469 -1.28125,0 L 3.242188,28.128906 C 2.84375,27.898438 2.601562,27.472656 2.601562,27.015625 V 9.992188 c 0,-0.457032 0.242188,-0.882813 0.640626,-1.113282 L 17.863281,0.371094 c 0.394531,-0.230469 0.882813,-0.230469 1.28125,0 z m 0,0"
-                  clip-rule="nonzero"
-                  id="path4"
-                />
-              </clipPath>
-              <clipPath id="67b56333ac">
-                <path
-                  d="M 4.097656,1.785156 H 32.867188 V 35.09375 H 4.097656 Z m 0,0"
-                  clip-rule="nonzero"
-                  id="path5"
-                />
-              </clipPath>
-              <clipPath id="673e7cea78">
-                <path
-                  d="m 19.121094,2.160156 13.105468,7.625 c 0.398438,0.230469 0.640626,0.652344 0.640626,1.109375 V 26.15625 c 0,0.457031 -0.242188,0.882812 -0.640626,1.113281 l -13.105468,7.625 c -0.394532,0.230469 -0.882813,0.230469 -1.28125,0 l -13.105469,-7.625 C 4.339844,27.039062 4.097656,26.613281 4.097656,26.15625 V 10.894531 c 0,-0.457031 0.242188,-0.878906 0.636719,-1.109375 l 13.105469,-7.625 c 0.398437,-0.230468 0.886718,-0.230468 1.28125,0 z m 0,0"
-                  clip-rule="nonzero"
-                  id="path6"
-                />
-              </clipPath>
-              <clipPath id="6e977c024b">
-                <path
-                  d="M 2.601562,0 H 34.40625 V 37 H 2.601562 Z m 0,0"
-                  clip-rule="nonzero"
-                  id="path7"
-                />
-              </clipPath>
-              <clipPath id="c894bf7d96">
-                <path
-                  d="m 19.144531,0.371094 14.621094,8.507812 c 0.394531,0.230469 0.640625,0.65625 0.640625,1.113282 v 17.023437 c 0,0.457031 -0.246094,0.882813 -0.640625,1.113281 l -14.621094,8.503906 c -0.398437,0.230469 -0.886719,0.230469 -1.28125,0 L 3.242188,28.128906 C 2.84375,27.898438 2.601562,27.472656 2.601562,27.015625 V 9.992188 c 0,-0.457032 0.242188,-0.882813 0.640626,-1.113282 L 17.863281,0.371094 c 0.394531,-0.230469 0.882813,-0.230469 1.28125,0 z m 0,0"
-                  clip-rule="nonzero"
-                  id="path8"
-                />
-              </clipPath>
-            </defs>
-            <g
-              clip-path="url(#fc6390ef02)"
-              id="g10"
-              transform="translate(-2.601562,-0.19824225)"
-            >
-              <g clip-path="url(#9a9ae78468)" id="g9">
-                <path
-                  fill="#cbcbcb"
-                  d="m 4.371094,2.109375 h 28.5 v 33.160156 h -28.5 z m 0,0"
-                  fill-opacity="1"
-                  fill-rule="nonzero"
-                  id="path9"
-                />
-              </g>
-            </g>
-            <g
-              clip-path="url(#3798ad9d6f)"
-              id="g12"
-              transform="translate(-2.601562,-0.19824225)"
-            >
-              <g clip-path="url(#6a868b6f1b)" id="g11">
-                <path
-                  fill="#cbcbcb"
-                  d="M 2.601562,0 H 34.40625 V 37.007812 H 2.601562 Z m 0,0"
-                  fill-opacity="1"
-                  fill-rule="nonzero"
-                  id="path10"
-                />
-                <path
-                  stroke-linecap="butt"
-                  transform="matrix(0.740132,0,0,0.740132,2.602025,0)"
-                  fill="none"
-                  stroke-linejoin="miter"
-                  d="M 22.350765,0.501389 42.105489,11.99639 c 0.533055,0.311389 0.865555,0.886666 0.865555,1.504166 v 23.000558 c 0,0.6175 -0.3325,1.192777 -0.865555,1.504166 L 22.350765,49.495003 c -0.538333,0.311389 -1.198056,0.311389 -1.731111,0 L 0.86493,38.00528 C 0.326597,37.693891 -6.25427e-4,37.118614 -6.25427e-4,36.501114 V 13.500556 c 0,-0.6175 0.327222427,-1.192777 0.865555427,-1.504166 L 20.619654,0.501389 c 0.533055,-0.311389 1.192778,-0.311389 1.731111,0 z m 0,0"
-                  stroke="#cbcbcb"
-                  stroke-width="2"
-                  stroke-opacity="1"
-                  stroke-miterlimit="4"
-                  id="path11"
-                />
-              </g>
-            </g>
-            <g
-              clip-path="url(#67b56333ac)"
-              id="g14"
-              transform="translate(-2.601562,-0.19824225)"
-            >
-              <g clip-path="url(#673e7cea78)" id="g13">
-                <path
-                  stroke-linecap="butt"
-                  transform="matrix(0.740132,0,0,0.740132,4.09572,1.786197)"
-                  fill="none"
-                  stroke-linejoin="miter"
-                  d="m 20.30095,0.50526 17.706946,10.302223 c 0.538333,0.311389 0.865555,0.881389 0.865555,1.498889 v 20.620279 c 0,0.6175 -0.327222,1.192778 -0.865555,1.504167 L 20.30095,44.733041 c -0.533055,0.311389 -1.192778,0.311389 -1.731111,0 L 0.862893,34.430818 C 0.329838,34.119429 0.00261547,33.544151 0.00261547,32.926651 V 12.306372 c 0,-0.6175 0.32722253,-1.1875 0.86027753,-1.498889 L 18.569839,0.50526 c 0.538333,-0.311389 1.198056,-0.311389 1.731111,0 z m 0,0"
-                  stroke="#cfaf5c"
-                  stroke-width="2"
-                  stroke-opacity="1"
-                  stroke-miterlimit="4"
-                  id="path12"
-                />
-              </g>
-            </g>
-            <g
-              clip-path="url(#6e977c024b)"
-              id="g16"
-              transform="translate(-2.601562,-0.19824225)"
-            >
-              <g clip-path="url(#c894bf7d96)" id="g15">
-                <path
-                  stroke-linecap="butt"
-                  transform="matrix(0.740132,0,0,0.740132,2.602025,0)"
-                  fill="none"
-                  stroke-linejoin="miter"
-                  d="M 22.350765,0.501389 42.105489,11.99639 c 0.533055,0.311389 0.865555,0.886666 0.865555,1.504166 v 23.000558 c 0,0.6175 -0.3325,1.192777 -0.865555,1.504166 L 22.350765,49.495003 c -0.538333,0.311389 -1.198056,0.311389 -1.731111,0 L 0.86493,38.00528 C 0.326597,37.693891 -6.25427e-4,37.118614 -6.25427e-4,36.501114 V 13.500556 c 0,-0.6175 0.327222427,-1.192777 0.865555427,-1.504166 L 20.619654,0.501389 c 0.533055,-0.311389 1.192778,-0.311389 1.731111,0 z m 0,0"
-                  stroke="#8f8f8f"
-                  stroke-width="2"
-                  stroke-opacity="1"
-                  stroke-miterlimit="4"
-                  id="path14"
-                />
-              </g>
-            </g>
+            <title id="title1">Artboard 14</title>
+            <circle cx="58" cy="31.000668" r="2" id="circle1" />
+            <circle cx="44" cy="31.000668" r="2" id="circle2" />
+            <circle cx="30" cy="31.000668" r="2" id="circle3" />
+            <path
+              d="M 70.85,6.683826e-4 H 17.15 A 17,17 0 0 0 0,16.840668 v 27.44 a 17,17 0 0 0 17.15,16.84 h 0.92 v 16.88 a 2,2 0 0 0 1.28,1.88 2.13,2.13 0 0 0 0.79,0.15 2.1,2.1 0 0 0 1.46,-0.59 l 18.63,-18.32 h 30.62 a 17,17 0 0 0 17.15,-16.84 v -27.44 A 17,17 0 0 0 70.85,6.683826e-4 Z M 30,35.000668 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z m 14,0 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z m 14,0 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z"
+              id="path3"
+            />
           </svg>
+          <h1 class="header">Contact</h1>
         </div>
-        <h1 class="name onyx">Cheyanne <span class="">hewitt</span></h1>
-        <h2 class="tagline onyx">
-          Web design, development,
-          <span class=""><br />&</span> copywriting
-        </h2>
+
+        <form class="contact">
+          <!-- Name input -->
+          <div class="contact-field">
+            <input
+              class="input-bg round"
+              id="name"
+              type="text"
+              placeholder="Your name"
+              data-sb-validations="required"
+              style="height: 2.25rem"
+            />
+          </div>
+
+          <!-- Email address input -->
+          <div class="contact-field">
+            <input
+              class="input-bg round"
+              id="email"
+              type="text"
+              placeholder="Your email"
+              data-sb-validations="required"
+              style="height: 2.25rem"
+            />
+          </div>
+
+          <!-- Message input -->
+          <div class="contact-field">
+            <textarea
+              class="input-bg"
+              id="message"
+              type="text"
+              placeholder="Message"
+              style="height: 10rem; border-radius: 20px"
+              data-sb-validations="required"
+            ></textarea>
+          </div>
+
+          <!-- Form submit button -->
+          <div class="row">
+            <button class="button header rounded contact-field" type="submit">
+              Send
+            </button>
+          </div>
+        </form>
       </div>
 
       <!-- Test Card -->
-      <div class="container card glass blur-filter frost-filter">
-        <div class="row">
-          <h1 class="font1">Web Design</h1>
-
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,afgq rgargs bs AGFG Test Test
-          </p>
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-        </div>
-      </div>
-
-      <!-- Web Design Card -->
-      <div class="container card glass blur-filter frost-filter">
-        <div class="row">
-          <svg
-            class="icon"
-            fill="#000000"
-            height="60px"
-            height="60px"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            version="1.1"
-            id="Layer_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 472.615 472.615"
-            xml:space="preserve"
-          >
-            <g>
-              <g>
-                <path
-                  d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
-			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
-                />
-              </g>
-            </g>
-            <g>
-              <g>
-                <path
-                  d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
-			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
-                />
-              </g>
-            </g>
-          </svg>
-        </div>
-        <div class="row">
-          <h1 class="header onyx">Web Design</h1>
-
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-        </div>
-      </div>
-
-      <!-- Web Dev Card -->
-      <div class="container card glass blur-filter frost-filter">
+      <div
+        class="container card glass blur-filter animate__animated animate__fadeInUp animate__slow"
+        id="test"
+      >
         <div class="row">
           <svg
             class="icon"
@@ -441,1712 +685,6 @@
           </svg>
         </div>
         <div class="row">
-          <svg
-            width="292.56882"
-            zoomAndPan="magnify"
-            viewBox="0 0 219.30958 28.380529"
-            height="37.840706"
-            preserveAspectRatio="xMidYMid"
-            version="1.0"
-            id="svg46"
-            sodipodi:docname="Web Development (2).svg"
-            inkscape:version="1.3 (0e150ed, 2023-07-21)"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
-          >
-            <sodipodi:namedview
-              id="namedview46"
-              pagecolor="#ffffff"
-              bordercolor="#000000"
-              borderopacity="0.25"
-              inkscape:showpageshadow="2"
-              inkscape:pageopacity="0.0"
-              inkscape:pagecheckerboard="0"
-              inkscape:deskcolor="#d1d1d1"
-              inkscape:zoom="1.1534936"
-              inkscape:cx="120.07002"
-              inkscape:cy="19.939425"
-              inkscape:window-width="1312"
-              inkscape:window-height="449"
-              inkscape:window-x="0"
-              inkscape:window-y="0"
-              inkscape:window-maximized="0"
-              inkscape:current-layer="svg46"
-            />
-            <defs id="defs1">
-              <g id="g1" />
-            </defs>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g4"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(2.091523,40.993803)"
-                id="g3"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g2"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 2.703125,-19.296875 c 0.488281,-0.0625 0.941406,-0.0625 1.359375,0 0.332031,0.04297 0.566406,0.246094 0.703125,0.609375 0.144531,0.367188 1.015625,2.808594 2.609375,7.328125 0.894531,2.554687 1.738281,4.757813 2.53125,6.609375 0.113281,0.28125 0.210938,0.421875 0.296875,0.421875 0.07031,0 0.160156,-0.140625 0.265625,-0.421875 0.726562,-1.75 1.535156,-3.769531 2.421875,-6.0625 l -2.8125,-7.828125 c -0.0625,-0.132813 -0.05859,-0.269531 0.01563,-0.40625 0.07031,-0.144531 0.175781,-0.226563 0.3125,-0.25 0.46875,-0.0625 0.921875,-0.0625 1.359375,0 0.332031,0.04297 0.570313,0.261719 0.71875,0.65625 1.257813,3.4375 2.925781,8.070313 5,13.890625 0.144531,0.367188 0.253906,0.546875 0.328125,0.546875 0.08203,0 0.203125,-0.179687 0.359375,-0.546875 1.1875,-3.019531 3.039063,-7.738281 5.5625,-14.15625 0.125,-0.300781 0.441406,-0.453125 0.953125,-0.453125 0.15625,0 0.265625,0.07813 0.328125,0.234375 0.0625,0.167969 0.0625,0.328125 0,0.484375 l -7.4375,18.90625 C 17.472656,0.503906 17.375,0.625 17.28125,0.625 17.164062,0.625 17.054688,0.484375 16.953125,0.203125 15.890625,-2.660156 14.753906,-5.75 13.546875,-9.0625 L 9.875,0.265625 C 9.769531,0.503906 9.671875,0.625 9.578125,0.625 9.472656,0.625 9.363281,0.484375 9.25,0.203125 c -2.074219,-5.59375 -4.367188,-11.875 -6.875,-18.84375 -0.042969,-0.132813 -0.039062,-0.269531 0.015625,-0.40625 0.0625,-0.144531 0.164063,-0.226563 0.3125,-0.25 z m 0,0"
-                    id="path1"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g7"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(30.20671,40.993803)"
-                id="g6"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g5"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path4"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g10"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(42.561392,40.993803)"
-                id="g9"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g8"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 3.4375,-11.359375 V -1.875 c 0,0.617188 0.226562,0.921875 0.6875,0.921875 h 1.5 c 1.3125,0 2.40625,-0.519531 3.28125,-1.5625 0.875,-1.050781 1.3125,-2.382813 1.3125,-4 0,-1.363281 -0.453125,-2.609375 -1.359375,-3.734375 -0.90625,-1.125 -2,-1.6875 -3.28125,-1.6875 H 4.09375 c -0.4375,0 -0.65625,0.195312 -0.65625,0.578125 z M 5.984375,0 h -3.5 C 2.054688,0 1.78125,-0.046875 1.65625,-0.140625 1.539062,-0.242188 1.484375,-0.523438 1.484375,-0.984375 v -19.59375 c 0,-0.351563 0.164063,-0.53125 0.5,-0.53125 H 2.9375 c 0.332031,0 0.5,0.179687 0.5,0.53125 v 7.15625 c 0,0.355469 0.1875,0.53125 0.5625,0.53125 h 1.421875 c 1.851563,0 3.46875,0.585937 4.84375,1.75 1.375,1.167969 2.0625,2.625 2.0625,4.375 0,2 -0.574219,3.632813 -1.71875,4.890625 C 9.460938,-0.625 7.921875,0 5.984375,0 Z m 0,0"
-                    id="path7"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g13"
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g transform="translate(58.056324,40.993803)" id="g12">
-                <g id="g11" style="display: inline" />
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g16"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(66.55976,40.993803)"
-                id="g15"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g14"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 5.625,-17.578125 v 15.4375 c 0,0.21875 0.066406,0.4375 0.203125,0.65625 0.144531,0.21875 0.316406,0.328125 0.515625,0.328125 h 3.171875 c 2.050781,0 3.78125,-0.789062 5.1875,-2.375 1.40625,-1.59375 2.109375,-3.6875 2.109375,-6.28125 0,-2.46875 -0.726562,-4.492188 -2.171875,-6.078125 -1.386719,-1.476563 -3.054687,-2.21875 -5,-2.21875 h -3.46875 c -0.367187,0 -0.546875,0.179687 -0.546875,0.53125 z m -1.59375,-1.6875 H 9.75 c 2.644531,0 4.878906,0.882813 6.703125,2.640625 1.875,1.8125 2.8125,4.105469 2.8125,6.875 0,2.761719 -0.992187,5.09375 -2.96875,7 C 14.398438,-0.914062 12.128906,0 9.484375,0 H 4.03125 c -0.335938,0 -0.5,-0.164062 -0.5,-0.5 v -18.265625 c 0,-0.332031 0.164062,-0.5 0.5,-0.5 z m 0,0"
-                    id="path13"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g19"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(88.986944,40.993803)"
-                id="g18"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g17"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path16"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g22"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(101.34163,40.993803)"
-                id="g21"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g20"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 1.359375,-12.265625 c -0.15625,-0.414063 -0.046875,-0.625 0.328125,-0.625 h 0.890625 c 0.28125,0 0.476563,0.15625 0.59375,0.46875 0.726563,2 1.863281,5.054687 3.40625,9.15625 C 6.640625,-3.085938 6.757812,-3 6.9375,-3 c 0.15625,0 0.265625,-0.085938 0.328125,-0.265625 0.707031,-1.789063 1.890625,-4.851563 3.546875,-9.1875 0.125,-0.289063 0.332031,-0.4375 0.625,-0.4375 0.101562,0 0.179688,0.05859 0.234375,0.171875 0.0625,0.105469 0.07031,0.203125 0.03125,0.296875 l -4.59375,12 C 7.015625,-0.140625 6.804688,0 6.484375,0 6.109375,0 5.84375,-0.207031 5.6875,-0.625 Z m 0,0"
-                    id="path19"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g25"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(116.15519,40.993803)"
-                id="g24"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g23"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path22"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g28"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(128.50986,40.993803)"
-                id="g27"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g26"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 1.484375,-20.578125 c 0,-0.351563 0.164063,-0.53125 0.5,-0.53125 H 2.9375 c 0.332031,0 0.5,0.179687 0.5,0.53125 V -1.875 c 0,0.617188 0.226562,0.921875 0.6875,0.921875 h 1.1875 c 0.207031,0 0.3125,0.152344 0.3125,0.453125 0,0.335938 -0.070312,0.5 -0.203125,0.5 H 3 C 2.539062,0 2.171875,-0.15625 1.890625,-0.46875 1.617188,-0.789062 1.484375,-1.175781 1.484375,-1.625 Z m 0,0"
-                    id="path25"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g31"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(136.03567,40.993803)"
-                id="g30"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g29"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 1.25,-6.546875 C 1.25,-8.410156 1.84375,-10 3.03125,-11.3125 c 1.195312,-1.3125 2.632812,-1.96875 4.3125,-1.96875 1.707031,0 3.15625,0.65625 4.34375,1.96875 1.195312,1.3125 1.796875,2.902344 1.796875,4.765625 0,1.855469 -0.601563,3.4375 -1.796875,4.75 -1.1875,1.3125 -2.636719,1.96875 -4.34375,1.96875 -1.679688,0 -3.117188,-0.65625 -4.3125,-1.96875 -1.1875,-1.3125 -1.78125,-2.894531 -1.78125,-4.75 z m 1.984375,0 c 0,1.636719 0.398437,3.03125 1.203125,4.1875 C 5.25,-1.203125 6.226562,-0.625 7.375,-0.625 c 1.144531,0 2.125,-0.578125 2.9375,-1.734375 0.8125,-1.15625 1.21875,-2.550781 1.21875,-4.1875 0,-1.664063 -0.40625,-3.078125 -1.21875,-4.234375 C 9.5,-11.9375 8.519531,-12.515625 7.375,-12.515625 c -1.148438,0 -2.125,0.578125 -2.9375,1.734375 -0.804688,1.15625 -1.203125,2.570312 -1.203125,4.234375 z m 0,0"
-                    id="path28"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g34"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(152.50823,40.993803)"
-                id="g33"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g32"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 3.4375,-1.71875 v -9.515625 c 0,-0.613281 0.226562,-0.921875 0.6875,-0.921875 h 1.5 c 1.3125,0 2.40625,0.53125 3.28125,1.59375 0.875,1.054688 1.3125,2.382812 1.3125,3.984375 0,1.367187 -0.453125,2.609375 -1.359375,3.734375 -0.90625,1.125 -2,1.6875 -3.28125,1.6875 H 4.09375 c -0.4375,0 -0.65625,-0.1875 -0.65625,-0.5625 z m 2.546875,-11.375 h -3.5 c -0.429687,0 -0.703125,0.04687 -0.828125,0.140625 -0.117188,0.09375 -0.171875,0.382813 -0.171875,0.859375 v 16.8125 c 0,0.332031 0.164063,0.5 0.5,0.5 H 2.9375 c 0.332031,0 0.5,-0.167969 0.5,-0.5 V 0.328125 c 0,-0.3515625 0.1875,-0.53125 0.5625,-0.53125 h 1.421875 c 1.851563,0 3.46875,-0.582031 4.84375,-1.75 1.375,-1.164063 2.0625,-2.628906 2.0625,-4.390625 0,-1.976562 -0.574219,-3.597656 -1.71875,-4.859375 -1.148437,-1.257813 -2.6875,-1.890625 -4.625,-1.890625 z m 0,0"
-                    id="path31"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g37"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(168.12166,40.993803)"
-                id="g36"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g35"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 12.5625,-12.890625 c 1.164062,0 1.75,0.640625 1.75,1.921875 V -0.5 c 0,0.335938 -0.167969,0.5 -0.5,0.5 h -0.953125 c -0.355469,0 -0.53125,-0.164062 -0.53125,-0.5 v -10.109375 c 0,-0.28125 -0.07813,-0.421875 -0.234375,-0.421875 -0.179688,0 -0.324219,0.140625 -0.4375,0.421875 l -3.953125,10.375 C 7.628906,-0.015625 7.539062,0.09375 7.4375,0.09375 7.34375,0.09375 7.253906,-0.015625 7.171875,-0.234375 6.179688,-2.878906 4.894531,-6.238281 3.3125,-10.3125 c -0.15625,-0.375 -0.324219,-0.5625 -0.5,-0.5625 -0.21875,0 -0.328125,0.179688 -0.328125,0.53125 v 9.953125 C 2.484375,-0.128906 2.316406,0 1.984375,0 c -0.335937,0 -0.5,-0.140625 -0.5,-0.421875 v -10.875 c 0,-0.425781 0.148437,-0.800781 0.453125,-1.125 0.3125,-0.332031 0.691406,-0.5 1.140625,-0.5 0.71875,0 1.222656,0.355469 1.515625,1.0625 0.726562,1.648437 1.738281,4.117187 3.03125,7.40625 0.09375,0.242187 0.1875,0.359375 0.28125,0.359375 0.101562,0 0.203125,-0.117188 0.296875,-0.359375 0.851563,-2.164063 1.785156,-4.613281 2.796875,-7.34375 0.269531,-0.707031 0.789062,-1.070313 1.5625,-1.09375 z m 0,0"
-                    id="path34"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g40"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(185.63109,40.993803)"
-                id="g39"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g38"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path37"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g43"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(197.98577,40.993803)"
-                id="g42"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g41"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 1.484375,-0.6875 v -10.609375 c 0,-0.488281 0.140625,-0.875 0.421875,-1.15625 0.289062,-0.289063 0.644531,-0.4375 1.0625,-0.4375 0.644531,0 1.175781,0.308594 1.59375,0.921875 1.007812,1.523438 2.660156,4.023438 4.953125,7.5 0.15625,0.210938 0.273437,0.3125 0.359375,0.3125 0.09375,0 0.140625,-0.1875 0.140625,-0.5625 V -12 c 0,-0.59375 0.160156,-0.890625 0.484375,-0.890625 0.3125,0 0.46875,0.296875 0.46875,0.890625 v 11.140625 c 0,0.554687 -0.179688,0.828125 -0.53125,0.828125 -0.179688,0 -0.339844,-0.097656 -0.484375,-0.296875 L 3.34375,-10.640625 C 3.125,-10.992188 2.925781,-11.171875 2.75,-11.171875 c -0.199219,0 -0.296875,0.21875 -0.296875,0.65625 V -0.6875 c 0,0.4375 -0.179687,0.65625 -0.53125,0.65625 -0.292969,0 -0.4375,-0.21875 -0.4375,-0.65625 z m 0,0"
-                    id="path40"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g46"
-              style="
-                opacity: 0.5;
-                fill: none;
-                stroke: #000000;
-                stroke-width: 1.67475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.6635999,-18.669399)"
-            >
-              <g
-                transform="translate(212.17721,40.993803)"
-                id="g45"
-                style="
-                  fill: none;
-                  stroke: #000000;
-                  stroke-width: 1.67475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g44"
-                  style="
-                    fill: none;
-                    stroke: #000000;
-                    stroke-width: 1.67475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 4.71875,-0.46875 c 0,0.335938 0.164062,0.5 0.5,0.5 h 0.765625 c 0.332031,0 0.5,-0.164062 0.5,-0.5 V -11.5 c 0,-0.238281 0.109375,-0.378906 0.328125,-0.421875 0.0625,-0.0078 0.28125,-0.01563 0.65625,-0.01563 h 1.890625 c 0.4375,0 0.65625,-0.117188 0.65625,-0.359375 v -0.234375 c 0,-0.238281 -0.277344,-0.359375 -0.828125,-0.359375 H 1.84375 c -0.574219,0 -0.859375,0.121094 -0.859375,0.359375 v 0.234375 c 0,0.242187 0.222656,0.359375 0.671875,0.359375 h 2.609375 c 0.300781,0 0.453125,0.148438 0.453125,0.4375 z m 0,0"
-                    id="path43"
-                    style="
-                      fill: none;
-                      stroke: #000000;
-                      stroke-width: 1.67475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g4-3"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(2.091523,40.993803)"
-                id="g3-3"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g2-77"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 2.703125,-19.296875 c 0.488281,-0.0625 0.941406,-0.0625 1.359375,0 0.332031,0.04297 0.566406,0.246094 0.703125,0.609375 0.144531,0.367188 1.015625,2.808594 2.609375,7.328125 0.894531,2.554687 1.738281,4.757813 2.53125,6.609375 0.113281,0.28125 0.210938,0.421875 0.296875,0.421875 0.07031,0 0.160156,-0.140625 0.265625,-0.421875 0.726562,-1.75 1.535156,-3.769531 2.421875,-6.0625 l -2.8125,-7.828125 c -0.0625,-0.132813 -0.05859,-0.269531 0.01563,-0.40625 0.07031,-0.144531 0.175781,-0.226563 0.3125,-0.25 0.46875,-0.0625 0.921875,-0.0625 1.359375,0 0.332031,0.04297 0.570313,0.261719 0.71875,0.65625 1.257813,3.4375 2.925781,8.070313 5,13.890625 0.144531,0.367188 0.253906,0.546875 0.328125,0.546875 0.08203,0 0.203125,-0.179687 0.359375,-0.546875 1.1875,-3.019531 3.039063,-7.738281 5.5625,-14.15625 0.125,-0.300781 0.441406,-0.453125 0.953125,-0.453125 0.15625,0 0.265625,0.07813 0.328125,0.234375 0.0625,0.167969 0.0625,0.328125 0,0.484375 l -7.4375,18.90625 C 17.472656,0.503906 17.375,0.625 17.28125,0.625 17.164062,0.625 17.054688,0.484375 16.953125,0.203125 15.890625,-2.660156 14.753906,-5.75 13.546875,-9.0625 L 9.875,0.265625 C 9.769531,0.503906 9.671875,0.625 9.578125,0.625 9.472656,0.625 9.363281,0.484375 9.25,0.203125 c -2.074219,-5.59375 -4.367188,-11.875 -6.875,-18.84375 -0.042969,-0.132813 -0.039062,-0.269531 0.015625,-0.40625 0.0625,-0.144531 0.164063,-0.226563 0.3125,-0.25 z m 0,0"
-                    id="path1-3"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g7-2"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(30.20671,40.993803)"
-                id="g6-5"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g5-6"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path4-3"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g10-4"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(42.561392,40.993803)"
-                id="g9-0"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g8-6"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 3.4375,-11.359375 V -1.875 c 0,0.617188 0.226562,0.921875 0.6875,0.921875 h 1.5 c 1.3125,0 2.40625,-0.519531 3.28125,-1.5625 0.875,-1.050781 1.3125,-2.382813 1.3125,-4 0,-1.363281 -0.453125,-2.609375 -1.359375,-3.734375 -0.90625,-1.125 -2,-1.6875 -3.28125,-1.6875 H 4.09375 c -0.4375,0 -0.65625,0.195312 -0.65625,0.578125 z M 5.984375,0 h -3.5 C 2.054688,0 1.78125,-0.046875 1.65625,-0.140625 1.539062,-0.242188 1.484375,-0.523438 1.484375,-0.984375 v -19.59375 c 0,-0.351563 0.164063,-0.53125 0.5,-0.53125 H 2.9375 c 0.332031,0 0.5,0.179687 0.5,0.53125 v 7.15625 c 0,0.355469 0.1875,0.53125 0.5625,0.53125 h 1.421875 c 1.851563,0 3.46875,0.585937 4.84375,1.75 1.375,1.167969 2.0625,2.625 2.0625,4.375 0,2 -0.574219,3.632813 -1.71875,4.890625 C 9.460938,-0.625 7.921875,0 5.984375,0 Z m 0,0"
-                    id="path7-0"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g16-4"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(66.55976,40.993803)"
-                id="g15-0"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g14-5"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 5.625,-17.578125 v 15.4375 c 0,0.21875 0.066406,0.4375 0.203125,0.65625 0.144531,0.21875 0.316406,0.328125 0.515625,0.328125 h 3.171875 c 2.050781,0 3.78125,-0.789062 5.1875,-2.375 1.40625,-1.59375 2.109375,-3.6875 2.109375,-6.28125 0,-2.46875 -0.726562,-4.492188 -2.171875,-6.078125 -1.386719,-1.476563 -3.054687,-2.21875 -5,-2.21875 h -3.46875 c -0.367187,0 -0.546875,0.179687 -0.546875,0.53125 z m -1.59375,-1.6875 H 9.75 c 2.644531,0 4.878906,0.882813 6.703125,2.640625 1.875,1.8125 2.8125,4.105469 2.8125,6.875 0,2.761719 -0.992187,5.09375 -2.96875,7 C 14.398438,-0.914062 12.128906,0 9.484375,0 H 4.03125 c -0.335938,0 -0.5,-0.164062 -0.5,-0.5 v -18.265625 c 0,-0.332031 0.164062,-0.5 0.5,-0.5 z m 0,0"
-                    id="path13-6"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g19-8"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(88.986944,40.993803)"
-                id="g18-5"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g17-3"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path16-76"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g22-8"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(101.34163,40.993803)"
-                id="g21-6"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g20-7"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 1.359375,-12.265625 c -0.15625,-0.414063 -0.046875,-0.625 0.328125,-0.625 h 0.890625 c 0.28125,0 0.476563,0.15625 0.59375,0.46875 0.726563,2 1.863281,5.054687 3.40625,9.15625 C 6.640625,-3.085938 6.757812,-3 6.9375,-3 c 0.15625,0 0.265625,-0.085938 0.328125,-0.265625 0.707031,-1.789063 1.890625,-4.851563 3.546875,-9.1875 0.125,-0.289063 0.332031,-0.4375 0.625,-0.4375 0.101562,0 0.179688,0.05859 0.234375,0.171875 0.0625,0.105469 0.07031,0.203125 0.03125,0.296875 l -4.59375,12 C 7.015625,-0.140625 6.804688,0 6.484375,0 6.109375,0 5.84375,-0.207031 5.6875,-0.625 Z m 0,0"
-                    id="path19-18"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g25-4"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(116.15519,40.993803)"
-                id="g24-9"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g23-7"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path22-3"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g28-1"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(128.50986,40.993803)"
-                id="g27-02"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g26-3"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 1.484375,-20.578125 c 0,-0.351563 0.164063,-0.53125 0.5,-0.53125 H 2.9375 c 0.332031,0 0.5,0.179687 0.5,0.53125 V -1.875 c 0,0.617188 0.226562,0.921875 0.6875,0.921875 h 1.1875 c 0.207031,0 0.3125,0.152344 0.3125,0.453125 0,0.335938 -0.070312,0.5 -0.203125,0.5 H 3 C 2.539062,0 2.171875,-0.15625 1.890625,-0.46875 1.617188,-0.789062 1.484375,-1.175781 1.484375,-1.625 Z m 0,0"
-                    id="path25-7"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g31-1"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(136.03567,40.993803)"
-                id="g30-8"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g29-9"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 1.25,-6.546875 C 1.25,-8.410156 1.84375,-10 3.03125,-11.3125 c 1.195312,-1.3125 2.632812,-1.96875 4.3125,-1.96875 1.707031,0 3.15625,0.65625 4.34375,1.96875 1.195312,1.3125 1.796875,2.902344 1.796875,4.765625 0,1.855469 -0.601563,3.4375 -1.796875,4.75 -1.1875,1.3125 -2.636719,1.96875 -4.34375,1.96875 -1.679688,0 -3.117188,-0.65625 -4.3125,-1.96875 -1.1875,-1.3125 -1.78125,-2.894531 -1.78125,-4.75 z m 1.984375,0 c 0,1.636719 0.398437,3.03125 1.203125,4.1875 C 5.25,-1.203125 6.226562,-0.625 7.375,-0.625 c 1.144531,0 2.125,-0.578125 2.9375,-1.734375 0.8125,-1.15625 1.21875,-2.550781 1.21875,-4.1875 0,-1.664063 -0.40625,-3.078125 -1.21875,-4.234375 C 9.5,-11.9375 8.519531,-12.515625 7.375,-12.515625 c -1.148438,0 -2.125,0.578125 -2.9375,1.734375 -0.804688,1.15625 -1.203125,2.570312 -1.203125,4.234375 z m 0,0"
-                    id="path28-3"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g34-74"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(152.50823,40.993803)"
-                id="g33-8"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g32-04"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 3.4375,-1.71875 v -9.515625 c 0,-0.613281 0.226562,-0.921875 0.6875,-0.921875 h 1.5 c 1.3125,0 2.40625,0.53125 3.28125,1.59375 0.875,1.054688 1.3125,2.382812 1.3125,3.984375 0,1.367187 -0.453125,2.609375 -1.359375,3.734375 -0.90625,1.125 -2,1.6875 -3.28125,1.6875 H 4.09375 c -0.4375,0 -0.65625,-0.1875 -0.65625,-0.5625 z m 2.546875,-11.375 h -3.5 c -0.429687,0 -0.703125,0.04687 -0.828125,0.140625 -0.117188,0.09375 -0.171875,0.382813 -0.171875,0.859375 v 16.8125 c 0,0.332031 0.164063,0.5 0.5,0.5 H 2.9375 c 0.332031,0 0.5,-0.167969 0.5,-0.5 V 0.328125 c 0,-0.3515625 0.1875,-0.53125 0.5625,-0.53125 h 1.421875 c 1.851563,0 3.46875,-0.582031 4.84375,-1.75 1.375,-1.164063 2.0625,-2.628906 2.0625,-4.390625 0,-1.976562 -0.574219,-3.597656 -1.71875,-4.859375 -1.148437,-1.257813 -2.6875,-1.890625 -4.625,-1.890625 z m 0,0"
-                    id="path31-0"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g37-5"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(168.12166,40.993803)"
-                id="g36-70"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g35-0"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 12.5625,-12.890625 c 1.164062,0 1.75,0.640625 1.75,1.921875 V -0.5 c 0,0.335938 -0.167969,0.5 -0.5,0.5 h -0.953125 c -0.355469,0 -0.53125,-0.164062 -0.53125,-0.5 v -10.109375 c 0,-0.28125 -0.07813,-0.421875 -0.234375,-0.421875 -0.179688,0 -0.324219,0.140625 -0.4375,0.421875 l -3.953125,10.375 C 7.628906,-0.015625 7.539062,0.09375 7.4375,0.09375 7.34375,0.09375 7.253906,-0.015625 7.171875,-0.234375 6.179688,-2.878906 4.894531,-6.238281 3.3125,-10.3125 c -0.15625,-0.375 -0.324219,-0.5625 -0.5,-0.5625 -0.21875,0 -0.328125,0.179688 -0.328125,0.53125 v 9.953125 C 2.484375,-0.128906 2.316406,0 1.984375,0 c -0.335937,0 -0.5,-0.140625 -0.5,-0.421875 v -10.875 c 0,-0.425781 0.148437,-0.800781 0.453125,-1.125 0.3125,-0.332031 0.691406,-0.5 1.140625,-0.5 0.71875,0 1.222656,0.355469 1.515625,1.0625 0.726562,1.648437 1.738281,4.117187 3.03125,7.40625 0.09375,0.242187 0.1875,0.359375 0.28125,0.359375 0.101562,0 0.203125,-0.117188 0.296875,-0.359375 0.851563,-2.164063 1.785156,-4.613281 2.796875,-7.34375 0.269531,-0.707031 0.789062,-1.070313 1.5625,-1.09375 z m 0,0"
-                    id="path34-5"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g40-6"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(185.63109,40.993803)"
-                id="g39-7"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g38-8"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="M 8.953125,-12.921875 H 3.375 c -1.261719,-0.01953 -1.890625,0.699219 -1.890625,2.15625 V -1.75 c 0,1.167969 0.648437,1.75 1.953125,1.75 h 5.421875 c 0.332031,0 0.5,-0.144531 0.5,-0.4375 0,-0.320312 -0.179687,-0.484375 -0.53125,-0.484375 -0.59375,0 -1.375,0 -2.34375,0 -0.96875,-0.019531 -1.648437,-0.03125 -2.03125,-0.03125 -0.65625,0 -0.984375,-0.304687 -0.984375,-0.921875 v -3.515625 c 0,-0.519531 0.273438,-0.78125 0.828125,-0.78125 0.457031,0 1.050781,-0.00391 1.78125,-0.015625 0.726563,0 1.320313,0 1.78125,0 0.351563,0 0.53125,-0.160156 0.53125,-0.484375 0,-0.289063 -0.164063,-0.4375 -0.484375,-0.4375 -0.511719,0 -1.179688,-0.00781 -2,-0.03125 -0.835938,0 -1.460938,0 -1.875,0 -0.375,0 -0.5625,-0.21875 -0.5625,-0.65625 v -3.046875 c 0,-0.300781 0.113281,-0.5625 0.34375,-0.78125 0.226562,-0.226562 0.488281,-0.34375 0.78125,-0.34375 0.675781,0.02344 1.414062,0.02344 2.21875,0 C 7.84375,-11.988281 8.566406,-12 8.984375,-12 c 0.414063,0 0.625,-0.148438 0.625,-0.453125 0,-0.3125 -0.21875,-0.46875 -0.65625,-0.46875 z m 0,0"
-                    id="path37-0"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g43-6"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(197.98577,40.993803)"
-                id="g42-5"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g41-7"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 1.484375,-0.6875 v -10.609375 c 0,-0.488281 0.140625,-0.875 0.421875,-1.15625 0.289062,-0.289063 0.644531,-0.4375 1.0625,-0.4375 0.644531,0 1.175781,0.308594 1.59375,0.921875 1.007812,1.523438 2.660156,4.023438 4.953125,7.5 0.15625,0.210938 0.273437,0.3125 0.359375,0.3125 0.09375,0 0.140625,-0.1875 0.140625,-0.5625 V -12 c 0,-0.59375 0.160156,-0.890625 0.484375,-0.890625 0.3125,0 0.46875,0.296875 0.46875,0.890625 v 11.140625 c 0,0.554687 -0.179688,0.828125 -0.53125,0.828125 -0.179688,0 -0.339844,-0.097656 -0.484375,-0.296875 L 3.34375,-10.640625 C 3.125,-10.992188 2.925781,-11.171875 2.75,-11.171875 c -0.199219,0 -0.296875,0.21875 -0.296875,0.65625 V -0.6875 c 0,0.4375 -0.179687,0.65625 -0.53125,0.65625 -0.292969,0 -0.4375,-0.21875 -0.4375,-0.65625 z m 0,0"
-                    id="path40-3"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              fill="#000000"
-              fill-opacity=".5"
-              id="g46-4"
-              style="
-                opacity: 0.3;
-                fill: #000000;
-                fill-opacity: 0.5;
-                stroke: #000000;
-                stroke-width: 1.07475;
-                stroke-linecap: round;
-                stroke-linejoin: round;
-                stroke-dasharray: none;
-                stroke-opacity: 1;
-              "
-              transform="translate(-3.5913375,-19.347053)"
-            >
-              <g
-                transform="translate(212.17721,40.993803)"
-                id="g45-3"
-                style="
-                  fill: #000000;
-                  fill-opacity: 0.5;
-                  stroke: #000000;
-                  stroke-width: 1.07475;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-dasharray: none;
-                  stroke-opacity: 1;
-                "
-              >
-                <g
-                  id="g44-0"
-                  style="
-                    fill: #000000;
-                    fill-opacity: 0.5;
-                    stroke: #000000;
-                    stroke-width: 1.07475;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-dasharray: none;
-                    stroke-opacity: 1;
-                  "
-                >
-                  <path
-                    d="m 4.71875,-0.46875 c 0,0.335938 0.164062,0.5 0.5,0.5 h 0.765625 c 0.332031,0 0.5,-0.164062 0.5,-0.5 V -11.5 c 0,-0.238281 0.109375,-0.378906 0.328125,-0.421875 0.0625,-0.0078 0.28125,-0.01563 0.65625,-0.01563 h 1.890625 c 0.4375,0 0.65625,-0.117188 0.65625,-0.359375 v -0.234375 c 0,-0.238281 -0.277344,-0.359375 -0.828125,-0.359375 H 1.84375 c -0.574219,0 -0.859375,0.121094 -0.859375,0.359375 v 0.234375 c 0,0.242187 0.222656,0.359375 0.671875,0.359375 h 2.609375 c 0.300781,0 0.453125,0.148438 0.453125,0.4375 z m 0,0"
-                    id="path43-4"
-                    style="
-                      fill: #000000;
-                      fill-opacity: 0.5;
-                      stroke: #000000;
-                      stroke-width: 1.07475;
-                      stroke-linecap: round;
-                      stroke-linejoin: round;
-                      stroke-dasharray: none;
-                      stroke-opacity: 1;
-                    "
-                  />
-                </g>
-              </g>
-            </g>
-            <g
-              inkscape:groupmode="layer"
-              id="layer1"
-              inkscape:label="Layer 1"
-              transform="translate(-3.6635999,-18.669399)"
-            />
-          </svg>
           <svg
             width="300"
             zoomAndPan="magnify"
@@ -7431,183 +5969,11 @@
               </g>
             </g>
           </svg>
-
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
         </div>
       </div>
-
-      <!-- Copywriting Card -->
-      <div class="container card glass blur-filter frost-filter">
-        <div class="row">
-          <svg
-            class="icon"
-            height="60px"
-            height="60px"
-            data-name="Layer 1"
-            viewBox="0 0 93 72.723999"
-            x="0px"
-            y="0px"
-            version="1.1"
-            id="svg2"
-            sodipodi:docname="noun-content-writing-5399831.svg"
-            width="93"
-            height="72.723999"
-            inkscape:version="1.3 (0e150ed, 2023-07-21)"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
-          >
-            <defs id="defs2" />
-            <sodipodi:namedview
-              id="namedview2"
-              pagecolor="#ffffff"
-              bordercolor="#000000"
-              borderopacity="0.25"
-              inkscape:showpageshadow="2"
-              inkscape:pageopacity="0.0"
-              inkscape:pagecheckerboard="0"
-              inkscape:deskcolor="#d1d1d1"
-              inkscape:zoom="1.9873684"
-              inkscape:cx="18.365996"
-              inkscape:cy="43.273305"
-              inkscape:window-width="1312"
-              inkscape:window-height="449"
-              inkscape:window-x="0"
-              inkscape:window-y="0"
-              inkscape:window-maximized="0"
-              inkscape:current-layer="svg2"
-            />
-            <path
-              d="m 93,20.344 -1.543,1.6 -3.183,-3.18 1.6,-1.543 z m -28.774,21.6 4.052,4.052 L 89.263,24.22 86,20.955 Z m -2.034,2.435 -0.657,4.308 4.308,-0.656 z M 77.977,8.429 H 6.207 V 1.6 A 1.6,1.6 0 0 1 7.807,0 h 68.569 a 1.6,1.6 0 0 1 1.6,1.6 z M 14.9,4.025 A 1.58,1.58 0 0 0 13.32,2.444 h -0.762 a 1.581,1.581 0 0 0 0,3.161 h 0.762 a 1.58,1.58 0 0 0 1.58,-1.58 z m 7.09,0 A 1.581,1.581 0 0 0 20.409,2.444 h -0.761 a 1.581,1.581 0 1 0 0,3.161 h 0.761 a 1.58,1.58 0 0 0 1.585,-1.58 z m 43.111,0 a 1.58,1.58 0 0 0 -1.58,-1.581 h -0.762 a 1.581,1.581 0 0 0 0,3.161 h 0.762 a 1.58,1.58 0 0 0 1.584,-1.58 z m 7.071,0 a 1.58,1.58 0 0 0 -1.273,-1.55 1.58,1.58 0 0 0 -3,0 1.58,1.58 0 0 0 0,3.1 1.58,1.58 0 0 0 3,0 1.581,1.581 0 0 0 1.277,-1.55 z M 3.26,66.075 A 4.755,4.755 0 0 1 3.046,64.664 V 6.464 H 1.6 A 1.6,1.6 0 0 0 0,8.064 v 63.06 a 1.6,1.6 0 0 0 1.6,1.6 h 68.569 a 1.6,1.6 0 0 0 1.6,-1.6 V 69.422 H 7.808 A 4.771,4.771 0 0 1 3.26,66.075 Z m 72.612,-23.406 2.105,-2.185 v 24.18 a 1.6,1.6 0 0 1 -1.6,1.6 H 7.808 a 1.6,1.6 0 0 1 -1.6,-1.6 V 11.586 h 71.77 v 12.71 l -2.105,2.029 V 23.38 a 1.581,1.581 0 0 0 -3.161,0 v 5.992 l -3.226,3.109 A 1.616,1.616 0 0 0 69.15,32.444 H 51.925 a 1.581,1.581 0 1 0 0,3.161 H 66.244 L 59.7,41.914 a 1.585,1.585 0 0 0 -0.466,0.9 l -0.1,0.66 H 46.515 a 1.581,1.581 0 1 0 0,3.161 H 58.65 l -0.359,2.354 h -2.659 a 1.581,1.581 0 1 0 0,3.161 h 13.517 a 1.58,1.58 0 0 0 0.538,-3.065 l 3.031,-3.145 a 1.58,1.58 0 0 0 3.154,-0.146 z m -46.7,6.32 a 1.581,1.581 0 1 0 0,3.161 h 20.209 a 1.581,1.581 0 0 0 0,-3.161 z m 3,-2.6 a 1.581,1.581 0 0 0 1.58,-1.58 V 28.754 a 1.58,1.58 0 0 0 -1.58,-1.58 h -15.41 a 1.58,1.58 0 0 0 -1.581,1.58 v 16.057 a 1.581,1.581 0 0 0 1.581,1.58 z m 5.351,0.244 h 2.744 a 1.581,1.581 0 0 0 0,-3.161 H 37.52 a 1.581,1.581 0 1 0 0,3.161 z m 0,-8.676 a 1.581,1.581 0 1 0 0,3.161 H 59.01 a 1.581,1.581 0 1 0 0,-3.161 z m 0,-2.354 h 8.154 a 1.581,1.581 0 0 0 0,-3.161 H 37.52 a 1.581,1.581 0 1 0 0,3.161 z m 33.209,-7.095 a 1.58,1.58 0 0 0 -1.58,-1.581 H 37.52 a 1.581,1.581 0 1 0 0,3.161 h 31.629 a 1.58,1.58 0 0 0 1.58,-1.578 z M 40.215,24.575 h 20.8 a 1.581,1.581 0 0 0 0,-3.161 h -20.8 a 1.581,1.581 0 0 0 0,3.161 z m 30.514,-1.58 a 1.58,1.58 0 0 0 -1.58,-1.581 h -1.883 a 1.581,1.581 0 1 0 0,3.161 h 1.883 a 1.58,1.58 0 0 0 1.58,-1.58 z M 26.778,17.48 a 1.58,1.58 0 0 0 1.58,1.58 h 40.791 a 1.581,1.581 0 0 0 0,-3.161 H 28.358 a 1.58,1.58 0 0 0 -1.58,1.581 z m -13.323,0 a 1.58,1.58 0 0 0 1.58,1.58 h 7.072 a 1.581,1.581 0 0 0 0,-3.161 h -7.072 a 1.58,1.58 0 0 0 -1.58,1.581 z m 0,5.515 a 1.58,1.58 0 0 0 1.58,1.58 h 18.929 a 1.581,1.581 0 1 0 0,-3.161 H 15.035 a 1.58,1.58 0 0 0 -1.58,1.581 z m 0,27.575 a 1.58,1.58 0 0 0 1.58,1.58 h 7.881 a 1.581,1.581 0 0 0 0,-3.161 h -7.881 a 1.58,1.58 0 0 0 -1.58,1.581 z m 0,5.515 a 1.58,1.58 0 0 0 1.58,1.58 H 32.67 a 1.58,1.58 0 1 0 0,-3.16 H 15.035 a 1.58,1.58 0 0 0 -1.58,1.58 z M 61.4,61.6 A 1.581,1.581 0 0 0 59.819,60.019 H 15.035 a 1.581,1.581 0 0 0 0,3.161 H 59.819 A 1.58,1.58 0 0 0 61.4,61.6 Z m 9.329,0 a 1.58,1.58 0 0 0 -1.58,-1.581 H 66.07 a 1.581,1.581 0 0 0 0,3.161 h 3.079 a 1.58,1.58 0 0 0 1.58,-1.58 z m 0,-5.515 a 1.58,1.58 0 0 0 -1.58,-1.58 H 38.921 a 1.58,1.58 0 1 0 0,3.16 h 30.228 a 1.58,1.58 0 0 0 1.58,-1.58 z M 18.342,43.23 H 30.588 V 30.334 H 18.342 Z"
-              id="path1"
-            />
-          </svg>
-        </div>
-        <div class="row">
-          <h1 class="header">Copywriting</h1>
-          <p class="copy">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-          <p class="copy onyx">
-            Test Test Test dfgkagla a gmdaw; d,af gq rgargs bs AGFG Test Test
-          </p>
-        </div>
-      </div>
-
-      <!-- Contact Card -->
-      <div class="container card glass blur-filter frost-filter">
-        <div class="row">
-          <svg
-            class="icon"
-            height="60px"
-            height="50px"
-            data-name="Layer 1"
-            viewBox="0 0 88 80.03067"
-            x="0px"
-            y="0px"
-            version="1.1"
-            id="svg4"
-            sodipodi:docname="noun-bubble-text-4084702.svg"
-            width="88"
-            height="80.03067"
-            inkscape:version="1.3 (0e150ed, 2023-07-21)"
-            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:svg="http://www.w3.org/2000/svg"
-          >
-            <defs id="defs4" />
-            <sodipodi:namedview
-              id="namedview4"
-              pagecolor="#ffffff"
-              bordercolor="#000000"
-              borderopacity="0.25"
-              inkscape:showpageshadow="2"
-              inkscape:pageopacity="0.0"
-              inkscape:pagecheckerboard="0"
-              inkscape:deskcolor="#d1d1d1"
-              inkscape:zoom="1.9666667"
-              inkscape:cx="43.983051"
-              inkscape:cy="51.864407"
-              inkscape:window-width="1312"
-              inkscape:window-height="449"
-              inkscape:window-x="-18"
-              inkscape:window-y="0"
-              inkscape:window-maximized="0"
-              inkscape:current-layer="svg4"
-            />
-            <title id="title1">Artboard 14</title>
-            <circle cx="58" cy="31.000668" r="2" id="circle1" />
-            <circle cx="44" cy="31.000668" r="2" id="circle2" />
-            <circle cx="30" cy="31.000668" r="2" id="circle3" />
-            <path
-              d="M 70.85,6.683826e-4 H 17.15 A 17,17 0 0 0 0,16.840668 v 27.44 a 17,17 0 0 0 17.15,16.84 h 0.92 v 16.88 a 2,2 0 0 0 1.28,1.88 2.13,2.13 0 0 0 0.79,0.15 2.1,2.1 0 0 0 1.46,-0.59 l 18.63,-18.32 h 30.62 a 17,17 0 0 0 17.15,-16.84 v -27.44 A 17,17 0 0 0 70.85,6.683826e-4 Z M 30,35.000668 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z m 14,0 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z m 14,0 a 4,4 0 1 1 4,-4 4,4 0 0 1 -4,4 z"
-              id="path3"
-            />
-          </svg>
-          <h1 class="header onyx">Contact</h1>
-        </div>
-
-        <form class="contact">
-          <!-- Name input -->
-          <div class="contact-field">
-            <input
-              class="input-bg round"
-              id="name"
-              type="text"
-              placeholder="Your name"
-              data-sb-validations="required"
-              style="height: 2.25rem"
-            />
-          </div>
-
-          <!-- Email address input -->
-          <div class="contact-field">
-            <input
-              class="input-bg rounded"
-              id="email"
-              type="text"
-              placeholder="Your email"
-              data-sb-validations="required"
-              style="height: 2.25rem"
-            />
-          </div>
-
-          <!-- Message input -->
-          <div class="contact-field">
-            <textarea
-              class="input-bg rounded"
-              id="message"
-              type="text"
-              placeholder="Message"
-              style="height: 10rem"
-              data-sb-validations="required"
-            ></textarea>
-          </div>
-
-          <!-- Form submit button -->
-          <div class="row">
-            <button class="button header rounded contact-field" type="submit">
-              Send
-            </button>
-          </div>
-        </form>
-      </div>
+      <!-- Testimonials -->
+      <!-- Packages -->
+      <!-- About -->
     </div>
 
     <!-- Bootstrap JavaScript Dependencies section -->
@@ -7617,16 +5983,18 @@
     ></script>
     <!-- Hamburger Side Menu activation -->
     <script>
-      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px; remove scroll from body */
       function openNav() {
-        document.getElementById("mySidenav").style.width = "50vw";
+        document.getElementById("mySidenav").style.width = "60vw";
         document.getElementById("mySidenav-bg").style.width = "100%";
+        document.querySelector("body").style.overflow = "hidden";
       }
 
       /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("mySidenav-bg").style.width = "0";
+        document.querySelector("body").style.overflow = "visible";
       }
     </script>
 
@@ -7672,6 +6040,22 @@
           }
         });
       }
+    </script>
+
+    <!-- Flip card test -->
+    <script>
+      var button = document.querySelector(".flip-box-front button");
+      console.log(button.textContent);
+      var flipCard = button.closest(".card");
+
+      button.addEventListener("click", (e) => {
+        flipCard.classList.toggle("active");
+        flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
+        flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
+          "visible";
+        flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
+          "visible";
+      });
     </script>
   </body>
 </html>
