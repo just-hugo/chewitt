@@ -526,7 +526,10 @@ input:checked + .slider:before {
 .flip-box-back {
   transform: rotateY(180deg);
 }
-
+.animated {
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
 @keyframes fadeInUp {
   0% {
     transform: translateY(100%);
@@ -536,12 +539,6 @@ input:checked + .slider:before {
     transform: translateY(0%);
     opacity: 1;
   }
-}
-.animated {
-  animation-duration: 1.25s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
 }
 .fadeInUp-animation {
   animation: 1.75s fadeInUp;
