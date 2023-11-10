@@ -173,7 +173,7 @@ body {
 .logo-cutout-ring {
   stroke: var(--logo-cutout-stroke);
   fill: var(--logo-cutout-fill);
-  stroke-width: 6;
+  stroke-width: 8;
   filter: var(--logo-cutout-shadow);
 }
 .logo-initials {
