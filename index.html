@@ -280,9 +280,8 @@
       <div class="row align-items-stretch">
         <!-- Web Dev Card -->
         <div
-          class="container card animate__animated animate__fadeInUp animate__slow"
+          class="container card blur-filter animate__animated animate__fadeInUp animate__slow"
           id="dev"
-          onclick="flipCard(this)"
         >
           <div class="flip-box-inner glass blur-filter round">
             <div class="flip-box-front">
@@ -332,7 +331,9 @@
                   We’ll keep collaborating until the website is complete.
                 </p>
               </div>
-              <button class="service-more">Read more</button>
+              <button class="service-more" onclick="learnMore(this)">
+                Learn more
+              </button>
             </div>
             <div class="flip-box-back">
               <div class="row">
@@ -370,7 +371,9 @@
                 <h1 class="header">Web Development</h1>
                 <p class="copy">Yxfgdfgfg sghsgh sthdth th</p>
                 <p class="copy">dgadfgafhfhg nhtndhgndhm dhmdhnd sz</p>
-                <button class="service-more">Go back</button>
+                <button class="service-more" onclick="goBack(this)">
+                  Go back
+                </button>
               </div>
             </div>
           </div>
@@ -378,11 +381,10 @@
 
         <!-- Content Card -->
         <div
-          class="container card animate__animated animate__fadeInUp animate__slow"
+          class="container card blur-filter animate__animated animate__fadeInUp animate__slow"
           id="content"
-          onclick="flipCard(this)"
         >
-          <div class="flip-box-inner glass blur-filter round">
+          <div class="flip-box-inner glass round">
             <div class="flip-box-front">
               <div class="row">
                 <svg
@@ -443,7 +445,9 @@
                   We’ll keep collaborating until the website is complete.
                 </p>
               </div>
-              <button class="service-more">Read more</button>
+              <button class="service-more" onclick="learnMore(this)">
+                Learn more
+              </button>
             </div>
             <div class="flip-box-back">
               <div class="row">
@@ -478,10 +482,12 @@
                 </svg>
               </div>
               <div class="row">
-                <h1 class="header">Web Development</h1>
+                <h1 class="header">Web Content</h1>
                 <p class="copy">Yxfgdfgfg sghsgh sthdth th</p>
                 <p class="copy">dgadfgafhfhg nhtndhgndhm dhmdhnd sz</p>
-                <button class="service-more">Go back</button>
+                <button class="service-more" onclick="goBack(this)">
+                  Go back
+                </button>
               </div>
             </div>
           </div>
@@ -489,54 +495,102 @@
 
         <!-- Web Hosting Card -->
         <div
-          class="container card round glass blur-filter animate__animated animate__fadeInUp animate__slow"
-          id="host"
+          class="container card blur-filter animate__animated animate__fadeInUp animate__slow"
+          id="content"
         >
-          <div class="row">
-            <svg
-              class="icon col"
-              fill="#000000"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              version="1.1"
-              id="Layer_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 472.615 472.615"
-              xml:space="preserve"
-            >
-              <g>
-                <g>
-                  <path
-                    d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
+          <div class="flip-box-inner glass blur-filter round">
+            <div class="flip-box-front">
+              <div class="row">
+                <svg
+                  class="icon col"
+                  fill="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 472.615 472.615"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
 			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
-                  />
-                </g>
-              </g>
-              <g>
-                <g>
-                  <path
-                    d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
 			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
-                  />
-                </g>
-              </g>
-            </svg>
-          </div>
-          <div class="row">
-            <h1 class="header text-center">Web Hosting</h1>
-            <p class="copy">
-              You have your site built. Now what? To get it on the web, you need
-              a host. Some people prefer to set up and manage their own hosts —
-              if that’s you, I’ll supply you with your website code in a zip
-              file that you can upload and extract to your host's servers.
-            </p>
-            <p class="copy">
-              If you’d rather not deal with the hassle of setting up the host
-              yourself, I'll do it for you. Once I've set it up, I’ll also
-              maintain the hosting account and resolve any outages or other
-              technical issues that occur.
-            </p>
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="row">
+                <h1 class="header">Web Hosting</h1>
+                <p class="copy">
+                  You need a website, but you’re unsure where to start. Or maybe
+                  you have a concept but need help translating it to code. No
+                  matter your starting point, I’ll collaborate with you to make
+                  your vision a reality.
+                </p>
+                <p class="copy">
+                  Once we’ve found a design, I’ll begin coding. From start to
+                  finish, I’ll keep you looped in - you can expect a prototype
+                  website to demo on your own devices within the first week.
+                  We’ll keep collaborating until the website is complete.
+                </p>
+              </div>
+              <button class="service-more" onclick="learnMore(this)">
+                Learn more
+              </button>
+            </div>
+            <div class="flip-box-back">
+              <div class="row">
+                <svg
+                  class="icon col"
+                  fill="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 472.615 472.615"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M0,98.432v374.183h472.615V98.432H0z M147.692,433.205H49.231V246.128h98.462V433.205z M285.538,433.205h-98.462V246.128
+			h98.462V433.205z M423.385,433.205h-98.462V246.128h98.462V433.205z M423.385,206.744H49.231v-68.923h374.154V206.744z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M0,0v78.74h472.615V0H0z M354.462,59.047h-19.692V39.355h19.692V59.047z M393.846,59.047h-19.692V39.355h19.692V59.047z
+			 M433.231,59.047h-19.692V39.355h19.692V59.047z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="row">
+                <h1 class="header">Web Hosting</h1>
+                <p class="copy">Yxfgdfgfg sghsgh sthdth th</p>
+                <p class="copy">dgadfgafhfhg nhtndhgndhm dhmdhnd sz</p>
+                <button class="service-more" onclick="goBack(this)">
+                  Go back
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -6046,15 +6100,21 @@
 
     <!-- Flip card test -->
     <script>
-      function flipCard(button) {
+      function learnMore(button) {
         console.log(button.textContent);
         var flipCard = button.closest(".card");
         flipCard.classList.toggle("active");
         flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
           "visible";
+      }
+
+      function goBack(button) {
+        var flipCard = button.closest(".card");
+        flipCard.classList.toggle("active");
+        flipCard.querySelector(".flip-box-front").classList.toggle("hidden");
         flipCard.querySelector(".flip-box-back").style.backfaceVisibility =
-          "visible";
+          "hidden";
       }
     </script>
   </body>
