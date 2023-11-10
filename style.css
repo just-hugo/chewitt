@@ -539,7 +539,7 @@ input:checked + .slider:before {
 }
 
 .fadeInUp-animation {
-  animation: 1.5s fadeInUp;
+  animation: 1.75s fadeInUp;
 }
 @keyframes fadeInDown {
   0% {
@@ -553,7 +553,7 @@ input:checked + .slider:before {
 }
 
 .fadeInDown-animation {
-  animation: 1.5s fadeInDown;
+  animation: 1.75s fadeInDown;
 }
 @font-face {
   font-family: "Better Regular";
