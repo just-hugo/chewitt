@@ -157,6 +157,8 @@ body {
   padding: 1.15rem 1.7rem;
   border-radius: 24px;
   scroll-margin-top: 17vh;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .logo {
@@ -494,15 +496,6 @@ input:checked + .slider:before {
   margin-left: 50px;
   margin-bottom: 1rem;
 }
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
 /* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;
@@ -514,7 +507,7 @@ input:checked + .slider:before {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box.active .flip-box-inner {
+.card.active .flip-box-inner {
   transform: rotateY(180deg);
 }
 
