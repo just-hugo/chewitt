@@ -534,6 +534,46 @@ input:checked + .slider:before {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+@-ms-keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 @keyframes fadeInUp {
   0% {
     transform: translateY(100%);
@@ -551,7 +591,27 @@ input:checked + .slider:before {
   -webkit-animation: 1.75s fadeInUp;
   animation: 1.75s fadeInUp;
 }
-@keyframes fadeInDown {
+@-ms-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInDown {
   0% {
     transform: translateY(-100%);
     opacity: 0;
@@ -562,6 +622,16 @@ input:checked + .slider:before {
   }
 }
 @-webkit-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
   0% {
     transform: translateY(-100%);
     opacity: 0;
