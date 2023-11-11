@@ -71,10 +71,14 @@
   --logo-cutout-stroke: rgba(0, 0, 0, 0.15);
   --logo-cutout-fill: rgba(0, 0, 0, 0.15);
 }
+html {
+  height: -webkit-fill-available;
+}
 body {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 .parallax-bg {
@@ -83,7 +87,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  height: 100vh;
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
   width: 100vw;
   overflow: hidden;
 }
@@ -704,8 +709,7 @@ input:checked + .slider:before {
   }
   .card {
     padding-top: 0.7rem;
-    padding-right: 1.4rem;
-    height: 82vh;
+    height: 85vh;
   }
   .icon {
     margin-top: 0.85rem;
@@ -743,7 +747,6 @@ input:checked + .slider:before {
   }
   .card {
     padding-top: 0.7rem;
-    padding-right: 1.5rem;
     height: 87vh;
   }
   .icon {
