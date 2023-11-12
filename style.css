@@ -789,22 +789,6 @@ input:checked + .slider:before {
     margin-left: 25%;
   }
 }
-/* Large phone screens ie  */
-/* @media (min-height: 853px) {
-  .card {
-    height: 80vh;
-    width: 85vw;
-    padding: 1.15rem 2rem;
-  }
-  .copy {
-    letter-spacing: 0.02em;
-    font-size: 1.25rem;
-    margin: 0.4rem;
-  }
-  .service-more {
-    margin-top: 0.25rem;
-  }
-} */
 /* XS tablets */
 @media (min-width: 650px) {
   .parallax-content {
