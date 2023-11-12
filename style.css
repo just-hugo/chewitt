@@ -689,46 +689,8 @@ input:checked + .slider:before {
   font-weight: normal;
   font-style: normal;
 }
-/* Short/xs iphones 6-8 */
+/* Short/xs iphones 6-8 and short androids like the samsung galaxy edge */
 @media (max-height: 667px) {
-  .nav {
-    min-height: 12vh;
-    max-height: 12vh;
-  }
-  .masthead {
-    height: 77vh;
-  }
-  .logo {
-    height: 16vh;
-    width: 16vh;
-    margin-top: 1.75rem;
-  }
-  .tagline {
-    font-size: 1.2rem;
-    margin: 0 1rem;
-  }
-  .card {
-    padding-top: 0.7rem;
-    height: 85vh;
-  }
-  .icon {
-    margin-top: 0.85rem;
-    margin-bottom: 0.2rem;
-    height: 3.2rem;
-    width: 3.2rem;
-  }
-  .header {
-    letter-spacing: 0.05em;
-    font-size: 1.7rem;
-  }
-  .copy {
-    letter-spacing: 0.009em;
-    font-size: 1.025rem;
-    font-weight: 520;
-  }
-}
-/* Short/xs Android ie Samsung Edge series */
-@media (max-height: 665px) {
   .nav {
     min-height: 12vh;
     max-height: 12vh;
@@ -750,7 +712,7 @@ input:checked + .slider:before {
     height: 87vh;
   }
   .icon {
-    margin-top: 1rem;
+    margin-top: 0.85rem;
     margin-bottom: 0.2rem;
     height: 3.2rem;
     width: 3.2rem;
@@ -760,15 +722,17 @@ input:checked + .slider:before {
     font-size: 1.7rem;
   }
   .copy {
-    letter-spacing: 0.009em;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 0.2rem;
+    letter-spacing: 0em;
+    font-size: 1.02rem;
+    font-weight: 520;
   }
   .service-more {
-    width: 45%;
-    font-size: 1.3rem;
-    margin-left: 25%;
+    width: 50%;
+    font-size: 1.2rem;
+    margin-left: 23%;
+    margin-right: 30%;
+    margin-top: 0.85rem;
+    padding-right: 0.7rem;
   }
 }
 /*  Small Android phones such as Samsung Galaxy series */
