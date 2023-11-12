@@ -694,6 +694,7 @@ input:checked + .slider:before {
   .nav {
     min-height: 12vh;
     max-height: 12vh;
+    width: 87vw;
   }
   .masthead {
     height: 77vh;
@@ -719,11 +720,11 @@ input:checked + .slider:before {
   }
   .header {
     letter-spacing: 0.05em;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .copy {
     letter-spacing: 0em;
-    font-size: 1.02rem;
+    font-size: 1rem;
     font-weight: 520;
   }
   .service-more {
@@ -731,11 +732,14 @@ input:checked + .slider:before {
     font-size: 1.2rem;
     margin-left: 23%;
     margin-right: 30%;
-    margin-top: 0.85rem;
+    margin-top: 0.5rem;
   }
 }
-/*  Small Android phones such as Samsung Galaxy series */
+/*  Small Android phones such as Samsung Galaxy series or the standard google pixel line */
 @media (min-height: 740px) {
+  .nav {
+    width: 87vw;
+  }
   .card {
     height: 80vh;
     width: 87vw;
@@ -752,6 +756,7 @@ input:checked + .slider:before {
     letter-spacing: 0.02em;
     font-size: 1.02rem;
     font-weight: 520;
+    padding: 0 1.75rem;
   }
 }
 /* Medium phone screens ie iphone 11, iPhone 12 Pro, or google pixel 3XL or google pixel 5 */
@@ -759,13 +764,12 @@ input:checked + .slider:before {
   .card {
     height: 79vh;
     width: 85vw;
-    padding: 1rem 2.2rem;
   }
   .icon {
     margin-top: 1.75rem;
     margin-bottom: 0.7rem;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
   }
   .header {
     letter-spacing: 0.05em;
@@ -778,15 +782,15 @@ input:checked + .slider:before {
     margin-bottom: 0.5rem;
   }
   .service-more {
-    width: 45%;
+    width: 48%;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     margin-left: 25%;
   }
 }
 /* Large phone screens ie  */
-@media (min-height: 853px) {
+/* @media (min-height: 853px) {
   .card {
     height: 80vh;
     width: 85vw;
@@ -800,7 +804,7 @@ input:checked + .slider:before {
   .service-more {
     margin-top: 0.25rem;
   }
-}
+} */
 /* XS tablets */
 @media (min-width: 650px) {
   .parallax-content {
