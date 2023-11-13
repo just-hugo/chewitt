@@ -110,8 +110,15 @@ footer {
   width: 35%;
   z-index: 3;
 }
-.speech-bubble {
+#mast-popover {
+  display: none;
   position: relative;
+  height: 25%;
+  width: 35%;
+  z-index: 3;
+}
+.speech-bubble {
+  position: absolute;
   background: #ffffff;
   border-radius: 0.4em;
 }
@@ -130,15 +137,21 @@ footer {
   margin-left: -0.312em;
   margin-top: -0.625em;
 }
-.nav-pop-close {
-  position: static;
+.pop-close {
+  position: relative;
   font-size: 2.75rem;
 }
-.nav-pop-close:hover {
+.pop-close:hover {
   filter: drop-shadow(1px -1px 3px rgb(241, 189, 67));
   height: 1.75rem;
   width: 1.75rem;
 }
+/* .activate-popover {
+  background-color: ;
+  border-width: ;
+  border-radius: ;
+  border-color: ;
+} */
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

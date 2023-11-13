@@ -61,9 +61,8 @@
       id="nav-popover"
     >
       <div class="row">
-        <div class="col-12 align-self-end text-end">
+        <div class="col-12 align-self-end text-end my-2">
           <svg
-            class="nav-pop-close"
             onclick="closeNavPop()"
             width="24"
             height="24"
@@ -73,10 +72,10 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="feather feather-x"
+            class="feather feather-x pop-close"
           >
-            <line class="nav-pop-close" x1="18" y1="6" x2="6" y2="18"></line>
-            <line class="nav-pop-close"" x1="6" y1="6" x2="18" y2="18"></line>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </div>
         <div class="col-12"><p>Test</p></div>
@@ -92,6 +91,31 @@
         <div class="col-9 mx-auto align-self-center">
           <h2>A design demonstration.</h2>
         </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid speech-bubble popover highlight align-self-center my-3"
+      id="mast-popover"
+    >
+      <div class="row">
+        <div class="col-12 align-self-end text-end my-2">
+          <svg
+            onclick="closeMastPop()"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x pop-close"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <div class="col-12"><p>Test</p></div>
       </div>
     </div>
 
@@ -153,14 +177,17 @@
                     The links may collapse when viewed on a mobile, but remain
                     accessible through a menu icon.
                   </p>
-                  <button id="showNav" onclick="showNav()">
-                    Highlight Navigation Bar
+                  <button
+                    class="btn btn-outline-secondary"
+                    id="showNav"
+                    onclick="showNav()"
+                  >
+                    Show me the navigation bar.
                   </button>
-                  <button onclick="showMasthead()">Highlight Masthead</button>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" id="masthead-accord">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -179,15 +206,9 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                  <button id="showMast" onclick="showMasthead()">
+                    Show me the masthead.
+                  </button>
                 </div>
               </div>
             </div>
@@ -381,15 +402,6 @@
         document.querySelector("#nav-popover").style.display = "block";
       }
 
-      function showMasthead() {
-        var masthead = document.querySelector(".masthead");
-        masthead.scrollIntoView(true);
-        document.querySelector(".highlight-bg").style.width = "100%";
-        document.querySelector("body").classList.toggle("disable-scroll");
-        masthead.classList.toggle("highlight");
-        document.querySelector("#nav-popover").style.display = "block";
-      }
-
       function closeNavPop() {
         var navbar = document.querySelector(".navbar");
         document.querySelector(".highlight-bg").style.width = "0%";
@@ -397,6 +409,27 @@
         navbar.classList.toggle("highlight");
 
         document.querySelector("#nav-popover").style.display = "none";
+      }
+
+      function showMasthead() {
+        var masthead = document.querySelector(".masthead");
+        masthead.scrollIntoView(false);
+        document.querySelector(".highlight-bg").style.width = "100%";
+        document.querySelector("body").classList.toggle("disable-scroll");
+        masthead.classList.toggle("highlight");
+        document.querySelector("#mast-popover").style.display = "block";
+      }
+
+      function closeMastPop() {
+        var masthead = document.querySelector(".masthead");
+        document.querySelector(".highlight-bg").style.width = "0%";
+        document.querySelector("body").classList.toggle("disable-scroll");
+        masthead.classList.toggle("highlight");
+
+        document.querySelector("#mast-popover").style.display = "none";
+        document
+          .querySelector("#masthead-accord")
+          .scrollIntoView({ block: "center" });
       }
     </script>
   </body>
