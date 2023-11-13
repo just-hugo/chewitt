@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .gradient {
   background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
@@ -57,4 +60,24 @@ footer {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
