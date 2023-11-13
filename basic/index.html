@@ -12,46 +12,138 @@
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
+    <!-- Components style -->
+    <link rel="stylesheet" href="style.css" />
+
     <title>Basic Demo</title>
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid justify-content-around">
-        <div class="col-4">
-          <a class="navbar-brand" href="#">Website Name</a>
+  <body class="gradient">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <div class="row justify-content-start">
+          <div class="col mx-5">
+            <a class="navbar-brand" href="#">Website Name</a>
+          </div>
         </div>
-        <div class="col-4">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Section 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Section 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Section 3</a>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="col-4 me-3">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="col-4 me-3 nav-item">
+                  <a class="nav-link" href="index.html#section1">Section 1</a>
+                </li>
+                <li class="col-4 me-3 nav-item">
+                  <a class="nav-link" href="#">Section 2</a>
+                </li>
+                <li class="col-4 me-3 nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </nav>
+
+    <!-- Masthead -->
+    <div class="container-fluid masthead" id="masthead">
+      <div class="row justify-content-center mt-5">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1>The <br />Starter.</h1>
+        </div>
+        <div class="col-9 mx-auto align-self-center">
+          <h2>A package for a simple online presence.</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="container-fluid section py-5" id="section1">
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1>The <br />Details.</h1>
+        </div>
+        <div class="col-9">
+          <p class="me-1">
+            Welcome to The Starter, a single-page website package designed for
+            artists and professionals looking for a minimalist web presence.
+          </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-9 mt-3">
+          <p class="me-1">
+            When you purchase the Starter Package, you'll receive a website
+            similar to this one. That is, your website will be laid out with a
+            navbar, a header, a footer, and up to three sections to hold content
+            of your choosing. Each component's shape, size, color, and other
+            design elements can be adjusted to create the look and feel you
+            want.
+          </p>
+          <p class="mx-5">
+            Content sections can be anything from a portfolio grid to
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Section 2 -->
+    <div class="container-fluid section py-5" id="section1">
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1>Customize <br />This Page.</h1>
+        </div>
+        <div class="col-9">
+          <p class="me-1"></p>
+        </div>
+      </div>
+
+      <!-- Section 3-->
+      <div class="row justify-content-center">
+        <div class="col-9 mt-3">
+          <p class="me-1"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Section 3 -->
+    <div class="container-fluid section py-5" id="section1">
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1>Customize <br />This Page.</h1>
+        </div>
+        <div class="col-9">
+          <p class="me-1"></p>
+        </div>
+      </div>
+
+      <!-- Section 3-->
+      <div class="row justify-content-center">
+        <div class="col-9 mt-3">
+          <p class="me-1"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <footer></footer>
     <!-- Bootstrap JavaScript Dependencies section -->
     <script
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
