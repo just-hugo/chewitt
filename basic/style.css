@@ -29,8 +29,10 @@ p {
 }
 
 .section {
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  padding-right: 15vw;
   background-color: white;
+  box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
 .divider {
@@ -39,6 +41,7 @@ p {
   min-height: 15vh;
   max-height: 15vh;
   z-index: 0;
+  box-shadow: inset 0px 5px 10px 1px rgba(0, 0, 0, 0.3);
 }
 .gradient-background {
   background: linear-gradient(153deg, #3362f4, #23518a, #a56d5a, #d62377);
@@ -51,6 +54,7 @@ footer {
   min-height: 15vh;
   max-height: 15vh;
   background-color: white;
+  box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, 0.3);
 }
 .accordion-button {
   background-color: #ffffff;

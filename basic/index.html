@@ -23,7 +23,7 @@
     <title>The Starter</title>
   </head>
 
-  <body class="gradient">
+  <body>
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <div class="row justify-content-start">
@@ -88,8 +88,8 @@
     </div>
 
     <!-- Masthead -->
-    <div class="container-fluid masthead" id="masthead">
-      <div class="row justify-content-center mt-5">
+    <div class="container-fluid masthead gradient" id="masthead">
+      <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1>The <br />Starter.</h1>
         </div>
@@ -125,7 +125,7 @@
     </div>
 
     <!-- Section 1 -->
-    <div class="container-fluid section py-5" id="section1">
+    <div class="container-fluid section" id="section1">
       <div class="row justify-content-center">
         <div class="col-9">
           <p class="me-1 my-5 text-center standout">
@@ -153,8 +153,10 @@
             Not sure what the components are? Check out this reference sheet for
             a guided tour.
           </p>
+        </div>
+        <div class="col-md-10 mt-3">
           <div class="accordion pb-5" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item" id="nav-accord">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button"
@@ -348,7 +350,7 @@
       </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="divider gradient"></div>
 
     <!-- Section 2 -->
     <div class="container-fluid section py-5" id="section1">
@@ -406,7 +408,7 @@
       </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="divider gradient"></div>
 
     <!-- Section 3 -->
     <div class="container-fluid section py-5" id="section1">
@@ -427,7 +429,7 @@
       </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="divider gradient"></div>
     <div class="highlight-bg"></div>
     <footer></footer>
     <!-- Bootstrap JavaScript Dependencies section -->
@@ -454,6 +456,9 @@
         document.querySelector("body").classList.toggle("disable-scroll");
         navbar.classList.toggle("highlight");
         document.querySelector("#nav-popover").style.display = "none";
+        document
+          .querySelector("#nav-accord")
+          .scrollIntoView({ block: "center" });
       }
 
       function showMasthead() {
