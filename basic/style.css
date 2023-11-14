@@ -108,14 +108,14 @@ footer {
   position: relative;
   height: 25%;
   width: 35%;
-  z-index: 3;
+  z-index: 2;
 }
 #mast-popover {
   display: none;
   position: relative;
   height: 25%;
   width: 35%;
-  z-index: 3;
+  z-index: 2;
 }
 .speech-bubble {
   position: absolute;
@@ -146,12 +146,9 @@ footer {
   height: 1.75rem;
   width: 1.75rem;
 }
-/* .activate-popover {
-  background-color: ;
-  border-width: ;
-  border-radius: ;
-  border-color: ;
-} */
+.round {
+  border-radius: 34px;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -170,4 +167,78 @@ footer {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+.accordion-item {
+  margin: 5%;
+}
+@-ms-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.fadeInDown-animation {
+  -ms-animation: 3s fadeInDown;
+  -o-animation: 3s fadeInDown;
+  -moz-animation: 3s fadeInDown;
+  -webkit-animation: 3s fadeInDown;
+  animation: 3s fadeInDown;
+}
+.card {
+  width: 20rem;
+  height: 25rem;
+  margin: 1.5rem;
+}
+.image {
+  border-radius: 10px;
+  box-shadow: 6px 7px 7px rgba(0, 0, 0, 0.25);
+  min-width: 20vh;
+  max-width: 20vw;
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
 }

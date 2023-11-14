@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Components style -->
     <link rel="stylesheet" href="style.css" />
@@ -78,7 +83,7 @@
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </div>
-        <div class="col-12"><p>Test</p></div>
+        <div class="col-12"><p>This is the navigation bar.</p></div>
       </div>
     </div>
 
@@ -130,23 +135,25 @@
             a minimalist web presence.
           </p>
         </div>
-
-        <div class="col-9 mx-auto mt-5 text-justify">
-          <h1 class="mt-2">The <br />Details.</h1>
-        </div>
       </div>
 
       <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1 class="mt-2">Take <br />The Tour.</h1>
+        </div>
         <div class="col-9 mt-3">
-          <p></p>
           <p class="me-1">
             Every website is made of components that display content and help
             orient users. Components can be designd in a variety of ways and
             combined with other components to create a unique page. The Starter
-            comes with up to 6 components that can be mixed and matched.
+            has 6 components and a wide variety of layouts to mix and match for
+            the perfect look.
           </p>
-          <p>Check out the details of each component below.</p>
-          <div class="accordion" id="accordionExample">
+          <p>
+            Not sure what the components are? Check out this reference sheet for
+            a guided tour.
+          </p>
+          <div class="accordion pb-5" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
@@ -178,7 +185,7 @@
                     accessible through a menu icon.
                   </p>
                   <button
-                    class="btn btn-outline-secondary"
+                    class="btn btn-outline-secondary round"
                     id="showNav"
                     onclick="showNav()"
                   >
@@ -347,17 +354,54 @@
     <div class="container-fluid section py-5" id="section1">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
-          <h1>Designs <br />& Layouts.</h1>
+          <h1 class="mt-2">Text <br />Layouts.</h1>
         </div>
-        <div class="col-9">
-          <p class="me-1"></p>
+        <div class="col-9 mt-3">
+          <p class="me-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante. Dignissim diam quis enim lobortis scelerisque
+            fermentum dui. Ut enim blandit volutpat maecenas volutpat blandit.
+            In pellentesque massa placerat duis ultricies lacus sed turpis
+            tincidunt.
+          </p>
+          <p>
+            Cursus euismod quis viverra nibh cras. At auctor urna nunc id cursus
+            metus aliquam eleifend mi.
+          </p>
         </div>
       </div>
-
-      <!-- Section 3-->
       <div class="row justify-content-center">
-        <div class="col-9 mt-3">
-          <p class="me-1"></p>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div
+          class="col-md-6 ml-auto d-flex align-items-center mt-4 mt-md-0 text-justify"
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante. <br />Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Pharetra convallis posuere morbi leo urna.
+            Tellus in hac habitasse platea dictumst vestibulum. Tellus cras
+            adipiscing enim eu. Id aliquet risus feugiat in ante.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="../assets/saturn1.webp"
+            class="img-fluid"
+            alt=""
+            loading="lazy"
+          />
         </div>
       </div>
     </div>
@@ -368,7 +412,7 @@
     <div class="container-fluid section py-5" id="section1">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
-          <h1>Image<br />Gallery.</h1>
+          <h1>Image<br />Layouts.</h1>
         </div>
         <div class="col-9">
           <p class="me-1"></p>
@@ -395,7 +439,9 @@
       function showNav() {
         var navbar = document.querySelector(".navbar");
         navbar.scrollIntoView(true);
-
+        document
+          .querySelector("#nav-popover")
+          .classList.toggle("fadeInDown-animation");
         navbar.classList.toggle("highlight");
         document.querySelector(".highlight-bg").style.width = "100%";
         document.querySelector("body").classList.toggle("disable-scroll");
@@ -407,7 +453,6 @@
         document.querySelector(".highlight-bg").style.width = "0%";
         document.querySelector("body").classList.toggle("disable-scroll");
         navbar.classList.toggle("highlight");
-
         document.querySelector("#nav-popover").style.display = "none";
       }
 
@@ -417,6 +462,9 @@
         document.querySelector(".highlight-bg").style.width = "100%";
         document.querySelector("body").classList.toggle("disable-scroll");
         masthead.classList.toggle("highlight");
+        document
+          .querySelector("#mast-popover")
+          .classList.toggle("fadeInDown-animation");
         document.querySelector("#mast-popover").style.display = "block";
       }
 
