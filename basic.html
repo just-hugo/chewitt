@@ -187,14 +187,14 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item" id="masthead-accord">
+            <div class="accordion-item" id="mast-accord">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseTwo"
                 >
                   Masthead
@@ -202,13 +202,28 @@
               </h2>
               <div
                 id="collapseTwo"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse show"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <button id="showMast" onclick="showMasthead()">
-                    Show me the masthead.
-                  </button>
+                <div class="row accordion-body align-items-center">
+                  <p class="col-md-12">
+                    The masthead is usually found at the top of a page,
+                    displaying an image, logo, or slogan. Mastheads range in
+                    size and design, with the primary goal being to grab
+                    attention.
+                  </p>
+                  <p class="col-md-12"></p>
+                  <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-4">
+                      <button
+                        class="btn"
+                        id="showMast"
+                        onclick="showMasthead()"
+                      >
+                        Show me.
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
