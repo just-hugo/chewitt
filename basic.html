@@ -450,12 +450,10 @@
 
         navbar.scrollIntoView(true);
         navbar.classList.toggle("highlight");
-
-        popover.classList.toggle("fadeInDown-animation");
-
         document.querySelector(".highlight-bg").style.width = "100%";
         document.querySelector("body").classList.toggle("disable-scroll");
-        document.querySelector("#nav-popover").style.display = "block";
+        popover.classList.toggle("fadeInDown-animation");
+        popover.style.display = "block";
       }
 
       function closeNavPop() {
