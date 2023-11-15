@@ -163,7 +163,8 @@ footer {
 }
 #nav-popover {
   display: none;
-  position: relative;
+  position: fixed;
+  left: 35%;
   height: 25%;
   width: 35%;
   z-index: 2;
@@ -268,7 +269,7 @@ footer {
 }
 @keyframes fadeInDown {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     opacity: 0;
   }
   100% {
@@ -277,11 +278,11 @@ footer {
   }
 }
 .fadeInDown-animation {
-  -ms-animation: 2.5s fadeInDown;
-  -o-animation: 2.5s fadeInDown;
-  -moz-animation: 2.5s fadeInDown;
-  -webkit-animation: 2.5s fadeInDown;
-  animation: 2.5s fadeInDown;
+  -ms-animation: 3s fadeInDown;
+  -o-animation: 3s fadeInDown;
+  -moz-animation: 3s fadeInDown;
+  -webkit-animation: 3s fadeInDown;
+  animation: 3s fadeInDown;
 }
 .card {
   box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
