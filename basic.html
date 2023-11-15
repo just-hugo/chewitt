@@ -190,11 +190,11 @@
             <div class="accordion-item" id="mast-accord">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button"
+                  class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
-                  aria-expanded="true"
+                  aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
                   Masthead
@@ -202,7 +202,7 @@
               </h2>
               <div
                 id="collapseTwo"
-                class="accordion-collapse collapse show"
+                class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
                 <div class="row accordion-body align-items-center">
@@ -446,11 +446,13 @@
     <script>
       function showNav() {
         var navbar = document.querySelector(".navbar");
+        var popover = document.querySelector("#nav-popover");
+
         navbar.scrollIntoView(true);
-        document
-          .querySelector("#nav-popover")
-          .classList.toggle("fadeInDown-animation");
         navbar.classList.toggle("highlight");
+
+        popover.classList.toggle("fadeInDown-animation");
+
         document.querySelector(".highlight-bg").style.width = "100%";
         document.querySelector("body").classList.toggle("disable-scroll");
         document.querySelector("#nav-popover").style.display = "block";
@@ -465,6 +467,10 @@
         document
           .querySelector("#nav-accord")
           .scrollIntoView({ block: "center" });
+
+        document
+          .querySelector("#nav-popover")
+          .classList.toggle("fadeInDown-animation");
       }
 
       function showMasthead() {
