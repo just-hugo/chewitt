@@ -143,8 +143,10 @@
             for a guided tour of each section type.
           </p>
         </div>
+
+        <!-- Accordion -->
         <div class="col-md-9">
-          <div class="accordion pb-1" id="accordionExample">
+          <div class="accordion mb-5" id="accordionExample">
             <div class="accordion-item" id="nav-accord">
               <h2 class="accordion-header">
                 <button
@@ -163,36 +165,36 @@
                 class="accordion-collapse collapse show"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <p>
+                <div class="row accordion-body align-items-center">
+                  <p class="col-md-12">
                     The navigation bar usually appears at the top of the page,
                     though some websites are intentionally designed with it at
                     the bottom.
                   </p>
-                  <p>
+                  <p class="col-md-12">
                     Navigation bars typically display a logo or brand name,
                     along with a few links to different parts of the website.
                     The links may collapse when viewed on a mobile, but remain
                     accessible through a menu icon.
                   </p>
-                  <button
-                    class="btn btn-outline-secondary round"
-                    id="showNav"
-                    onclick="showNav()"
-                  >
-                    Show me the navigation bar.
-                  </button>
+                  <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-4">
+                      <button class="btn" id="showNav" onclick="showNav()">
+                        Show me.
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="accordion-item" id="masthead-accord">
+            <div class="accordion-item" id="mast-accord">
               <h2 class="accordion-header">
                 <button
-                  class="accordion-button collapsed"
+                  class="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo"
-                  aria-expanded="false"
+                  aria-expanded="true"
                   aria-controls="collapseTwo"
                 >
                   Masthead
@@ -200,13 +202,28 @@
               </h2>
               <div
                 id="collapseTwo"
-                class="accordion-collapse collapse"
+                class="accordion-collapse collapse show"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <button id="showMast" onclick="showMasthead()">
-                    Show me the masthead.
-                  </button>
+                <div class="row accordion-body align-items-center">
+                  <p class="col-md-12">
+                    The masthead is usually found at the top of a page,
+                    displaying an image, logo, or slogan. Mastheads range in
+                    size and design, with the primary goal being to grab
+                    attention.
+                  </p>
+                  <p class="col-md-12"></p>
+                  <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-4">
+                      <button
+                        class="btn"
+                        id="showMast"
+                        onclick="showMasthead()"
+                      >
+                        Show me.
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -474,5 +491,14 @@
           .scrollIntoView({ block: "center" });
       }
     </script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
