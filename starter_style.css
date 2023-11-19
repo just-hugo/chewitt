@@ -96,7 +96,7 @@ footer {
   color: #f99d80;
   border-bottom: solid;
   border-width: 3px;
-  border-color: #f99d80;
+  border-color: rgb(196, 196, 196);
 }
 .accordion-body {
   margin: 1rem 0.25rem;
@@ -158,27 +158,30 @@ footer {
   overflow: hidden;
 }
 .popover {
-  background-color: #ffffff;
-  border: none;
 }
 #nav-popover {
+  background-color: #ffffff;
+  border: none;
   display: none;
   position: fixed;
+  opacity: 0;
   left: 35%;
   height: 25%;
   width: 35%;
   z-index: 2;
 }
-#mast-popover {
+#masthead-popover {
+  background-color: #ffffff;
+  border: none;
   display: none;
   position: fixed;
+  opacity: 0;
   left: 35%;
   height: 25%;
   width: 35%;
   z-index: 2;
 }
 .speech-bubble {
-  position: absolute;
   background: #ffffff;
   border-radius: 0.4em;
 }
@@ -279,11 +282,11 @@ footer {
   }
 }
 .fadeInDown-animation {
-  -ms-animation: 3s fadeInDown;
-  -o-animation: 3s fadeInDown;
-  -moz-animation: 3s fadeInDown;
-  -webkit-animation: 3s fadeInDown;
-  animation: 3s fadeInDown;
+  -ms-animation: 2.5s fadeInDown;
+  -o-animation: 2.5s fadeInDown;
+  -moz-animation: 2.5s fadeInDown;
+  -webkit-animation: 2.5s fadeInDown;
+  animation: 2.5s fadeInDown;
 }
 .card {
   box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
