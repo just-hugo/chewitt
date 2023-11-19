@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md" id="nav">
       <div class="container-fluid">
         <div class="row justify-content-start">
           <div class="col mx-5">
@@ -62,7 +62,7 @@
       </div>
     </nav>
     <div
-      class="container-fluid speech-bubble popover highlight align-self-center my-3"
+      class="container-fluid speech-bubble highlight align-self-center my-3"
       id="nav-popover"
     >
       <div class="row">
@@ -99,8 +99,8 @@
       </div>
     </div>
     <div
-      class="container-fluid speech-bubble popover highlight align-self-center my-3"
-      id="mast-popover"
+      class="container-fluid speech-bubble highlight align-self-center my-3"
+      id="masthead-popover"
     >
       <div class="row">
         <div class="col-12 align-self-end text-end my-2">
@@ -179,7 +179,12 @@
                   </p>
                   <div class="row align-items-center">
                     <div class="col-md-6 offset-md-4">
-                      <button class="btn" id="showNav" onclick="showNav()">
+                      <button
+                        class="btn"
+                        id="showNav"
+                        target="nav"
+                        onclick="showPop(this)"
+                      >
                         Show me.
                       </button>
                     </div>
@@ -218,7 +223,8 @@
                       <button
                         class="btn"
                         id="showMast"
-                        onclick="showMasthead()"
+                        target="masthead"
+                        onclick="showPop(this)"
                       >
                         Show me.
                       </button>
@@ -438,22 +444,29 @@
     <div class="divider gradient"></div>
     <div class="highlight-bg"></div>
     <footer></footer>
+
     <!-- Bootstrap JavaScript Dependencies section -->
     <script
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
       async=""
     ></script>
     <script>
-      function showNav() {
-        var navbar = document.querySelector(".navbar");
-        var popover = document.querySelector("#nav-popover");
+      function showPop(button) {
+        var target = button.getAttribute("target");
+        var navbar = document.querySelector("#" + target);
+        var popover = document.querySelector("#" + target + "-popover");
 
-        navbar.scrollIntoView(true);
+        // Use smooth scrolling for the navbar
+        navbar.scrollIntoView(false);
         navbar.classList.toggle("highlight");
         document.querySelector(".highlight-bg").style.width = "100%";
         document.querySelector("body").classList.toggle("disable-scroll");
-        popover.classList.toggle("fadeInDown-animation");
-        popover.style.display = "block";
+        // Delay the execution of the code that makes the element visible
+        setTimeout(function () {
+          popover.style.display = "block";
+          popover.style.opacity = 1;
+          popover.classList.toggle("fadeInDown-animation");
+        }, 300); // Adjust the delay time as needed
       }
 
       function closeNavPop() {
@@ -471,38 +484,26 @@
           .classList.toggle("fadeInDown-animation");
       }
 
-      function showMasthead() {
-        var masthead = document.querySelector(".masthead");
-        masthead.scrollIntoView(false);
-        document.querySelector(".highlight-bg").style.width = "100%";
-        document.querySelector("body").classList.toggle("disable-scroll");
-        masthead.classList.toggle("highlight");
-        document
-          .querySelector("#mast-popover")
-          .classList.toggle("fadeInDown-animation");
-        document.querySelector("#mast-popover").style.display = "block";
-      }
-
       function closeMastPop() {
         var masthead = document.querySelector(".masthead");
         document.querySelector(".highlight-bg").style.width = "0%";
         document.querySelector("body").classList.toggle("disable-scroll");
         masthead.classList.toggle("highlight");
 
-        document.querySelector("#mast-popover").style.display = "none";
+        document.querySelector("#masthead-popover").style.display = "none";
         document
-          .querySelector("#masthead-accord")
+          .querySelector("#mast-accord")
           .scrollIntoView({ block: "center" });
+
+        document
+          .querySelector("#masthead-popover")
+          .classList.toggle("fadeInDown-animation");
+        document.querySelector("#masthead-popover").style.opacity = 0;
       }
     </script>
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-1.12.0.min.js"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-      crossorigin="anonymous"
     ></script>
   </body>
 </html>
