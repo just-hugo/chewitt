@@ -68,7 +68,7 @@
       <div class="row">
         <div class="col-12 align-self-end text-end my-2">
           <svg
-            onclick="closeNavPop()"
+            onclick="closePop()"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -105,7 +105,7 @@
       <div class="row">
         <div class="col-12 align-self-end text-end my-2">
           <svg
-            onclick="closeMastPop()"
+            onclick="closePop()"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -450,15 +450,16 @@
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
       async=""
     ></script>
+    <!-- Popover functionality -->
     <script>
       function showPop(button) {
         var target = button.getAttribute("target");
-        var navbar = document.querySelector("#" + target);
+        var element = document.querySelector("#" + target);
         var popover = document.querySelector("#" + target + "-popover");
 
-        // Use smooth scrolling for the navbar
-        navbar.scrollIntoView(false);
-        navbar.classList.toggle("highlight");
+        // Use smooth scrolling for the element
+        element.scrollIntoView(false);
+        element.classList.toggle("highlight");
         document.querySelector(".highlight-bg").style.width = "100%";
         document.querySelector("body").classList.toggle("disable-scroll");
         // Delay the execution of the code that makes the element visible
@@ -466,39 +467,39 @@
           popover.style.display = "block";
           popover.style.opacity = 1;
           popover.classList.toggle("fadeInDown-animation");
+          popover.classList.toggle("active");
         }, 300); // Adjust the delay time as needed
       }
 
-      function closeNavPop() {
-        var navbar = document.querySelector(".navbar");
-        document.querySelector(".highlight-bg").style.width = "0%";
-        document.querySelector("body").classList.toggle("disable-scroll");
-        navbar.classList.toggle("highlight");
-        document.querySelector("#nav-popover").style.display = "none";
-        document
-          .querySelector("#nav-accord")
-          .scrollIntoView({ block: "center" });
+      document.addEventListener("keydown", function (event) {
+        // Check if the pressed key is the Escape key (key code 27)
+        if (event.key === "Escape") {
+          closePop();
+        }
+      });
 
-        document
-          .querySelector("#nav-popover")
-          .classList.toggle("fadeInDown-animation");
-      }
+      document.addEventListener("click", function (event) {
+        // Check if the click is outside the popover element
+        var popover = document.querySelector(".active");
+        if (
+          popover.style.display === "block" &&
+          !popover.contains(event.target)
+        ) {
+          closePop();
+        }
+      });
 
-      function closeMastPop() {
-        var masthead = document.querySelector(".masthead");
-        document.querySelector(".highlight-bg").style.width = "0%";
-        document.querySelector("body").classList.toggle("disable-scroll");
-        masthead.classList.toggle("highlight");
+      function closePop() {
+        var popover = document.querySelector(".active");
+        var element = popover.previousElementSibling;
 
-        document.querySelector("#masthead-popover").style.display = "none";
-        document
-          .querySelector("#mast-accord")
-          .scrollIntoView({ block: "center" });
-
-        document
-          .querySelector("#masthead-popover")
-          .classList.toggle("fadeInDown-animation");
-        document.querySelector("#masthead-popover").style.opacity = 0;
+        element.classList.remove("highlight");
+        document.querySelector(".highlight-bg").style.width = "0";
+        document.querySelector("body").classList.remove("disable-scroll");
+        popover.style.display = "none";
+        popover.style.opacity = 0;
+        popover.classList.remove("fadeInDown-animation");
+        popover.classList.toggle("active");
       }
     </script>
     <script

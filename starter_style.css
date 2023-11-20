@@ -282,11 +282,11 @@ footer {
   }
 }
 .fadeInDown-animation {
-  -ms-animation: 2.5s fadeInDown;
-  -o-animation: 2.5s fadeInDown;
-  -moz-animation: 2.5s fadeInDown;
-  -webkit-animation: 2.5s fadeInDown;
-  animation: 2.5s fadeInDown;
+  -ms-animation: 2.25s fadeInDown;
+  -o-animation: 2.25s fadeInDown;
+  -moz-animation: 2.25s fadeInDown;
+  -webkit-animation: 2.25s fadeInDown;
+  animation: 2.25s fadeInDown;
 }
 .card {
   box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
