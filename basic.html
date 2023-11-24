@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4 me-3">
+          <div class="col-5 me-5">
             <button
               class="navbar-toggler"
               type="button"
@@ -46,14 +46,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="col-4 me-3 nav-item">
-                  <a class="nav-link" href="index.html#section1">Section 1</a>
+                <li class="col-4 mx-2">
+                  <a class="nav-link disabled" aria-disabled="true">The Tour</a>
                 </li>
-                <li class="col-4 me-3 nav-item">
-                  <a class="nav-link" href="#">Section 2</a>
+                <li class="col-4 mx-3">
+                  <a class="nav-link" href="index.html#section1"
+                    >Text Layouts</a
+                  >
                 </li>
-                <li class="col-4 me-3 nav-item">
-                  <a class="nav-link disabled" aria-disabled="true">Contact</a>
+                <li class="col-5 mx-5">
+                  <a class="nav-link" href="#">Image Layouts</a>
                 </li>
               </ul>
             </div>
@@ -233,7 +235,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item" id="section1-accord">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
@@ -251,16 +253,21 @@
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
+                <div class="row accordion-body align-items-center">
+                  <p class="col-md-12">The first content section usually</p>
+                  <p class="col-md-12">Blah</p>
+                  <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-4">
+                      <button
+                        class="btn"
+                        id="showSection1"
+                        target="section1"
+                        onclick="showPopSection(this)"
+                      >
+                        Show me.
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -361,10 +368,40 @@
         </div>
       </div>
     </div>
+    <div
+      class="container-fluid speech-bubble highlight align-self-center my-3"
+      id="section1-popover"
+    >
+      <div class="row">
+        <div class="col-12 align-self-end text-end my-2">
+          <svg
+            onclick="closePop()"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-x pop-close"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </div>
+        <div class="col-12">
+          <p>Test</p>
+          <p>Test</p>
+          <p>Test</p>
+          <p>Test</p>
+        </div>
+      </div>
+    </div>
 
     <div class="divider gradient"></div>
 
-    <!-- Section 2 -->
+    <!-- Section 2: Text Layouts -->
     <div class="container-fluid section py-5" id="section1">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
@@ -385,6 +422,48 @@
             Cursus euismod quis viverra nibh cras. At auctor urna nunc id cursus
             metus aliquam eleifend mi.
           </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h2 class="mt-2">Sub <br />Heading.</h2>
+        </div>
+        <div class="row mt-3 ps-5 justify-content-start">
+          <p class="col-6 ms-md-5 text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante. Dignissim diam quis enim lobortis scelerisque
+            fermentum dui. Ut enim blandit volutpat maecenas volutpat blandit.
+            In pellentesque massa placerat duis ultricies lacus sed turpis
+            tincidunt.
+          </p>
+          <p class="col-6 ms-md-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante. Dignissim diam quis enim lobortis scelerisque
+            fermentum dui. Ut enim blandit volutpat maecenas volutpat blandit.
+            In pellentesque massa placerat duis ultricies lacus sed turpis
+            tincidunt.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider gradient"></div>
+
+    <!-- Section 3 -->
+    <div class="container-fluid section py-5" id="section1">
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1>Image<br />Layouts.</h1>
+        </div>
+        <div class="col-9">
+          <p class="me-1"></p>
         </div>
       </div>
       <div class="row justify-content-center px-auto">
@@ -421,27 +500,6 @@
     </div>
 
     <div class="divider gradient"></div>
-
-    <!-- Section 3 -->
-    <div class="container-fluid section py-5" id="section1">
-      <div class="row justify-content-center">
-        <div class="col-9 mx-auto mt-5 text-justify">
-          <h1>Image<br />Layouts.</h1>
-        </div>
-        <div class="col-9">
-          <p class="me-1"></p>
-        </div>
-      </div>
-
-      <!-- Section 3-->
-      <div class="row justify-content-center">
-        <div class="col-9 mt-3">
-          <p class="me-1"></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider gradient"></div>
     <div class="highlight-bg"></div>
     <footer></footer>
 
@@ -450,6 +508,7 @@
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
       async=""
     ></script>
+
     <!-- Popover functionality -->
     <script>
       function showPop(button) {
@@ -471,23 +530,32 @@
         }, 300); // Adjust the delay time as needed
       }
 
-      document.addEventListener("keydown", function (event) {
-        // Check if the pressed key is the Escape key (key code 27)
-        if (event.key === "Escape") {
-          closePop();
-        }
-      });
+      function showPopSection(button) {
+        var target = button.getAttribute("target");
+        var element = document.querySelector("#" + target);
+        var popover = document.querySelector("#" + target + "-popover");
+        var accordion = document.querySelector("#collapseThree");
 
-      document.addEventListener("click", function (event) {
-        // Check if the click is outside the popover element
-        var popover = document.querySelector(".active");
-        if (
-          popover.style.display === "block" &&
-          !popover.contains(event.target)
-        ) {
-          closePop();
-        }
-      });
+        accordion.classList.remove("show");
+        accordion.classList.add("collapse");
+        element.style.backgroundColor = "rgba(0,0,0,0)";
+
+        popover.style.display = "block";
+        popover.style.opacity = 1;
+        popover.classList.toggle("active");
+        // Use smooth scrolling for the element
+        element.scrollIntoView({ block: "end", inline: "end" });
+        element.classList.toggle("highlight");
+        // document.querySelector(".highlight-bg").style.width = "100%";
+        // document.querySelector("body").classList.toggle("disable-scroll");
+        // // Delay the execution of the code that makes the element visible
+        // setTimeout(function () {
+        //   popover.style.display = "block";
+        //   popover.style.opacity = 1;
+        //   popover.classList.toggle("fadeInDown-animation");
+        //   popover.classList.toggle("active");
+        // }, 300); // Adjust the delay time as needed
+      }
 
       function closePop() {
         var popover = document.querySelector(".active");
@@ -501,6 +569,25 @@
         popover.classList.remove("fadeInDown-animation");
         popover.classList.toggle("active");
       }
+
+      // close popover with Esc key
+      document.addEventListener("keydown", function (event) {
+        // Check if the pressed key is the Escape key (key code 27)
+        if (event.key === "Escape") {
+          closePop();
+        }
+      });
+
+      // close popover by clicking outside of popover
+      document.addEventListener("click", function (event) {
+        var popover = document.querySelector(".active");
+        var highlightBg = document.querySelector(".highlight-bg");
+
+        // Check if the click is on the highlight-bg element
+        if (highlightBg.contains(event.target)) {
+          closePop();
+        }
+      });
     </script>
     <script
       type="text/javascript"

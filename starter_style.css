@@ -181,6 +181,15 @@ footer {
   width: 35%;
   z-index: 2;
 }
+#section1-popover {
+  background-color: #ffffff;
+  border: none;
+  position: fixed;
+  left: 35%;
+  height: 25%;
+  width: 35%;
+  z-index: 2;
+}
 .speech-bubble {
   background: #ffffff;
   border-radius: 0.4em;
