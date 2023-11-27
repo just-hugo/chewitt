@@ -75,7 +75,7 @@ body {
   overflow-x: hidden;
 }
 .parallax-bg {
-  background: url("/assets/saturn2.webp");
+  background: var(--bg-img);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -375,4 +375,11 @@ input:checked + .slider:before {
 /* Style the back side */
 .flip-box-back {
   transform: rotateY(180deg);
+}
+/* Tablet & Desktop */
+@media (min-width: 1024px) {
+  .parallax-bg {
+    background: var(--bg-img-desktop);
+    background-size: cover;
+  }
 }
