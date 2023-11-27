@@ -70,6 +70,10 @@
   --logo-cutout-stroke: rgba(0, 0, 0, 0.15);
   --logo-cutout-fill: rgba(0, 0, 0, 0.15);
 }
+body {
+  display: flex;
+  overflow-x: hidden;
+}
 .parallax-bg {
   background: url("/assets/saturn2.webp");
   background-position: center;
@@ -83,8 +87,11 @@
 .parallax-content {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) translateY(28%);
+  transform: translateX(-50%);
   width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  overflow: hidden;
 }
 .glass {
   background: var(--glass-bg-color);
@@ -93,15 +100,31 @@
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
 }
+.copy {
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+}
+.hidden {
+  visibility: hidden;
+}
+.invisible {
+  display: none;
+}
+/* Navbar */
 .navbar {
   display: block;
+  margin-top: 1rem;
+  width: 80%;
   z-index: 2;
   box-shadow: var(--glass-shadow);
   border-radius: 24px;
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
-
 .logo-nav-icon {
   height: 3.75rem;
   width: 3.75rem;
@@ -179,9 +202,6 @@
 .moon-icon:hover {
   filter: drop-shadow(-2px -3px 3px #ba9e58);
 }
-.hidden {
-  visibility: hidden;
-}
 /* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
@@ -255,7 +275,6 @@ input:checked + .slider:before {
 }
 .sidenav {
   background-color: rgba(255, 255, 255, 0.15);
-
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   height: 70%;
@@ -295,4 +314,63 @@ input:checked + .slider:before {
   font-size: 2.75rem;
   margin-left: 50px;
   margin-bottom: 1rem;
+}
+.masthead {
+  width: 80%;
+}
+/* Service Cards */
+.service-cards {
+  width: 80%;
+  margin-top: 2rem;
+}
+.card {
+  margin-bottom: 2rem;
+  border: 0px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.icon {
+  fill: rgba(0, 0, 0, 0.5);
+  height: 5rem;
+  width: 5rem;
+  filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+}
+.card-header {
+  border: 0;
+}
+.card-title {
+  color: var(--text-color);
+  font-family: Peignot;
+  letter-spacing: 0.06em;
+  font-size: 1.7rem;
+  text-shadow: var(--text-shadow);
+}
+.card-footer {
+  border: 0;
+}
+.service-more {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0 0px 0.5px 0px;
+  border-color: rgba(255, 255, 255, 0.5);
+  font-family: Poiret;
+  font-size: 1.3rem;
+  font-weight: 650;
+  color: rgba(193, 179, 142, 0.75);
+  filter: drop-shadow(1px 1px 1px #ba9e58c8);
+}
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  margin-right: 0%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.card.active {
+  transform: rotateY(180deg);
+}
+/* Style the back side */
+.flip-box-back {
+  transform: rotateY(180deg);
 }
