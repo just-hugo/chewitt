@@ -1,4 +1,3 @@
-/* Primary style formatted for iphone 13 mini: 375px x 812px */
 :root[color-mode="dark"] {
   --bg-img: url("/assets/saturn2.webp");
   --bg-img-desktop: url("/assets/img/saturn2.jpg");
@@ -71,26 +70,31 @@
   --logo-cutout-stroke: rgba(0, 0, 0, 0.15);
   --logo-cutout-fill: rgba(0, 0, 0, 0.15);
 }
-html {
-  height: -webkit-fill-available;
+@font-face {
+  font-family: "Poiret";
+  src: url("assets/fonts/poiret-one.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "peignot";
+  src: url("assets/fonts/peignot.regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   display: flex;
-  justify-content: center;
-  min-height: -webkit-fill-available;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 .parallax-bg {
   background: var(--bg-img);
-  background-position: top left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  min-height: -webkit-fill-available;
-  min-height: 100%;
+  height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  z-index: -1;
 }
 .parallax-content {
   position: absolute;
@@ -101,20 +105,35 @@ body {
   margin-bottom: 10rem;
   overflow: hidden;
 }
-.nav {
-  float: left;
+.glass {
+  background: var(--glass-bg-color);
+  -webkit-box-shadow: var(--glass-shadow);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.copy {
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+}
+.hidden {
+  visibility: hidden;
+}
+.invisible {
+  display: none;
+}
+/* Navbar */
+.navbar {
   display: block;
-  position: fixed;
-  min-height: 10vh;
-  max-height: 10vh;
-  width: 85vw;
   margin-top: 1rem;
-  padding: 0.8rem 0;
+  width: 80%;
   z-index: 2;
   box-shadow: var(--glass-shadow);
   border-radius: 24px;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
 }
 .logo-nav-icon {
   height: 3.75rem;
@@ -155,198 +174,6 @@ body {
   box-shadow: inset 1px 2px 1px rgba(255, 255, 255, 0.5),
     1px 2px 3px rgba(0, 0, 0, 1);
 }
-.card {
-  padding: 0%;
-  height: 77vh;
-  width: 85vw;
-  margin-bottom: 2.5rem;
-  border-radius: 24px;
-  scroll-margin-top: 17vh;
-  background-color: transparent;
-  border: 0px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-.logo {
-  width: 8rem;
-  height: 8rem;
-  margin-top: 3.5rem;
-  color: rgba(0, 0, 0, 0.35);
-}
-.logo-inner {
-  stroke: var(--logo-inner-stroke);
-  fill: var(--logo-inner-fill);
-  stroke-width: 3.3;
-  filter: var(--logo-inner-shadow);
-}
-.logo-cutout-ring {
-  stroke: var(--logo-cutout-stroke);
-  fill: var(--logo-cutout-fill);
-  stroke-width: 8;
-  filter: var(--logo-cutout-shadow);
-}
-.logo-initials {
-  stroke: var(--logo-initials-stroke);
-  fill: var(--logo-initials-stroke);
-  stroke-width: 0.5;
-  filter: var(--logo-initials-shadow);
-}
-.name {
-  font-family: "peignot";
-  font-size: 2rem;
-  margin-top: 0%;
-  margin-bottom: 0rem;
-  text-align: center;
-  color: var(--text-color);
-  letter-spacing: 0.1em;
-  text-shadow: var(--text-shadow);
-}
-.llc {
-  font-family: "peignot";
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: var(--text-color);
-  letter-spacing: 0.1em;
-  text-shadow: var(--text-shadow);
-}
-.tagline {
-  margin: 2rem 0;
-  padding: 0 0.5rem;
-  font-family: "Poiret";
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-align: center;
-  color: var(--text-color);
-  letter-spacing: 0.05em;
-  text-shadow: var(--text-shadow);
-}
-.masthead {
-  width: 85vw;
-  min-height: 50vh;
-  max-height: 50vh;
-  margin-bottom: 2.5rem;
-}
-.header {
-  color: var(--text-color);
-  font-family: Peignot;
-  letter-spacing: 0.06em;
-  font-size: 1.7rem;
-  margin: 0.5rem 0;
-  text-shadow: var(--text-shadow);
-  text-align: center;
-}
-.copy {
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 0.02em;
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-  color: var(--text-color);
-  text-shadow: var(--text-shadow);
-}
-.icon {
-  fill: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  margin: 0.65rem;
-  height: 5rem;
-  width: 5rem;
-  filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
-}
-.subheader {
-  font-size: 1.1rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-align: left;
-  margin: 5%;
-}
-.service-more {
-  width: 51%;
-  background-color: rgba(0, 0, 0, 0);
-  border-width: 0 0px 0.5px 0px;
-  border-color: rgba(255, 255, 255, 0.5);
-  font-family: Poiret;
-  font-size: 1.3rem;
-  font-weight: 650;
-  color: rgba(193, 179, 142, 0.75);
-  filter: drop-shadow(1px 1px 1px #ba9e58c8);
-  margin-left: 23%;
-  margin-right: 30%;
-  margin-top: 0.5rem;
-  padding-right: 0.7rem;
-}
-.contact {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.contact-field {
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-top: 5%;
-}
-.input-bg {
-  color: rgb(255, 255, 255, 0.7);
-  width: 100%;
-  outline: none;
-  background-color: rgb(0, 0, 0, 0.5);
-  border-width: 0px;
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: inset 01px 01px 01px rgba(0, 0, 0, 0.35),
-    inset 3px 3px 7px rgba(53, 53, 53, 0.65);
-}
-input,
-textarea,
-input:focus,
-textarea:focus,
-input:autofill,
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  background-color: rgba(255, 255, 255, 0.35);
-  color: rgba(0, 0, 0, 1);
-  text-shadow: 0 2px 2px #e0bf6c24;
-  padding: 3%;
-}
-.button {
-  text-align: center;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  color: rgba(255, 255, 255, 0.7);
-  background: rgba(0, 0, 0, 0.075);
-}
-.glass {
-  background: var(--glass-bg-color);
-  -webkit-box-shadow: var(--glass-shadow);
-  box-shadow: var(--glass-shadow);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-}
-.blur-filter {
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-}
-.gradient {
-  background: linear-gradient(
-    -10deg,
-    black,
-    black,
-    black,
-    rgb(170, 170, 170),
-    rgb(211, 209, 209),
-    grey,
-    black,
-    black,
-    black
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -384,9 +211,6 @@ select:-webkit-autofill:focus {
 }
 .moon-icon:hover {
   filter: drop-shadow(-2px -3px 3px #ba9e58);
-}
-.hidden {
-  visibility: hidden;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -461,7 +285,6 @@ input:checked + .slider:before {
 }
 .sidenav {
   background-color: rgba(255, 255, 255, 0.15);
-
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   height: 70%;
@@ -502,36 +325,130 @@ input:checked + .slider:before {
   margin-left: 50px;
   margin-bottom: 1rem;
 }
+/* Masthead */
+.masthead {
+  width: 80%;
+}
+.logo {
+  width: 8rem;
+  height: 8rem;
+  margin-top: 3.5rem;
+  color: rgba(0, 0, 0, 0.35);
+}
+.logo-inner {
+  stroke: var(--logo-inner-stroke);
+  fill: var(--logo-inner-fill);
+  stroke-width: 3.3;
+  filter: var(--logo-inner-shadow);
+}
+.logo-cutout-ring {
+  stroke: var(--logo-cutout-stroke);
+  fill: var(--logo-cutout-fill);
+  stroke-width: 8;
+  filter: var(--logo-cutout-shadow);
+}
+.logo-initials {
+  stroke: var(--logo-initials-stroke);
+  fill: var(--logo-initials-stroke);
+  stroke-width: 0.5;
+  filter: var(--logo-initials-shadow);
+}
+.name {
+  font-family: "peignot";
+  font-size: 2rem;
+  margin-top: 0%;
+  margin-bottom: 0rem;
+  text-align: center;
+  color: var(--text-color);
+  letter-spacing: 0.1em;
+  text-shadow: var(--text-shadow);
+}
+.llc {
+  font-family: "peignot";
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  letter-spacing: 0.1em;
+  text-shadow: var(--text-shadow);
+}
+.tagline {
+  margin: 2rem 0;
+  padding: 0 0.5rem;
+  font-family: "Poiret";
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  letter-spacing: 0.05em;
+  text-shadow: var(--text-shadow);
+}
+/* Service Cards */
+.service-cards {
+  width: 80%;
+  margin-top: 2rem;
+}
+.card {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+  border: 0px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.icon {
+  margin-top: 1rem;
+  fill: rgba(0, 0, 0, 0.5);
+  height: 5rem;
+  width: 5rem;
+  filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+}
+.card-header {
+  border: 0;
+}
+.card-title {
+  color: var(--text-color);
+  font-family: Peignot;
+  letter-spacing: 0.06em;
+  font-size: 1.7rem;
+  text-shadow: var(--text-shadow);
+}
+.card-footer {
+  border: 0;
+}
+.service-more {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0 0px 0.5px 0px;
+  border-color: rgba(255, 255, 255, 0.5);
+  font-family: Poiret;
+  font-size: 1.3rem;
+  font-weight: 650;
+  color: rgba(193, 179, 142, 0.75);
+  filter: drop-shadow(1px 1px 1px #ba9e58c8);
+}
 /* This container is needed to position the front and back side */
 .flip-box-inner {
   margin-right: 0%;
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
 }
-
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.card.active .flip-box-inner {
+.card.active {
   transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front,
-.flip-box-back {
-  margin-right: 0%;
-  padding: 1.15rem 1.5rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
 }
 /* Style the back side */
 .flip-box-back {
   transform: rotateY(180deg);
 }
+/* Tablet & Desktop */
+@media (min-width: 1024px) {
+  .parallax-bg {
+    background: var(--bg-img-desktop);
+    background-size: cover;
+  }
+}
+/* Fade Animation */
 .animated {
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
@@ -652,227 +569,4 @@ input:checked + .slider:before {
   -moz-animation: 1.75s fadeInDown;
   -webkit-animation: 1.75s fadeInDown;
   animation: 1.75s fadeInDown;
-}
-@font-face {
-  font-family: "Better Regular";
-  src: url("assets/fonts/better.regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Znikomitno25";
-  src: url("assets/fonts/znikomitno25.regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Kilsonburg";
-  src: url("assets/fonts/kilsonburg.regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poiret";
-  src: url("assets/fonts/poiret-one.regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "UES";
-  src: url("assets/fonts/uppereastside.regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "peignot";
-  src: url("assets/fonts/peignot.regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-/* Short/xs iphones 6-8 and short androids like the samsung galaxy edge */
-@media (max-height: 667px) {
-  .nav {
-    min-height: 12vh;
-    max-height: 12vh;
-    width: 87vw;
-  }
-  .masthead {
-    height: 77vh;
-  }
-  .logo {
-    height: 16vh;
-    width: 16vh;
-    margin-top: 1.75rem;
-  }
-  .tagline {
-    font-size: 1.2rem;
-    margin: 0 1rem;
-  }
-  .card {
-    padding-top: 0.7rem;
-    height: 87vh;
-  }
-  .icon {
-    margin-top: 0.85rem;
-    margin-bottom: 0.2rem;
-    height: 3.2rem;
-    width: 3.2rem;
-  }
-  .header {
-    letter-spacing: 0.05em;
-    font-size: 1.6rem;
-  }
-  .copy {
-    letter-spacing: 0em;
-    font-size: 1rem;
-    font-weight: 520;
-  }
-  .service-more {
-    width: 50%;
-    font-size: 1.2rem;
-    margin-left: 23%;
-    margin-right: 30%;
-    margin-top: 0.5rem;
-  }
-}
-/*  Small Android phones such as Samsung Galaxy series or the standard google pixel line */
-@media (min-height: 740px) {
-  .nav {
-    width: 87vw;
-  }
-  .card {
-    height: 80vh;
-    width: 87vw;
-  }
-  .icon {
-    fill: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin: 0.65rem;
-    height: 4rem;
-    width: 4rem;
-    filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
-  }
-  .copy {
-    letter-spacing: 0.02em;
-    font-size: 1.02rem;
-    font-weight: 520;
-    padding: 0 1.75rem;
-  }
-}
-/* Medium phone screens ie iphone 11, iPhone 12 Pro, or google pixel 3XL or google pixel 5 */
-@media (min-height: 844px) {
-  .card {
-    height: 79vh;
-    width: 85vw;
-  }
-  .icon {
-    margin-top: 1.75rem;
-    margin-bottom: 0.7rem;
-    height: 4rem;
-    width: 4rem;
-  }
-  .header {
-    letter-spacing: 0.05em;
-    font-size: 2rem;
-  }
-  .copy {
-    letter-spacing: 0.01em;
-    font-size: 1.15rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-  .service-more {
-    width: 48%;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-top: 0.5rem;
-    margin-left: 25%;
-  }
-}
-/* XS tablets */
-@media (min-width: 650px) {
-  .parallax-content {
-    padding: 0 10vw;
-  }
-}
-/* Small tablets & phone landscape */
-@media (min-width: 1024px) {
-  .parallax-bg {
-    background: var(--bg-img-desktop);
-    background-size: cover;
-  }
-  .parallax-content {
-    margin-top: 15vh;
-    margin-left: 3.5vw;
-    margin-right: 2vw;
-    padding: 0 0;
-  }
-  .left-panel {
-    float: left;
-    width: 25vw;
-    display: flex;
-    position: fixed;
-    min-height: 59vh;
-    max-height: 59vh;
-    margin: 16vh 5vw;
-    z-index: 2;
-  }
-
-  .nav {
-    width: 100%;
-    margin-left: 0;
-  }
-  .logo {
-    margin-top: 5vh;
-  }
-  .llc {
-    margin-bottom: 0%;
-  }
-  .icon {
-    height: 5rem;
-    width: 5rem;
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    margin-left: 40%;
-    margin-right: 50%;
-  }
-  .header {
-    font-size: 1.75rem;
-    margin: 0;
-  }
-  .copy {
-    font-size: 1rem;
-    margin: 0;
-  }
-  .card {
-    width: 30vw;
-    height: 55vh;
-    margin: 1vh 1vw;
-    padding: 1rem 2.5rem;
-  }
-  .contact {
-    width: 30vw;
-    min-height: 70vh;
-    max-height: 70vh;
-    margin: 10vh 1vw;
-    padding: 1.5rem;
-  }
-  .contact-form {
-    margin-left: 1.5rem;
-  }
-  .contact-field {
-    width: 20vw;
-    margin: 0%;
-  }
-  .message-field {
-    width: 30vw;
-    margin: 0%;
-  }
-  .masthead {
-    width: 93vw;
-    min-height: 45vh;
-    max-height: 45vh;
-    margin-bottom: 1rem;
-    margin-left: 1vw;
-  }
 }
