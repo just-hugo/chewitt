@@ -325,12 +325,14 @@ input:checked + .slider:before {
 }
 .card {
   margin-bottom: 2rem;
+  padding: 1rem 1rem;
   border: 0px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
 .icon {
+  margin-top: 1rem;
   fill: rgba(0, 0, 0, 0.5);
   height: 5rem;
   width: 5rem;
