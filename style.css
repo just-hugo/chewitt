@@ -582,10 +582,8 @@ input:checked + .slider:before {
   animation: 1.75s fadeInDown;
 }
 .headshot {
-  background-image: url("/assets/cheyanne1.png");
-  background-position: 30%;
-  background-repeat: no-repeat;
-  background-size: 120%;
+  object-fit: cover;
+  object-position: 30%;
   filter: grayscale(70%);
   width: 10rem;
   height: 10rem;
