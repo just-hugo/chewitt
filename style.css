@@ -442,13 +442,15 @@ input:checked + .slider:before {
   transform: rotateY(180deg);
 }
 /* Contact Card */
-.contact {
+.section {
   width: 80%;
 }
 .contact-icon {
   stroke: rgba(255, 242, 215, 0.1);
   fill: rgba(0, 0, 0, 0.45);
   filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  height: 3rem;
+  width: 3rem;
 }
 /* Tablet & Desktop */
 @media (min-width: 1024px) {
