@@ -444,7 +444,6 @@ input:checked + .slider:before {
 /* Contact Card */
 .contact {
   width: 80%;
-  padding: 0;
 }
 .contact-icon {
   margin-top: 1rem;
@@ -582,4 +581,16 @@ input:checked + .slider:before {
   -moz-animation: 1.75s fadeInDown;
   -webkit-animation: 1.75s fadeInDown;
   animation: 1.75s fadeInDown;
+}
+.headshot {
+  background-image: url("assets/cheyanne1.png");
+  background-position: 30%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  filter: grayscale(65%);
+  width: 10rem;
+  height: 10rem;
+  background-color: var(--glass-cutout-bg);
+  border: 0px;
+  box-shadow: var(--glass-cutout-shadow);
 }
