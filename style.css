@@ -12,7 +12,7 @@
     inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
     inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
     3px 2px 4px rgb(255, 255, 255, 0.5);
-  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.7),
+  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.5),
     inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
     -0.2em 0 0.2em rgba(255, 255, 255, 0.5),
     inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
@@ -138,7 +138,11 @@ body {
 .logo-nav-icon {
   height: 4.25rem;
   width: 4.25rem;
-  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.85));
+  filter: drop-shadow(1px 0 3px rgba(255, 255, 255, 0.65))
+    drop-shadow(-1px -1px 3px rgba(255, 255, 255, 0.65));
+}
+.text-shadow {
+  filter: drop-shadow(1px -1px 1px rgba(255, 242, 215, 0.5));
 }
 .burger-menu {
   position: relative;
