@@ -31,7 +31,7 @@
   --logo-initials-stroke: rgba(181, 158, 94, 0.75);
   --logo-inner-fill: rgba(255, 255, 255, 0.1);
   --logo-inner-stroke: rgba(181, 158, 94, 0.75);
-  --logo-cutout-stroke: rgba(0, 0, 0, 0.5);
+  --logo-cutout-stroke: rgba(203, 30, 30, 0.908);
   --logo-cutout-fill: rgba(255, 255, 255, 0.05);
 }
 :root[color-mode="light"] {
@@ -142,7 +142,7 @@ body {
     drop-shadow(-1px -1px 3px rgba(255, 255, 255, 0.65));
 }
 .text-shadow {
-  filter: drop-shadow(1px -1px 1px rgba(255, 242, 215, 0.5));
+  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.75));
 }
 .burger-menu {
   position: relative;
