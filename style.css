@@ -24,7 +24,7 @@
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: rgba(255, 255, 255, 0.6);
-  --text-shadow: 0 2px 2px #e0bf6c24, 0 1px 3px rgba(0, 0, 0, 0.5);
+  --text-shadow: 0 2px 2px #e0bf6c32, 0 1px 3px rgba(0, 0, 0, 0.75);
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
@@ -109,21 +109,20 @@ ul {
   transform: translateX(-50%);
   width: 100%;
   margin-top: 8rem;
-  margin-bottom: 10rem;
   overflow: hidden;
+  padding-bottom: 4rem;
 }
 .glass {
   background: var(--glass-bg-color);
   -webkit-box-shadow: var(--glass-shadow);
   box-shadow: var(--glass-shadow);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
 }
 .copy {
-  margin-bottom: 0.45rem;
   font-family: Helvetica, sans-serif;
-  letter-spacing: 0.03em;
-  font-size: 1.06rem;
+  letter-spacing: 0.04em;
+  font-size: 1.07rem;
   font-weight: 500;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
@@ -393,7 +392,7 @@ input:checked + .slider:before {
   margin: 2rem 0;
   padding: 0 0.5rem;
   font-family: "Poiret";
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   color: var(--text-color);
@@ -441,10 +440,13 @@ input:checked + .slider:before {
   padding-left: 1rem;
 }
 .card-fee {
-  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 0;
   font-family: Helvetica, sans-serif;
   letter-spacing: 0.02em;
-  font-size: 1.05rem;
+  line-height: 1.25rem;
+  font-size: 1.06rem;
   font-weight: 600;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
@@ -497,6 +499,9 @@ input:checked + .slider:before {
   .sidenav-expand {
     width: 20vw;
     margin-top: 5%;
+  }
+  .tagline {
+    font-size: 1.4rem;
   }
 }
 /* Fade Animation */
