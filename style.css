@@ -86,6 +86,9 @@ body {
   display: flex;
   overflow-x: hidden;
 }
+ul {
+  list-style-type: none;
+}
 .parallax-bg {
   background: var(--bg-img);
   background-position: center;
@@ -420,6 +423,25 @@ input:checked + .slider:before {
   font-family: Peignot;
   letter-spacing: 0.06em;
   font-size: 1.7rem;
+  text-shadow: var(--text-shadow);
+}
+.card-subheader {
+  color: var(--text-color);
+  font-family: Peignot;
+  letter-spacing: 0.07em;
+  font-size: 1.3rem;
+  text-shadow: var(--text-shadow);
+}
+.card-body ul {
+  padding-left: 1rem;
+}
+.card-fee {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-color);
   text-shadow: var(--text-shadow);
 }
 .card-footer {
