@@ -82,7 +82,11 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  min-height: 100dvh;
+}
 body {
+  height: 100dvh;
   display: flex;
   overflow-x: hidden;
 }
@@ -95,7 +99,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   z-index: -1;
 }
