@@ -1055,7 +1055,7 @@
                 <div class="col-md-4 d-flex justify-content-center">
                   <img
                     class="headshot rounded-circle mb-4"
-                    src="../../assets/cheyanne1.png"
+                    src="../../assets/cheyanne1-min.png"
                     alt=""
                     loading="lazy"
                   />
@@ -1100,14 +1100,14 @@
   <script>
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px; remove scroll from body */
     function openNav() {
-      document.getElementById("mySidenav").style.width = "60vw";
+      document.getElementById("mySidenav").classList.toggle("sidenav-expand");
       document.getElementById("mySidenav-bg").style.width = "100%";
       document.querySelector("body").style.overflow = "hidden";
     }
 
     /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mySidenav").classList.toggle("sidenav-expand");
       document.getElementById("mySidenav-bg").style.width = "0";
       document.querySelector("body").style.overflow = "visible";
     }
