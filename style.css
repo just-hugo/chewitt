@@ -116,9 +116,10 @@ ul {
   backdrop-filter: blur(5px);
 }
 .copy {
+  margin-bottom: 0.45rem;
   font-family: Helvetica, sans-serif;
-  letter-spacing: 0.02em;
-  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  font-size: 1.06rem;
   font-weight: 500;
   color: var(--text-color);
   text-shadow: var(--text-shadow);
