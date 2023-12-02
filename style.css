@@ -320,15 +320,27 @@ input:checked + .slider:before {
   right: 5%;
   overflow-x: hidden; /* Disable horizontal scroll */
   overflow-y: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 40px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .sidenav-menu {
   margin-top: 1.75rem;
 }
 /* The navigation menu links */
-.sidenav a {
-  padding: 1rem 2rem;
+.sidenav h1 {
+  padding: 0rem 0.5rem;
+  margin: 0.3rem 0rem;
+  text-decoration: none;
+  font-size: 1.3em;
+  display: block;
+  transition: 0.5s;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+  z-index: 2;
+}
+.sidenav ul {
+  padding: 0rem 1rem;
+  margin-bottom: 0rem;
   text-decoration: none;
   font-size: 1.2em;
   display: block;
@@ -337,8 +349,21 @@ input:checked + .slider:before {
   text-shadow: var(--text-shadow);
   z-index: 2;
 }
+.sidenav a {
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  transition: 0.5s;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+  z-index: 2;
+}
+.credits {
+  margin: 1.5rem 0.5rem;
+}
 .sidenav-expand {
-  width: 60vw;
+  width: 65vw;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
