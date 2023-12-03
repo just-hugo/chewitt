@@ -473,6 +473,10 @@ input:checked + .slider:before {
   font-size: 1.3rem;
   text-shadow: var(--text-shadow);
 }
+.card-body {
+  padding-bottom: 0;
+  margin-bottom: 0.75rem;
+}
 .card-body ul {
   padding-left: 1rem;
 }
