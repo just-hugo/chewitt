@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" color-mode="">
+<html lang="en" color-mode="dark">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -1142,48 +1142,6 @@
   </script>
 
   <!-- Light & Dark mode toggler -->
-  <script>
-    // look for and apply saved user preferences from previous visits
-    let mode = localStorage.getItem("color-mode");
-
-    if (mode === null) {
-      localStorage.setItem("color-mode", "dark");
-      document.querySelector("html").setAttribute("color-mode", "dark");
-      document.querySelector(".sun-icon").classList.remove("hidden");
-      document.querySelector(".moon-icon").classList.add("hidden");
-    } else if (mode == "dark") {
-      document.querySelector("html").setAttribute("color-mode", "dark");
-      document.querySelector(".sun-icon").classList.remove("hidden");
-      document.querySelector(".moon-icon").classList.add("hidden");
-    } else if (mode == "light") {
-      document.querySelector("html").setAttribute("color-mode", "light");
-      document.querySelector(".sun-icon").classList.add("hidden");
-      document.querySelector(".moon-icon").classList.remove("hidden");
-      document.querySelector("input").setAttribute("checked", "");
-    }
-
-    // set mode based on user clicking the toggle click
-    function toggleMode() {
-      let userPreference = localStorage.getItem("color-mode");
-      let toggleSwitch = document.getElementById("modeToggle");
-
-      toggleSwitch.addEventListener("click", (e) => {
-        if (
-          document.querySelector("html").getAttribute("color-mode") == "dark"
-        ) {
-          document.querySelector("html").setAttribute("color-mode", "light");
-          document.querySelector(".sun-icon").classList.add("hidden");
-          document.querySelector(".moon-icon").classList.remove("hidden");
-          localStorage.setItem("color-mode", "light");
-        } else {
-          document.querySelector("html").setAttribute("color-mode", "dark");
-          document.querySelector(".sun-icon").classList.remove("hidden");
-          document.querySelector(".moon-icon").classList.add("hidden");
-          localStorage.setItem("color-mode", "dark");
-        }
-      });
-    }
-  </script>
 
   <!-- Flip card animations -->
   <script>
