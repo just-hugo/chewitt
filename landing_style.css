@@ -307,12 +307,19 @@ p {
   -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
   transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
 }
+.card-img-top {
+  padding: 1.5rem;
+}
+svg {
+  width: 12vw;
+  height: 12vh;
+  filter: drop-shadow(1px 2px 2px rgb(0 0 0 / 0.4));
+}
 .card-title {
-  background-color: rgba(251, 196, 108, 0.464);
+  background-color: #bbbbbb;
   font-variant: small-caps;
   border-radius: 10px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  border-radius: 0;
 }
 .card-icon {
   margin-left: 46%;
