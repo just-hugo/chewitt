@@ -49,14 +49,6 @@ p {
   background-size: 240% 240%;
   animation: gradient-animation 10s ease infinite;
 }
-footer {
-  min-width: 100vw;
-  max-width: 100vw;
-  min-height: 15vh;
-  max-height: 15vh;
-  background-color: white;
-  box-shadow: 0px -5px 10px 1px rgba(0, 0, 0, 0.3);
-}
 .accordion-item {
   margin: 1rem;
   background-color: #ffffff;
@@ -298,6 +290,7 @@ footer {
   animation: 2.25s fadeInDown;
 }
 .card {
+  padding: 0;
   box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
     0 20px 25px 0 rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -308,7 +301,6 @@ footer {
   margin-right: 1em;
   min-width: 18rem;
   max-width: 18rem;
-  height: 20rem;
   -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
   -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
   -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
@@ -318,7 +310,6 @@ footer {
 .card-title {
   background-color: rgba(251, 196, 108, 0.464);
   font-variant: small-caps;
-  padding: 3%;
   border-radius: 10px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;

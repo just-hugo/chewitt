@@ -427,7 +427,81 @@
         </div>
       </div>
 
-      <div class="row justify-content-center mt-5">
+      <!-- Text and card layouts -->
+      <div class="row justify-content-center">
+        <div class="col-9 mt-5 text-justify">
+          <h2 class="mt-2">
+            Text<br />
+            Layouts.
+          </h2>
+        </div>
+        <div class="col-md-9 text-justify ms-4 ms-md-0">
+          <p class="ms-4 ms-md-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante.
+          </p>
+        </div>
+
+        <div class="col-md-5 ms-5 ps-4 ms-md-5 ps-md-5 text-justify">
+          <h3 class="ms-md-4 ps-md-3">Column 1</h3>
+          <p class="ms-md-4 ps-md-3">
+            When viewed on a phone, you'll see this text as a single, full-width
+            row. But on medium and large devices like laptops, you'll see 2
+            columns.
+          </p>
+          <p class="ms-md-4 ps-md-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante.
+          </p>
+        </div>
+        <div
+          class="col-md-5 ms-5 ps-4 ms-md-5 ps-md-5 me-md-5 pe-md-5 text-justify"
+        >
+          <h3>Column 2</h3>
+          <p>
+            When viewed on a phone, you'll see this text as a single, full-width
+            row. But on medium and large devices like laptops, you'll see 2
+            columns.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Pharetra
+            convallis posuere morbi leo urna. Tellus in hac habitasse platea
+            dictumst vestibulum. Tellus cras adipiscing enim eu. Id aliquet
+            risus feugiat in ante.
+          </p>
+        </div>
+        <div class="col-sm-4 card">test</div>
+        <div class="col-sm-4 card"></div>
+        <div class="col-sm-4 card"></div>
+        <div class="card">
+          <div class="card-header">Quote</div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>A well-known quote, contained in a blockquote element.</p>
+              <footer class="blockquote-footer">
+                Someone famous in
+                <cite title="Source Title">Source Title</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text and image layouts -->
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h2 class="mt-2">
+            Image<br />
+            Layouts.
+          </h2>
+        </div>
         <div class="row justify-content-center">
           <div
             class="col-md-6 ml-auto d-flex align-items-center mt-4 mt-md-0 text-justify"
@@ -439,24 +513,112 @@
               platea dictumst vestibulum. Tellus cras adipiscing enim eu. Id
               aliquet risus feugiat in ante. <br />Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Pharetra convallis posuere morbi
-              leo urna. Tellus in hac habitasse platea dictumst vestibulum.
-              Tellus cras adipiscing enim eu. Id aliquet risus feugiat in ante.
+              labore et dolore magna aliqua. <br />Pharetra convallis posuere
+              morbi leo urna. Tellus in hac habitasse platea dictumst
+              vestibulum. Tellus cras adipiscing enim eu. Id aliquet risus
+              feugiat in ante.
             </p>
           </div>
           <div class="col-md-3">
             <img
-              src="../assets/saturn1.webp"
-              class="img-fluid"
+              src="assets/landing/adeventureshot.jpeg"
+              class="img-fluid rounded"
               alt=""
               loading="lazy"
             />
           </div>
         </div>
-        <div class="row justify-content-center px-auto">
-          <div class="col-md-4 card">test</div>
-          <div class="col-md-4 card"></div>
-          <div class="col-md-4 card"></div>
+
+        <!-- Gallery -->
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h3 class="mt-2">
+            Image<br />
+            Gallery.
+          </h3>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="row justify-content-end">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="assets/landing/morrobay.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Morro Bay, Califorina at sunset"
+              />
+
+              <img
+                src="assets/landing/bahaitemple.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="The Ba'hai Temple in Wilmette, IL"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="assets/landing/kanarrafalls2.jpeg "
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="A slot canyon in southern Utah"
+              />
+
+              <img
+                src="assets/landing/sandcave.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="A dock in Virginia at sunset"
+              />
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <img
+                src="assets/landing/flowers.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="Waves at Sea"
+              />
+
+              <img
+                src="assets/landing/kanarraformation.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+                alt="A jagged rock formation in souther Utah"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Gallery -->
+
+        <!-- Thumbnail gallery -->
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h3 class="mt-2">
+            Thumbnail<br />
+            Gallery.
+          </h3>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-sm-6 col-lg-3">
+            <img
+              src="assets/landing/magnolia.jpeg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Morro Bay, Califorina at sunset"
+            />
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <img
+              src="assets/landing/jupiter1.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Morro Bay, Califorina at sunset"
+            />
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <img
+              src="assets/landing/morrobay.jpeg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Morro Bay, Califorina at sunset"
+            />
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <img
+              src="assets/landing/jupiter2.jpeg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Morro Bay, Califorina at sunset"
+            />
+          </div>
         </div>
       </div>
     </div>
