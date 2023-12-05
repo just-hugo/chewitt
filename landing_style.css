@@ -345,3 +345,12 @@ svg {
   margin-right: auto;
   display: block;
 }
+/* Position and style the close button (top right corner) */
+#offcanvasNavbar .offcanvas-header .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1%;
+  font-size: 2.75rem;
+  margin-left: 50px;
+  margin-bottom: 1rem;
+}
