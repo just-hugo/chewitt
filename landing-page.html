@@ -36,58 +36,49 @@
             <button
               class="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav pe-md-5">
-                <li class="col-5">
-                  <a class="nav-link disabled" aria-disabled="true">The Tour</a>
-                </li>
-                <li class="col-8">
-                  <a class="nav-link" href="index.html#section1"
-                    >Layout Examples</a
-                  >
-                </li>
-                <li class="col-12">
-                  <a class="nav-link" href="#">Animations & Interactions</a>
-                </li>
-              </ul>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav pe-md-5">
+                  <li class="col-5">
+                    <a class="nav-link disabled" aria-disabled="true"
+                      >The Tour</a
+                    >
+                  </li>
+                  <li class="col-8">
+                    <a class="nav-link" href="index.html#section1"
+                      >Layout Examples</a
+                    >
+                  </li>
+                  <li class="col-12">
+                    <a class="nav-link" href="#">Animations & Interactions</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <div
-      class="container-fluid speech-bubble highlight align-self-center my-3"
-      id="nav-popover"
-    >
-      <div class="row">
-        <div class="col-12 align-self-end text-end my-2">
-          <svg
-            onclick="closePop()"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-x pop-close"
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </div>
-        <div class="col-12"><p>This is the navigation bar.</p></div>
-      </div>
-    </div>
 
     <!-- Masthead -->
     <div class="container-fluid masthead gradient" id="masthead">
@@ -98,31 +89,6 @@
         <div class="col-9 mx-auto align-self-center">
           <h2>A web presence for everybody.</h2>
         </div>
-      </div>
-    </div>
-    <div
-      class="container-fluid speech-bubble highlight align-self-center my-3"
-      id="masthead-popover"
-    >
-      <div class="row">
-        <div class="col-12 align-self-end text-end my-2">
-          <svg
-            onclick="closePop()"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-x pop-close"
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </div>
-        <div class="col-12"><p>Test</p></div>
       </div>
     </div>
 
@@ -657,7 +623,7 @@
               <img
                 src="assets/landing/loveland.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="A dock in Virginia at sunset"
+                alt="A winter sunrise captured in Loveland, CO"
               />
             </div>
 
@@ -665,13 +631,13 @@
               <img
                 src="assets/landing/flowers.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea"
+                alt="Wildflowers blooming in the desert"
               />
 
               <img
                 src="assets/landing/kanarratree.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="A jagged rock formation in souther Utah"
+                alt="A tree growing out of rock in a slot canyon in southern Utah"
               />
             </div>
           </div>
@@ -692,33 +658,33 @@
             </p>
           </div>
         </div>
-        <div class="row justify-content-center mt-5 ms-3 ms-md-0">
-          <div class="col-sm-6 col-lg-2">
+        <div class="row justify-content-center mt-5 mb-5 ms-3 ms-md-0">
+          <div class="col-sm-3 col-lg-2">
             <img
               src="assets/landing/stignatiusspring.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="Moqui sand caves in Kanaab, UT"
+              alt="St. Ignatius parish in the spring"
             />
           </div>
-          <div class="col-sm-6 col-lg-2">
+          <div class="col-sm-1 col-lg-2">
             <img
               src="assets/landing/stignatiussummer.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="St Ignatius church in Chicago, IL"
+              alt="St. Ignatius parish in the summer"
             />
           </div>
-          <div class="col-sm-6 col-lg-2">
+          <div class="col-sm-1 col-lg-2">
             <img
               src="assets/landing/stignatiusfall.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="Loveland, Colorado at sunrise"
+              alt="St. Ignatius parish in the autumn"
             />
           </div>
-          <div class="col-sm-6 col-lg-2">
+          <div class="col-sm-1 col-lg-2">
             <img
               src="assets/landing/stignatius.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="Woodlake, VA at sunset"
+              alt="St. Ignatius parish in the  winter"
             />
           </div>
         </div>
@@ -746,91 +712,6 @@
     <script
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
       async=""
-    ></script>
-
-    <!-- Popover functionality -->
-    <script>
-      function showPop(button) {
-        var target = button.getAttribute("target");
-        var element = document.querySelector("#" + target);
-        var popover = document.querySelector("#" + target + "-popover");
-
-        // Use smooth scrolling for the element
-        element.scrollIntoView(false);
-        element.classList.toggle("highlight");
-        document.querySelector(".highlight-bg").style.width = "100%";
-        document.querySelector("body").classList.toggle("disable-scroll");
-        // Delay the execution of the code that makes the element visible
-        setTimeout(function () {
-          popover.style.display = "block";
-          popover.style.opacity = 1;
-          popover.classList.toggle("fadeInDown-animation");
-          popover.classList.toggle("active");
-        }, 300); // Adjust the delay time as needed
-      }
-
-      function showPopSection(button) {
-        var target = button.getAttribute("target");
-        var element = document.querySelector("#" + target);
-        var popover = document.querySelector("#" + target + "-popover");
-        var accordion = document.querySelector("#collapseThree");
-
-        accordion.classList.remove("show");
-        accordion.classList.add("collapse");
-        element.style.backgroundColor = "rgba(0,0,0,0)";
-
-        popover.style.display = "block";
-        popover.style.opacity = 1;
-        popover.classList.toggle("active");
-        // Use smooth scrolling for the element
-        element.scrollIntoView({ block: "end", inline: "end" });
-        element.classList.toggle("highlight");
-        // document.querySelector(".highlight-bg").style.width = "100%";
-        // document.querySelector("body").classList.toggle("disable-scroll");
-        // // Delay the execution of the code that makes the element visible
-        // setTimeout(function () {
-        //   popover.style.display = "block";
-        //   popover.style.opacity = 1;
-        //   popover.classList.toggle("fadeInDown-animation");
-        //   popover.classList.toggle("active");
-        // }, 300); // Adjust the delay time as needed
-      }
-
-      function closePop() {
-        var popover = document.querySelector(".active");
-        var element = popover.previousElementSibling;
-
-        element.classList.remove("highlight");
-        document.querySelector(".highlight-bg").style.width = "0";
-        document.querySelector("body").classList.remove("disable-scroll");
-        popover.style.display = "none";
-        popover.style.opacity = 0;
-        popover.classList.remove("fadeInDown-animation");
-        popover.classList.toggle("active");
-      }
-
-      // close popover with Esc key
-      document.addEventListener("keydown", function (event) {
-        // Check if the pressed key is the Escape key (key code 27)
-        if (event.key === "Escape") {
-          closePop();
-        }
-      });
-
-      // close popover by clicking outside of popover
-      document.addEventListener("click", function (event) {
-        var popover = document.querySelector(".active");
-        var highlightBg = document.querySelector(".highlight-bg");
-
-        // Check if the click is on the highlight-bg element
-        if (highlightBg.contains(event.target)) {
-          closePop();
-        }
-      });
-    </script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.12.0.min.js"
     ></script>
   </body>
 </html>
