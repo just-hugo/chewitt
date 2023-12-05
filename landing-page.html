@@ -714,7 +714,7 @@
             a more hands-on way.
           </p>
           <h2>Animations</h2>
-          <h3>Text fade in</h3>
+          <h3>Fade in</h3>
           <p class="animate__animated" id="fadeInText">
             This animation is often triggered on page load or when a user
             scrolls, and causes the text on the page to fade in. For an example
@@ -724,11 +724,11 @@
           <h3>Slide in</h3>
           <button onclick="slideIn()">Show me</button>
           <div
-            class="card mb-3 animate__animated"
-            style="max-width: 540px"
+            class="card mb-3 animate__animated ms-0"
+            style="max-width: 70vw"
             id="slideLeft"
           >
-            <div class="row g-0">
+            <div class="row g-0 align-items-center">
               <div class="col-md-4">
                 <img
                   src="assets/landing/graftonbishophouse.png"
@@ -736,23 +736,21 @@
                   alt="..."
                 />
               </div>
-
-              <div class="col-md-8">
+              <div class="col-md-8 text-center">
                 <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content.
+                    This is a wider card with supporting text
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="card mb-3 animate__animated"
-            style="max-width: 540px"
+            class="card mb-3 animate__animated ms-0"
+            style="max-width: 70vw"
             id="slideRight"
           >
-            <div class="row g-0">
+            <div class="row g-0 align-items-center">
               <div class="col-md-4">
                 <img
                   src="assets/landing/graftonbishopinterior.png"
@@ -761,11 +759,10 @@
                 />
               </div>
 
-              <div class="col-md-8">
+              <div class="col-md-8 text-center">
                 <div class="card-body">
                   <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content.
+                    This is a wider card with supporting text
                   </p>
                 </div>
               </div>
@@ -843,7 +840,17 @@
               </div>
             </div>
           </nav>
-          <h3></h3>
+          <h3>Thumbnail Expansion</h3>
+          <div class="row justify-content-center mt-5 mb-5 ms-3 ms-md-0">
+            <div class="col-sm-3 col-lg-3">
+              <img
+                src="assets/landing/woodlakeVA.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                id="thumbnail"
+                alt="Sunset at Woodlake, Virginia"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -857,7 +864,7 @@
       async=""
     ></script>
 
-    <!-- Fade in text -->
+    <!-- Fade in -->
     <script>
       function fadeIn() {
         const text = document.querySelector("#fadeInText");
@@ -889,6 +896,39 @@
           rightElement.classList.remove(rightAnimation);
         });
       }
+    </script>
+
+    <!-- Thumbnail expansion -->
+    <script>
+      const images = document.querySelectorAll("#thumbnail");
+      let imgSrc;
+      // get images src onclick
+      images.forEach((img) => {
+        img.addEventListener("click", (e) => {
+          imgSrc = e.target.src;
+          //run modal function
+          imgModal(imgSrc);
+        });
+      });
+      //creating the modal
+      let imgModal = (src) => {
+        console.log("hi");
+        const modal = document.createElement("div");
+        modal.setAttribute("class", "modal");
+        //add the modal to the main section or the parent element
+        document.querySelector("body").append(modal);
+        //adding image to modal
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", src);
+        //creating the close button
+        const closeBtn = document.createElement("i");
+        closeBtn.setAttribute("class", "fas fa-times closeBtn");
+        //close function
+        closeBtn.onclick = () => {
+          modal.remove();
+        };
+        modal.append(newImage, closeBtn);
+      };
     </script>
   </body>
 </html>
