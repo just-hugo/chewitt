@@ -717,10 +717,60 @@
           <h3>Text fade in</h3>
           <p class="animate__animated" id="fadeInText">
             This animation is often triggered on page load or when a user
-            scrolls, and causes the text on the page to fade in. To make this
-            paragraph of text disappear and fade in, click the button below.
+            scrolls, and causes the text on the page to fade in. For an example
+            of what text fading in looks like, click the button.
           </p>
           <button onclick="fadeIn()">Show me</button>
+          <h3>Slide in</h3>
+          <button onclick="slideIn()">Show me</button>
+          <div
+            class="card mb-3 animate__animated"
+            style="max-width: 540px"
+            id="slideLeft"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="assets/landing/graftonbishophouse.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card mb-3 animate__animated"
+            style="max-width: 540px"
+            id="slideRight"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="assets/landing/graftonbishopinterior.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <h2>User Interactions</h2>
           <h3>Hamburger menu</h3>
           <p>
@@ -819,6 +869,24 @@
           // do something
           console.log("hi");
           text.classList.remove(animation);
+        });
+      }
+    </script>
+
+    <!-- Slide in -->
+    <script>
+      function slideIn() {
+        const leftElement = document.querySelector("#slideLeft");
+        const leftAnimation = "animate__slideInLeft";
+        const rightElement = document.querySelector("#slideRight");
+        const rightAnimation = "animate__slideInRight";
+
+        leftElement.classList.add(leftAnimation);
+        rightElement.classList.add(rightAnimation);
+
+        leftElement.addEventListener("animationend", () => {
+          leftElement.classList.remove(leftAnimation);
+          rightElement.classList.remove(rightAnimation);
         });
       }
     </script>
