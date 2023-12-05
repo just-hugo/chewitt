@@ -361,6 +361,8 @@ svg {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.733);
+    -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
   margin-top: -1px;
   animation: zoom 0.3s ease-in-out;
 }
@@ -376,6 +378,26 @@ svg {
 }
 
 .modal img {
-  width: 50%;
+  width: 65%;
   object-fit: cover;
+}
+.btn-close {
+  color: rgb(255, 255, 255);
+  background-color: white;
+  stroke: white;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-close:hover {
+  color: rgb(255, 255, 255);
+}
+modal a {
+  color: white;
+  background-color: white;
 }
