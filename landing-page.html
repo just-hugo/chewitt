@@ -60,17 +60,15 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav pe-md-5">
                   <li class="col-5">
-                    <a class="nav-link disabled" aria-disabled="true"
-                      >The Tour</a
-                    >
+                    <a class="nav-link" href="#tour">The Tour</a>
                   </li>
                   <li class="col-8">
-                    <a class="nav-link" href="index.html#section1"
-                      >Layout Examples</a
-                    >
+                    <a class="nav-link" href="#layouts">Layout Examples</a>
                   </li>
                   <li class="col-12">
-                    <a class="nav-link" href="#">Animations & Interactions</a>
+                    <a class="nav-link" href="#animations"
+                      >Animations & Interactions</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -93,7 +91,7 @@
     </div>
 
     <!-- Section 1 -->
-    <div class="container-fluid section" id="section1">
+    <div class="container-fluid section" id="tour">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1 class="mt-2">Take <br />The Tour.</h1>
@@ -344,8 +342,8 @@
 
     <div class="divider gradient"></div>
 
-    <!-- Section 2: Text Layouts -->
-    <div class="container-fluid section py-5" id="section1">
+    <!-- Section 2: Layouts -->
+    <div class="container-fluid section py-5" id="layouts">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1 class="mt-2">
@@ -694,13 +692,108 @@
     <div class="divider gradient"></div>
 
     <!-- Section 3 -->
-    <div class="container-fluid section py-5" id="section1">
+    <div class="container-fluid section py-5" id="animations">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1>Animations<br />& Interactions.</h1>
         </div>
         <div class="col-9">
-          <p class="me-1"></p>
+          <p class="me-1">
+            Animations cause pieces of your website to move, change shape, or
+            otherwise transform. When used judiciously, they can engage audience
+            attention, create a sense of flow, and provide a sense of response
+            when a user scrolls.
+          </p>
+          <p class="me-1">
+            User interactions are pieces of code that allow a user to interact
+            with pieces of the website directly. They often involve animations
+            of some sort, but can also be something like a contact form.
+          </p>
+          <p>
+            Below are some examples, to demonstrate these two design patterns in
+            a more hands-on way.
+          </p>
+          <h2>Animations</h2>
+          <h3>Text fade in</h3>
+          <p class="animate__animated" id="fadeInText">
+            This animation is often triggered on page load or when a user
+            scrolls, and causes the text on the page to fade in. To make this
+            paragraph of text disappear and fade in, click the button below.
+          </p>
+          <button onclick="fadeIn()">Show me</button>
+          <h2>User Interactions</h2>
+          <h3>Hamburger menu</h3>
+          <p>
+            A classic user interaction, hamburger menus have become ubiquitous
+            in mobile navigation bar design. You'll most often see them at the
+            top of a website, aligned to the right. When you tap them, they open
+            a menu of links to other parts of the website.
+          </p>
+          <p>
+            Hamburger menus are included in all of my landing pages as a
+            freebie.
+          </p>
+          <p>Click the example below for a demonstration.</p>
+          <nav class="navbar" id="burgerNav">
+            <div class="container-fluid">
+              <div class="row justify-content-start ps-3">
+                <div class="col">
+                  <a class="navbar-brand" href="#">
+                    <img
+                      src="assets/hexagon.svg"
+                      alt="Bootstrap"
+                      id="burgerNav-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbarExample"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasNavbarExample"
+                    aria-labelledby="offcanvasNavbarLabel"
+                  >
+                    <div class="offcanvas-header align-items-center">
+                      <button
+                        type="button"
+                        class="btn-close ms-auto"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav pe-md-5">
+                        <li class="col-5">
+                          <a class="nav-link disabled" aria-disabled="true"
+                            >Example Link A</a
+                          >
+                        </li>
+                        <li class="col-8">
+                          <a class="nav-link" href="">Example Link B</a>
+                        </li>
+                        <li class="col-12">
+                          <a class="nav-link" href="#"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <h3></h3>
         </div>
       </div>
     </div>
@@ -713,5 +806,21 @@
       src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
       async=""
     ></script>
+
+    <!-- Fade in text -->
+    <script>
+      function fadeIn() {
+        const text = document.querySelector("#fadeInText");
+        const animation = "animate__fadeIn";
+
+        text.classList.add(animation);
+
+        text.addEventListener("animationend", () => {
+          // do something
+          console.log("hi");
+          text.classList.remove(animation);
+        });
+      }
+    </script>
   </body>
 </html>
