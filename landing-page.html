@@ -912,7 +912,6 @@
       });
       //creating the modal
       let imgModal = (src) => {
-        console.log("hi");
         const modal = document.createElement("div");
         modal.setAttribute("class", "modal");
         //add the modal to the main section or the parent element
@@ -920,14 +919,27 @@
         //adding image to modal
         const newImage = document.createElement("img");
         newImage.setAttribute("src", src);
+        newImage.setAttribute("id", "modal-img");
         //creating the close button
-        const closeBtn = document.createElement("i");
-        closeBtn.setAttribute("class", "fas fa-times closeBtn");
-        //close function
+        const closeBtn = document.createElement("a");
+        closeBtn.setAttribute("class", "btn-close");
+        closeBtn.setAttribute("href", "javascript:void(0)");
+        //close functions
         closeBtn.onclick = () => {
           modal.remove();
+          document.querySelector("body").style.overflow = "visible";
         };
+        document.addEventListener("keydown", function (event) {
+          // Check if the pressed key is the Escape key (key code 27)
+          if (event.key === "Escape") {
+            modal.remove();
+            document.querySelector("body").style.overflow = "visible";
+          }
+        });
+
+        // build modal
         modal.append(newImage, closeBtn);
+        document.querySelector("body").style.overflow = "hidden";
       };
     </script>
   </body>
