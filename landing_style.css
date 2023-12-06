@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  padding-top: 5vh;
 }
 p {
   font-size: 1.1rem;
@@ -14,7 +15,7 @@ p {
   background-color: white;
 }
 .masthead {
-  height: 60vh;
+  height: 65vh;
   width: 100vw;
 }
 .masthead h1 {
@@ -380,7 +381,6 @@ modal a {
     display: none;
   }
 }
-
 /* The side navigation menu */
 .sidenav-bg {
   background-color: rgba(0, 0, 0, 0.5);
@@ -403,7 +403,6 @@ modal a {
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
-
 .sidenav {
   background-color: rgba(255, 255, 255);
   -webkit-backdrop-filter: blur(8px);
@@ -427,11 +426,9 @@ modal a {
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
 }
-
 .sidenav-menu {
   margin-top: 1.75rem;
 }
-
 /* The navigation menu links */
 .sidenav h1 {
   padding: 0rem 0.5rem;
@@ -444,7 +441,6 @@ modal a {
   text-shadow: var(--text-shadow);
   z-index: 2;
 }
-
 .sidenav ul {
   padding: 0rem 1rem;
   margin-bottom: 0rem;
@@ -465,16 +461,13 @@ modal a {
   color: rgb(0, 0, 0);
   z-index: 2;
 }
-
 .sidenav-expand {
   width: 65vw;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
