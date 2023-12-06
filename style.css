@@ -1,6 +1,5 @@
 :root[color-mode="dark"] {
-  --bg-img: url("/assets/saturn2.webp");
-  --bg-img-desktop: url("/assets/img/saturn2.jpg");
+  --bg-img-filter: invert(0%);
   --glass-bg-color: rgba(80, 80, 80, 0.35);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
@@ -35,19 +34,19 @@
   --logo-cutout-fill: rgba(255, 255, 255, 0.05);
 }
 :root[color-mode="light"] {
-  --bg-img: url("/assets/saturn1.webp");
-  --bg-img-desktop: url("/assets/img/saturn1.jpg");
-  --glass-bg-color: rgba(255, 255, 255, 0.1);
-  --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
-    inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
-    2px 2px 2px rgba(255, 255, 255, 0.3), 12px 10px 15px rgba(0, 0, 0, 0.6);
-  --glass-cutout-bg: rgba(0, 0, 0, 0.4);
+  --bg-img-filter: invert(100%);
+  --glass-bg-color: rgba(244, 237, 237, 0.35);
+  --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.5),
+    inset 1px 1px 01.25px rgba(238, 222, 197, 0.5),
+    1px 1px 2px rgba(244, 237, 237, 0.5), 2px 2px 2px rgba(238, 222, 197, 0.5),
+    12px 10px 15px rgba(148, 135, 120, 0.5);
+
+  --glass-cutout-bg: rgba(238, 222, 197, 0.4);
   --glass-cutout-shadow: 0 -0.2em 0.2em rgba(255, 255, 255, 0.35),
     inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
     -0.2em 0 0.2em rgba(255, 255, 255, 0.3),
     inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
-    inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
-    3px 2px 4px rgb(255, 255, 255, 0.5);
+    inset 2px 2px 2px rgb(0, 0, 0), 3px 2px 4px rgba(175, 163, 143, 0.25);
   --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.7),
     inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
     -0.2em 0 0.2em rgba(255, 255, 255, 0.5),
@@ -62,13 +61,17 @@
   --text-color: rgba(0, 0, 0, 1);
   --text-shadow: 0 2px 3px #e0bf6c42, 0 1px 3px rgba(0, 0, 0, 0.3);
   --logo-inner-shadow: drop-shadow(1px 2px 1px rgba(255, 255, 255, 0.3));
-  --logo-inner-fill: rgba(255, 255, 255, 0.25);
+  --logo-inner-fill: rgba(244,
+    237,
+    237, 0.5);
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
   --logo-initials-stroke: rgba(0, 0, 0, 0.5);
-  --logo-inner-stroke: rgba(151, 132, 80, 0.8);
-  --logo-cutout-stroke: rgba(0, 0, 0, 0.15);
-  --logo-cutout-fill: rgba(0, 0, 0, 0.15);
+  --logo-inner-stroke: rgba(183, 133, 53, 0.8);
+  --logo-cutout-stroke: rgba(113, 97, 78, 0.15);
+  --logo-cutout-fill: rgba(113,
+    97,
+    78, 0.15);
 }
 @font-face {
   font-family: "Poiret";
@@ -106,7 +109,8 @@ ul {
   filter: drop-shadow(1px 1px 1px #86723ec8);
 }
 .parallax-bg {
-  background: var(--bg-img);
+  background-image: url("assets/saturn2.webp");
+  filter: var(--bg-img-filter);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,7 +133,7 @@ ul {
   -webkit-box-shadow: var(--glass-shadow);
   box-shadow: var(--glass-shadow);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(5px);
 }
 .copy {
   font-family: Helvetica, sans-serif;
@@ -534,7 +538,7 @@ input:checked + .slider:before {
 /* Tablet & Desktop */
 @media (min-width: 1024px) {
   .parallax-bg {
-    background: var(--bg-img-desktop);
+    background: url("assets/img/saturn2.jpg");
     background-size: cover;
   }
   .sidenav-expand {
