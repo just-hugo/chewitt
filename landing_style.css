@@ -126,90 +126,6 @@ p {
   color: #000000;
   text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.3);
 }
-.highlight {
-  position: relative;
-  border: 5px solid #ffeec5;
-  box-shadow: 1px 6px 10px #f8dfa3;
-  z-index: 3; /* Stay on top */
-}
-.highlight-bg {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  bottom: 0;
-  left: 0%;
-  overflow: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-}
-.disable-scroll {
-  height: 100%;
-  overflow: hidden;
-}
-.popover {
-}
-#nav-popover {
-  background-color: #ffffff;
-  border: none;
-  display: none;
-  position: fixed;
-  opacity: 0;
-  left: 35%;
-  height: 25%;
-  width: 35%;
-  z-index: 2;
-}
-#masthead-popover {
-  background-color: #ffffff;
-  border: none;
-  display: none;
-  position: fixed;
-  opacity: 0;
-  left: 35%;
-  height: 25%;
-  width: 35%;
-  z-index: 2;
-}
-#section1-popover {
-  background-color: #ffffff;
-  border: none;
-  position: fixed;
-  left: 35%;
-  height: 25%;
-  width: 35%;
-  z-index: 2;
-}
-.speech-bubble {
-  background: #ffffff;
-  border-radius: 0.4em;
-}
-
-.speech-bubble:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border: 0.625em solid transparent;
-  border-bottom-color: #ffffff;
-  border-top: 0;
-  border-left: 0;
-  margin-left: -0.312em;
-  margin-top: -0.625em;
-}
-.pop-close {
-  position: relative;
-  font-size: 2.75rem;
-}
-.pop-close:hover {
-  filter: drop-shadow(1px -1px 3px rgb(241, 189, 67));
-  height: 1.75rem;
-  width: 1.75rem;
-}
 .round {
   border-radius: 34px;
 }
@@ -424,4 +340,147 @@ modal a {
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 2.5s;
+}
+.burger-menu {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding-left: 0.8rem;
+  padding-right: 0.2rem;
+  margin-bottom: 0.5rem;
+  border-width: 0px;
+  border-radius: 5px;
+  background-color: white;
+}
+.burger-menu:hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  padding-left: 0.8rem;
+  padding-right: 0.1rem;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
+}
+.burger-line1,
+.burger-line2,
+.burger-line3 {
+  height: 0.18rem;
+  margin: 0.19rem 0.55rem;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 1);
+  transition: 0.4s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+}
+@media (min-width: 992px) {
+  .burger-menu {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+/* The side navigation menu */
+.sidenav-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Stay on top */
+  bottom: 0;
+  left: 0%;
+  overflow: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav {
+  background-color: rgba(255, 255, 255);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  height: 60%;
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  margin-top: 20%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Stay on top */
+  top: 0;
+  right: 5%;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  overflow-y: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 40px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidenav-menu {
+  margin-top: 1.75rem;
+}
+
+/* The navigation menu links */
+.sidenav h1 {
+  padding: 0rem 0.5rem;
+  margin: 0.3rem 0rem;
+  text-decoration: none;
+  font-size: 1.3em;
+  display: block;
+  transition: 0.5s;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+  z-index: 2;
+}
+
+.sidenav ul {
+  padding: 0rem 1rem;
+  margin-bottom: 0rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1.2em;
+  display: block;
+  transition: 0.5s;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow);
+  z-index: 2;
+}
+.sidenav a {
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  display: block;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+  z-index: 2;
+}
+
+.sidenav-expand {
+  width: 65vw;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 1%;
+  font-size: 2.75rem;
+  margin-left: 50px;
+  margin-bottom: 1rem;
 }
