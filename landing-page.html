@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="icon" type="image/ico" href="assets/favicon.ico" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -36,58 +36,51 @@
             <button
               class="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
               aria-label="Toggle navigation"
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav pe-md-5">
-                <li class="col-5">
-                  <a class="nav-link disabled" aria-disabled="true">The Tour</a>
-                </li>
-                <li class="col-8">
-                  <a class="nav-link" href="index.html#section1"
-                    >Layout Examples</a
-                  >
-                </li>
-                <li class="col-12">
-                  <a class="nav-link" href="#">Animations & Interactions</a>
-                </li>
-              </ul>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header align-items-center">
+                <button
+                  type="button"
+                  class="btn-close ms-auto"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav pe-md-5">
+                  <li class="col-5">
+                    <a class="nav-link" href="landing-page.html#tour"
+                      >The Tour</a
+                    >
+                  </li>
+                  <li class="col-8">
+                    <a class="nav-link" href="landing-page.html#layouts"
+                      >Layout Examples</a
+                    >
+                  </li>
+                  <li class="col-12">
+                    <a class="nav-link" href="landing-page.html#animations"
+                      >Animations & Interactions</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-    <div
-      class="container-fluid speech-bubble highlight align-self-center my-3"
-      id="nav-popover"
-    >
-      <div class="row">
-        <div class="col-12 align-self-end text-end my-2">
-          <svg
-            onclick="closePop()"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-x pop-close"
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </div>
-        <div class="col-12"><p>This is the navigation bar.</p></div>
-      </div>
-    </div>
 
     <!-- Masthead -->
     <div class="container-fluid masthead gradient" id="masthead">
@@ -100,34 +93,9 @@
         </div>
       </div>
     </div>
-    <div
-      class="container-fluid speech-bubble highlight align-self-center my-3"
-      id="masthead-popover"
-    >
-      <div class="row">
-        <div class="col-12 align-self-end text-end my-2">
-          <svg
-            onclick="closePop()"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-x pop-close"
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </div>
-        <div class="col-12"><p>Test</p></div>
-      </div>
-    </div>
 
     <!-- Section 1 -->
-    <div class="container-fluid section" id="section1">
+    <div class="container-fluid section" id="tour">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1 class="mt-2">Take <br />The Tour.</h1>
@@ -378,8 +346,8 @@
 
     <div class="divider gradient"></div>
 
-    <!-- Section 2: Text Layouts -->
-    <div class="container-fluid section py-5" id="section1">
+    <!-- Section 2: Layouts -->
+    <div class="container-fluid section py-5" id="layouts">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1 class="mt-2">
@@ -562,7 +530,7 @@
         </div>
       </div>
 
-      <!-- Text and image layouts -->
+      <!-- image layouts -->
       <div class="row justify-content-center mt-5">
         <div class="col-9 mt-5 text-justify">
           <h2>
@@ -657,7 +625,7 @@
               <img
                 src="assets/landing/loveland.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="A dock in Virginia at sunset"
+                alt="A winter sunrise captured in Loveland, CO"
               />
             </div>
 
@@ -665,13 +633,13 @@
               <img
                 src="assets/landing/flowers.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea"
+                alt="Wildflowers blooming in the desert"
               />
 
               <img
                 src="assets/landing/kanarratree.png"
                 class="w-100 shadow-1-strong rounded mb-4"
-                alt="A jagged rock formation in souther Utah"
+                alt="A tree growing out of rock in a slot canyon in southern Utah"
               />
             </div>
           </div>
@@ -692,33 +660,33 @@
             </p>
           </div>
         </div>
-        <div class="row justify-content-center mt-5 ms-3 ms-md-0">
-          <div class="col-sm-6 col-lg-2">
+        <div class="row justify-content-center mt-5 mb-5 ms-3 ms-md-0">
+          <div class="col-sm-3 col-lg-2">
             <img
               src="assets/landing/stignatiusspring.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="Moqui sand caves in Kanaab, UT"
+              alt="St. Ignatius parish in the spring"
             />
           </div>
-          <div class="col-sm-6 col-lg-2">
+          <div class="col-sm-1 col-lg-2">
             <img
               src="assets/landing/stignatiussummer.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="St Ignatius church in Chicago, IL"
+              alt="St. Ignatius parish in the summer"
             />
           </div>
-          <div class="col-sm-6 col-lg-2">
+          <div class="col-sm-1 col-lg-2">
             <img
               src="assets/landing/stignatiusfall.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="Loveland, Colorado at sunrise"
+              alt="St. Ignatius parish in the autumn"
             />
           </div>
-          <div class="col-sm-6 col-lg-2">
+          <div class="col-sm-1 col-lg-2">
             <img
               src="assets/landing/stignatius.jpeg"
               class="w-100 shadow-1-strong rounded mb-4"
-              alt="Woodlake, VA at sunset"
+              alt="St. Ignatius parish in the  winter"
             />
           </div>
         </div>
@@ -728,13 +696,176 @@
     <div class="divider gradient"></div>
 
     <!-- Section 3 -->
-    <div class="container-fluid section py-5" id="section1">
+    <div class="container-fluid section py-5" id="animations">
       <div class="row justify-content-center">
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1>Animations<br />& Interactions.</h1>
         </div>
-        <div class="col-9">
-          <p class="me-1"></p>
+        <div class="col-9 mt-4">
+          <p class="me-1">
+            Animations cause pieces of your website to move, change shape, or
+            otherwise transform. When used judiciously, they can engage the
+            audience, create flow, and provide a feedback to the user.
+          </p>
+          <p class="me-1">
+            User interactions are pieces of code that allow a user to interact
+            with pieces of the website directly, usually by scrolling, clicking,
+            or typing. They often involve animations of some sort, but can also
+            be something like a contact form.
+          </p>
+          <p>
+            Below are some hands-on examples, to demonstrate these two design
+            patterns.
+          </p>
+          <h3 class="mt-5">Fade in</h3>
+          <p class="animate__animated" id="fadeInText">
+            This animation is often triggered on page load or when a user
+            scrolls, and causes the text on the page to fade in. For an example
+            of what text fading in looks like, click the button.
+          </p>
+          <button class="btn button" onclick="fadeIn()">Show me</button>
+          <h3 class="mt-5">Slide in</h3>
+          <p>
+            This animation, like Fade In, is often used when a page loads for
+            the first time. Click the button below to see these two image cards
+            slide in from the sides of the screen.
+          </p>
+
+          <div
+            class="card mb-3 animate__animated ms-0"
+            style="max-width: 70vw"
+            id="slideLeft"
+          >
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="assets/landing/graftonbishophouse.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 text-center">
+                <div class="card-body">
+                  <p class="card-text">The largest house in a ghost town.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card mb-5 animate__animated ms-0"
+            style="max-width: 70vw"
+            id="slideRight"
+          >
+            <div class="row g-0 align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="assets/landing/graftonbishopinterior.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+
+              <div class="col-md-8 text-center">
+                <div class="card-body">
+                  <p class="card-text">The upstairs interior.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn button" onclick="slideIn()">Show me</button>
+          <h3 class="mt-5">Hamburger menu</h3>
+          <p>
+            A classic user interaction, hamburger menus have become ubiquitous
+            in mobile navigation bar design. You'll most often see them at the
+            top of a website, aligned to the right. When you tap them, they open
+            a menu of links to other parts of the website.
+          </p>
+          <p>
+            Hamburger menus are included in all of my landing pages as a
+            freebie.
+          </p>
+          <p>Click the example below for a demonstration.</p>
+          <div class="row justify-content-start pt-3 pb-4">
+            <div class="col-12 col-md-6">
+              <nav class="navbar rounded" id="burgerNav">
+                <div class="container-fluid">
+                  <div class="row justify-content-start ps-3">
+                    <div class="col">
+                      <a class="navbar-brand" href="#">
+                        <img
+                          src="assets/hexagon.svg"
+                          alt="Bootstrap"
+                          id="burgerNav-icon"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-1">
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbarExample"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasNavbarExample"
+                        aria-labelledby="offcanvasNavbarLabel"
+                      >
+                        <div class="offcanvas-header align-items-center">
+                          <button
+                            type="button"
+                            class="btn-close mx-auto my-2"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav pe-md-5">
+                            <li class="col-5">
+                              <a class="nav-link disabled" aria-disabled="true"
+                                >Example Link A</a
+                              >
+                            </li>
+                            <li class="col-8">
+                              <a
+                                class="nav-link disabled"
+                                aria-disabled="true"
+                                href=""
+                                >Example Link B</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <h3 class="mt-5">Thumbnail Expansion</h3>
+          <p>
+            Another common interaction, when you click the below thumbnail, it
+            will expand in size for better viewing.
+          </p>
+          <div class="row justify-content-start mt-5 mb-5">
+            <div class="col-8 col-lg-3">
+              <img
+                src="assets/landing/woodlakeVA.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+                id="thumbnail"
+                alt="Sunset at Woodlake, Virginia"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -748,89 +879,81 @@
       async=""
     ></script>
 
-    <!-- Popover functionality -->
+    <!-- Fade in -->
     <script>
-      function showPop(button) {
-        var target = button.getAttribute("target");
-        var element = document.querySelector("#" + target);
-        var popover = document.querySelector("#" + target + "-popover");
+      function fadeIn() {
+        const text = document.querySelector("#fadeInText");
+        const animation = "animate__fadeIn";
 
-        // Use smooth scrolling for the element
-        element.scrollIntoView(false);
-        element.classList.toggle("highlight");
-        document.querySelector(".highlight-bg").style.width = "100%";
-        document.querySelector("body").classList.toggle("disable-scroll");
-        // Delay the execution of the code that makes the element visible
-        setTimeout(function () {
-          popover.style.display = "block";
-          popover.style.opacity = 1;
-          popover.classList.toggle("fadeInDown-animation");
-          popover.classList.toggle("active");
-        }, 300); // Adjust the delay time as needed
+        text.classList.add(animation);
+
+        text.addEventListener("animationend", () => {
+          text.classList.remove(animation);
+        });
       }
-
-      function showPopSection(button) {
-        var target = button.getAttribute("target");
-        var element = document.querySelector("#" + target);
-        var popover = document.querySelector("#" + target + "-popover");
-        var accordion = document.querySelector("#collapseThree");
-
-        accordion.classList.remove("show");
-        accordion.classList.add("collapse");
-        element.style.backgroundColor = "rgba(0,0,0,0)";
-
-        popover.style.display = "block";
-        popover.style.opacity = 1;
-        popover.classList.toggle("active");
-        // Use smooth scrolling for the element
-        element.scrollIntoView({ block: "end", inline: "end" });
-        element.classList.toggle("highlight");
-        // document.querySelector(".highlight-bg").style.width = "100%";
-        // document.querySelector("body").classList.toggle("disable-scroll");
-        // // Delay the execution of the code that makes the element visible
-        // setTimeout(function () {
-        //   popover.style.display = "block";
-        //   popover.style.opacity = 1;
-        //   popover.classList.toggle("fadeInDown-animation");
-        //   popover.classList.toggle("active");
-        // }, 300); // Adjust the delay time as needed
-      }
-
-      function closePop() {
-        var popover = document.querySelector(".active");
-        var element = popover.previousElementSibling;
-
-        element.classList.remove("highlight");
-        document.querySelector(".highlight-bg").style.width = "0";
-        document.querySelector("body").classList.remove("disable-scroll");
-        popover.style.display = "none";
-        popover.style.opacity = 0;
-        popover.classList.remove("fadeInDown-animation");
-        popover.classList.toggle("active");
-      }
-
-      // close popover with Esc key
-      document.addEventListener("keydown", function (event) {
-        // Check if the pressed key is the Escape key (key code 27)
-        if (event.key === "Escape") {
-          closePop();
-        }
-      });
-
-      // close popover by clicking outside of popover
-      document.addEventListener("click", function (event) {
-        var popover = document.querySelector(".active");
-        var highlightBg = document.querySelector(".highlight-bg");
-
-        // Check if the click is on the highlight-bg element
-        if (highlightBg.contains(event.target)) {
-          closePop();
-        }
-      });
     </script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.12.0.min.js"
-    ></script>
+
+    <!-- Slide in -->
+    <script>
+      function slideIn() {
+        const leftElement = document.querySelector("#slideLeft");
+        const leftAnimation = "animate__slideInLeft";
+        const rightElement = document.querySelector("#slideRight");
+        const rightAnimation = "animate__slideInRight";
+
+        leftElement.classList.add(leftAnimation);
+        rightElement.classList.add(rightAnimation);
+
+        leftElement.addEventListener("animationend", () => {
+          leftElement.classList.remove(leftAnimation);
+          rightElement.classList.remove(rightAnimation);
+        });
+      }
+    </script>
+
+    <!-- Thumbnail expansion -->
+    <script>
+      const images = document.querySelectorAll("#thumbnail");
+      let imgSrc;
+      // get images src onclick
+      images.forEach((img) => {
+        img.addEventListener("click", (e) => {
+          imgSrc = e.target.src;
+          //run modal function
+          imgModal(imgSrc);
+        });
+      });
+      //creating the modal
+      let imgModal = (src) => {
+        const modal = document.createElement("div");
+        modal.setAttribute("class", "modal");
+        //add the modal to the main section or the parent element
+        document.querySelector("body").append(modal);
+        //adding image to modal
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", src);
+        newImage.setAttribute("id", "modal-img");
+        //creating the close button
+        const closeBtn = document.createElement("a");
+        closeBtn.setAttribute("class", "btn-close");
+        closeBtn.setAttribute("href", "javascript:void(0)");
+        //close functions
+        closeBtn.onclick = () => {
+          modal.remove();
+          document.querySelector("body").style.overflow = "visible";
+        };
+        document.addEventListener("keydown", function (event) {
+          // Check if the pressed key is the Escape key (key code 27)
+          if (event.key === "Escape") {
+            modal.remove();
+            document.querySelector("body").style.overflow = "visible";
+          }
+        });
+
+        // build modal
+        modal.append(newImage, closeBtn);
+        document.querySelector("body").style.overflow = "hidden";
+      };
+    </script>
   </body>
 </html>
