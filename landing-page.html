@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="assets/favicon.ico" />
+    <link rel="icon" type="image/ico" href="assets/favicon.ico" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -60,13 +60,17 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav pe-md-5">
                   <li class="col-5">
-                    <a class="nav-link" href="#tour">The Tour</a>
+                    <a class="nav-link" href="landing-page.html#tour"
+                      >The Tour</a
+                    >
                   </li>
                   <li class="col-8">
-                    <a class="nav-link" href="#layouts">Layout Examples</a>
+                    <a class="nav-link" href="landing-page.html#layouts"
+                      >Layout Examples</a
+                    >
                   </li>
                   <li class="col-12">
-                    <a class="nav-link" href="#animations"
+                    <a class="nav-link" href="landing-page.html#animations"
                       >Animations & Interactions</a
                     >
                   </li>
@@ -526,7 +530,7 @@
         </div>
       </div>
 
-      <!-- Text and image layouts -->
+      <!-- image layouts -->
       <div class="row justify-content-center mt-5">
         <div class="col-9 mt-5 text-justify">
           <h2>
@@ -697,12 +701,12 @@
         <div class="col-9 mx-auto mt-5 text-justify">
           <h1>Animations<br />& Interactions.</h1>
         </div>
-        <div class="col-9">
+        <div class="col-9 mt-4">
           <p class="me-1">
             Animations cause pieces of your website to move, change shape, or
-            otherwise transform. When used judiciously, they can engage audience
-            attention, create a sense of flow, and provide a sense of response
-            when a user scrolls.
+            otherwise transform. When used judiciously, they can engage the
+            audience, create flow, and provide a feedback when a user interacts
+            with the site by scrolling, clicking, or tapping.
           </p>
           <p class="me-1">
             User interactions are pieces of code that allow a user to interact
@@ -710,19 +714,18 @@
             of some sort, but can also be something like a contact form.
           </p>
           <p>
-            Below are some examples, to demonstrate these two design patterns in
-            a more hands-on way.
+            Below are some hands-on examples, to demonstrate these two design
+            patterns.
           </p>
-          <h2>Animations</h2>
-          <h3>Fade in</h3>
+          <h3 class="mt-5">Fade in</h3>
           <p class="animate__animated" id="fadeInText">
             This animation is often triggered on page load or when a user
             scrolls, and causes the text on the page to fade in. For an example
             of what text fading in looks like, click the button.
           </p>
-          <button onclick="fadeIn()">Show me</button>
-          <h3>Slide in</h3>
-          <button onclick="slideIn()">Show me</button>
+          <button class="btn button" onclick="fadeIn()">Show me</button>
+          <h3 class="mt-5">Slide in</h3>
+          <button class="btn button" onclick="slideIn()">Show me</button>
           <div
             class="card mb-3 animate__animated ms-0"
             style="max-width: 70vw"
@@ -768,8 +771,7 @@
               </div>
             </div>
           </div>
-          <h2>User Interactions</h2>
-          <h3>Hamburger menu</h3>
+          <h3 class="mt-5">Hamburger menu</h3>
           <p>
             A classic user interaction, hamburger menus have become ubiquitous
             in mobile navigation bar design. You'll most often see them at the
@@ -781,67 +783,74 @@
             freebie.
           </p>
           <p>Click the example below for a demonstration.</p>
-          <nav class="navbar" id="burgerNav">
-            <div class="container-fluid">
-              <div class="row justify-content-start ps-3">
-                <div class="col">
-                  <a class="navbar-brand" href="#">
-                    <img
-                      src="assets/hexagon.svg"
-                      alt="Bootstrap"
-                      id="burgerNav-icon"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-1">
-                  <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbarExample"
-                    aria-controls="offcanvasNavbar"
-                    aria-label="Toggle navigation"
-                  >
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div
-                    class="offcanvas offcanvas-end"
-                    tabindex="-1"
-                    id="offcanvasNavbarExample"
-                    aria-labelledby="offcanvasNavbarLabel"
-                  >
-                    <div class="offcanvas-header align-items-center">
-                      <button
-                        type="button"
-                        class="btn-close ms-auto"
-                        data-bs-dismiss="offcanvas"
-                        aria-label="Close"
-                      ></button>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-4">
+              <nav class="navbar rounded" id="burgerNav">
+                <div class="container-fluid">
+                  <div class="row justify-content-start ps-3">
+                    <div class="col">
+                      <a class="navbar-brand" href="#">
+                        <img
+                          src="assets/hexagon.svg"
+                          alt="Bootstrap"
+                          id="burgerNav-icon"
+                        />
+                      </a>
                     </div>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav pe-md-5">
-                        <li class="col-5">
-                          <a class="nav-link disabled" aria-disabled="true"
-                            >Example Link A</a
-                          >
-                        </li>
-                        <li class="col-8">
-                          <a class="nav-link" href="">Example Link B</a>
-                        </li>
-                        <li class="col-12">
-                          <a class="nav-link" href="#"></a>
-                        </li>
-                      </ul>
+                  </div>
+                  <div class="row">
+                    <div class="col-1">
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbarExample"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div
+                        class="offcanvas offcanvas-end"
+                        tabindex="-1"
+                        id="offcanvasNavbarExample"
+                        aria-labelledby="offcanvasNavbarLabel"
+                      >
+                        <div class="offcanvas-header align-items-center">
+                          <button
+                            type="button"
+                            class="btn-close ms-auto"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav pe-md-5">
+                            <li class="col-5">
+                              <a class="nav-link disabled" aria-disabled="true"
+                                >Example Link A</a
+                              >
+                            </li>
+                            <li class="col-8">
+                              <a
+                                class="nav-link disabled"
+                                aria-disabled="true"
+                                href=""
+                                >Example Link B</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </nav>
             </div>
-          </nav>
-          <h3>Thumbnail Expansion</h3>
-          <div class="row justify-content-center mt-5 mb-5 ms-3 ms-md-0">
+          </div>
+
+          <h3 class="mt-5">Thumbnail Expansion</h3>
+          <div class="row justify-content-start mt-5 mb-5">
             <div class="col-8 col-lg-3">
               <img
                 src="assets/landing/woodlakeVA.png"
