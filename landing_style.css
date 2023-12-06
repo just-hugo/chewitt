@@ -361,8 +361,8 @@ svg {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.733);
-    -webkit-backdrop-filter: blur(8px);
-      backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   margin-top: -1px;
   animation: zoom 0.3s ease-in-out;
 }
@@ -407,8 +407,8 @@ modal a {
   color: #f99d80;
   text-transform: uppercase;
   padding: 20px 30px;
-  box-shadow:  4px 4px 10px rgba(0, 0, 0, 0.35),
-       0 5px 5px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35),
+    0 5px 5px -10px rgba(0, 0, 0, 0.35);
   border-radius: 100px;
   border-color: rgb(223, 223, 223);
   cursor: pointer;
@@ -418,12 +418,8 @@ modal a {
 
 .button:hover {
   color: #f99d80;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35),
-        0 5px 5px -10px rgba(0, 0, 0, 0.35);
-    -webkit-transform: translate(0px, -1px) scale(1.075);
-    transform: translate(0px, -1px) scale(1.075);}
-
-.button:active {
-  background-color: yellow;
-
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.35),
+    0 5px 5px -10px rgba(0, 0, 0, 0.35);
+  -webkit-transform: translate(0px, -1px) scale(1.075);
+  transform: translate(0px, -1px) scale(1.075);
 }
