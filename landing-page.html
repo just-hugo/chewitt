@@ -705,13 +705,13 @@
           <p class="me-1">
             Animations cause pieces of your website to move, change shape, or
             otherwise transform. When used judiciously, they can engage the
-            audience, create flow, and provide a feedback when a user interacts
-            with the site by scrolling, clicking, or tapping.
+            audience, create flow, and provide a feedback to the user.
           </p>
           <p class="me-1">
             User interactions are pieces of code that allow a user to interact
-            with pieces of the website directly. They often involve animations
-            of some sort, but can also be something like a contact form.
+            with pieces of the website directly, usually by scrolling, clicking,
+            or typing. They often involve animations of some sort, but can also
+            be something like a contact form.
           </p>
           <p>
             Below are some hands-on examples, to demonstrate these two design
@@ -725,7 +725,12 @@
           </p>
           <button class="btn button" onclick="fadeIn()">Show me</button>
           <h3 class="mt-5">Slide in</h3>
-          <button class="btn button" onclick="slideIn()">Show me</button>
+          <p>
+            This animation, like Fade In, is often used when a page loads for
+            the first time. Click the button below to see these two image cards
+            slide in from the sides of the screen.
+          </p>
+
           <div
             class="card mb-3 animate__animated ms-0"
             style="max-width: 70vw"
@@ -741,15 +746,13 @@
               </div>
               <div class="col-md-8 text-center">
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text
-                  </p>
+                  <p class="card-text">The largest house in a ghost town.</p>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="card mb-3 animate__animated ms-0"
+            class="card mb-5 animate__animated ms-0"
             style="max-width: 70vw"
             id="slideRight"
           >
@@ -764,13 +767,12 @@
 
               <div class="col-md-8 text-center">
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text
-                  </p>
+                  <p class="card-text">The upstairs interior.</p>
                 </div>
               </div>
             </div>
           </div>
+          <button class="btn button" onclick="slideIn()">Show me</button>
           <h3 class="mt-5">Hamburger menu</h3>
           <p>
             A classic user interaction, hamburger menus have become ubiquitous
@@ -783,8 +785,8 @@
             freebie.
           </p>
           <p>Click the example below for a demonstration.</p>
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-9">
+          <div class="row justify-content-start pt-3 pb-4">
+            <div class="col-12 col-md-6">
               <nav class="navbar rounded" id="burgerNav">
                 <div class="container-fluid">
                   <div class="row justify-content-start ps-3">
@@ -819,7 +821,7 @@
                         <div class="offcanvas-header align-items-center">
                           <button
                             type="button"
-                            class="btn-close ms-auto"
+                            class="btn-close mx-auto my-2"
                             data-bs-dismiss="offcanvas"
                             aria-label="Close"
                           ></button>
@@ -850,6 +852,10 @@
           </div>
 
           <h3 class="mt-5">Thumbnail Expansion</h3>
+          <p>
+            Another common interaction, when you click the below thumbnail, it
+            will expand in size for better viewing.
+          </p>
           <div class="row justify-content-start mt-5 mb-5">
             <div class="col-8 col-lg-3">
               <img
@@ -882,8 +888,6 @@
         text.classList.add(animation);
 
         text.addEventListener("animationend", () => {
-          // do something
-          console.log("hi");
           text.classList.remove(animation);
         });
       }
