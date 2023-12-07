@@ -41,6 +41,10 @@
   --icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
   --service-link-color: rgba(193, 179, 142, 0.85);
   --service-link-filter: drop-shadow(1px 1px 1px #ba9e58c8);
+  --headshot-filter: grayscale(60%);
+  --contact-icon-stroke: rgba(255, 242, 215, 0.1);
+  --contact-icon-fill: rgba(0, 0, 0, 0.45);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
 }
 :root[color-mode="light"] {
   --bg-img-filter: invert(100%) sepia(5%);
@@ -69,8 +73,8 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: rgb(85, 77, 69);
-  --text-shadow: -1px 0px 1px #cdb373c9, 0px 1px 1px rgba(0, 0, 0, 0.3);
+  --text-color: rgb(108, 94, 80);
+  --text-shadow: -1px 0px 1px #cdb473a1, 0px 1px 1px rgba(0, 0, 0, 0.7);
   --logo-inner-shadow: ;
   --logo-inner-fill: rgba(239, 238, 230, 0.5);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(199, 161, 115, 0.5));
@@ -85,8 +89,12 @@
   --icon-fill: rgba(237, 235, 233, 0.5);
   --icon-stroke: #bfa1718a;
   --icon-shadow: drop-shadow(1px -1px 2px #948778);
-  --service-link-color: #eedec5;
-  --service-link-filter: drop-shadow(1px 1px 1px #948778);
+  --service-link-color: #897b6c;
+  --service-link-filter: -1px 0px 1px #bf8460, 0px 1px 1px rgba(0, 0, 0, 0.7);
+  --headshot-filter: grayscale(50%) sepia(30%);
+  --contact-icon-stroke: #bfa1718a;
+  --contact-icon-fill: rgba(237, 235, 233, 0.5);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(0, 0, 0, 0.587));
 }
 @font-face {
   font-family: "Poiret";
@@ -511,12 +519,12 @@ input:checked + .slider:before {
 .service-more {
   background-color: transparent;
   border-width: 0 0px 0.5px 0px;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: var(--service-link-color);
   font-family: Poiret;
-  font-size: 1.32rem;
-  font-weight: 670;
+  font-size: 1.33rem;
+  font-weight: bolder;
   color: var(--service-link-color);
-  filter: var(--service-link-filter);
+  text-shadow: var(--service-link-filter);
 }
 /* This container is needed to position the front and back side */
 .flip-box-inner {
@@ -538,9 +546,9 @@ input:checked + .slider:before {
   width: 80%;
 }
 .contact-icon {
-  stroke: rgba(255, 242, 215, 0.1);
-  fill: rgba(0, 0, 0, 0.45);
-  filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  stroke: var(--contact-icon-stroke);
+  fill: var(--contact-icon-fill);
+  filter: var(--contact-icon-shadow);
   height: 3rem;
   width: 3rem;
 }
@@ -683,7 +691,7 @@ input:checked + .slider:before {
 .headshot {
   object-fit: cover;
   object-position: 30%;
-  filter: grayscale(70%);
+  filter: var(--headshot-filter);
   width: 10rem;
   height: 10rem;
   background-color: var(--glass-cutout-bg);
