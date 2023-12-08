@@ -23,7 +23,8 @@
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: rgba(255, 255, 255, 0.6);
-  --text-shadow: 0 2px 2px #e0bf6c32, 0 1px 3px rgba(0, 0, 0, 0.75);
+  --text-shadow: -1px 0 1px rgba(224, 191, 108, 0.393),
+    0 1px 3px rgba(0, 0, 0, 0.75);
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
@@ -48,13 +49,15 @@
   --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
 }
 :root[color-mode="light"] {
-  --bg-img-filter: invert(100%) sepia(10%) brightness(0.8);
-  --glass-bg-color: rgba(228, 227, 221, 0.15);
+  --bg-img-filter: invert(93%) sepia(7%) brightness(0.9);
+  --glass-bg-color: rgba(239, 236, 223, 0.2);
+
   --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.25),
-    inset 1px 1px 01.25px rgba(199, 161, 115, 0.35),
+    inset 1px 1px 01.25px rgba(217, 187, 150, 0.2),
     1px 1px 2px rgba(244, 237, 237, 0.25), 2px 2px 2px rgba(199, 161, 115, 0.2),
-    12px 10px 15px rgba(148, 135, 120, 0.5);
-  --glass-cutout-bg: rgba(136, 116, 96, 0.25);
+    12px 10px 15px rgba(130, 117, 101, 0.5);
+
+  --glass-cutout-bg: rgba(69, 58, 47, 0.25);
 
   --glass-cutout-shadow: 0 -0.2em 0.2em rgba(228, 227, 221, 0.35),
     inset 0 -0.2em 0.2em rgba(122, 111, 99, 0.25),
@@ -72,8 +75,12 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: #6d5746;
-  --text-shadow: -1px 1px 1px #bea9949e, 0px 1px 1px rgba(0, 0, 0, 0.5);
+  --text-color: #6b4d42;
+  --text-shadow: -0.5px 1px 0px #9f846f74, 0px 1px 1px rgba(0, 0, 0, 0.5);
+
+  --text-color-brown: #4f301e;
+  --text-shadow-brown: -1px 1px 1px #bea9949e, 0px 1px 2px rgba(0, 0, 0, 0.5);
+
   --logo-inner-shadow: ;
   --logo-inner-fill: rgba(228, 227, 221, 0.15);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(199, 161, 115, 0.5));
@@ -85,16 +92,16 @@
   --burger-lines: rgba(255, 255, 255, 0.7);
   --burger-lines-shadow: -1px 2px 1px rgba(0, 0, 0, 0.15),
     1px 2px 2px rgba(255, 255, 255, 0.25);
-  --icon-fill: rgba(237, 235, 233, 0.35);
-  --icon-stroke: #bfa1718a;
-  --icon-shadow: drop-shadow(1px -1px 2px #948778);
+  --icon-fill: rgba(239, 237, 223, 0.3);
+  --icon-stroke: #a5795787;
+  --icon-shadow: drop-shadow(1px -1px 2px #5e5243);
   --service-link-color: #897b6c;
   --service-link-filter: -1px 0px 1px #bf8460, 0px 1px 1px rgba(0, 0, 0, 0.7);
   --headshot-filter: grayscale(50%) sepia(30%);
-  --contact-icon-stroke: #bfa17149;
-  --contact-icon-fill: rgba(237, 235, 233, 0.5);
-  --contact-icon-shadow: drop-shadow(1px -1px 2px #948778);
-  --contact-icon-stroke-high-contrast: #896b36ba;
+  --contact-icon-stroke: #a579577a;
+  --contact-icon-fill: rgba(239, 237, 223, 0.3);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px #8c7860a3);
+  --contact-icon-stroke-high-contrast: #896b369f;
 }
 @font-face {
   font-family: "Poiret";
@@ -209,11 +216,13 @@ ul {
 .burger-line1,
 .burger-line2,
 .burger-line3 {
-  height: 0.18rem;
+  height: 0.2rem;
   margin: 0.19rem 0.55rem;
-  background-color: var(--burger-lines);
+  background-color: #e4e3dd31;
   transition: 0.4s;
-  box-shadow: var(--burger-lines-shadow);
+  box-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.35),
+    inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
+    inset -1px 2px 2px rgba(255, 255, 255, 0.3), 3px 2px 3px rgba(0, 0, 0, 0.3);
 }
 /* The switch - the box around the slider */
 .switch {
@@ -547,12 +556,14 @@ input:checked + .slider:before {
 }
 .contact-icon {
   stroke: var(--contact-icon-stroke);
+  stroke-width: 0.5px;
   fill: var(--contact-icon-fill);
   filter: var(--contact-icon-shadow);
   height: 3rem;
   width: 3rem;
 }
 .contact-icon-stroke {
+  stroke-width: 1.25px;
   stroke: var(--contact-icon-stroke-high-contrast);
   fill: transparent;
 }
