@@ -28,7 +28,7 @@
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
-  --logo-initials-stroke: rgba(181, 158, 94, 0.75);
+  --logo-initials-stroke: rgb(176, 153, 90);
   --logo-inner-fill: rgba(255, 255, 255, 0.1);
   --logo-inner-stroke: rgba(181, 158, 94, 0.75);
   --logo-cutout-stroke: rgba(0, 0, 0, 0.5);
@@ -49,6 +49,18 @@
   --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
   --sidenav-glass: rgba(255, 255, 255, 0.15);
   --sidenav-bg: rgba(0, 0, 0, 0.5);
+  --hex-border: 1px 0px 4px rgba(255, 255, 255, 0.5) inset,
+    -1px 0px 4px rgba(255, 255, 255, 0.5) inset,
+    -1px 0 1px rgba(255, 255, 255, 0.35), 1px 0 4px rgba(255, 255, 255, 0.5),
+    5px 0 4px rgba(0, 0, 0, 0.5) inset, -5px 0 4px rgba(0, 0, 0, 0.5) inset;
+  --nav-logo-filter: drop-shadow(1px 2px 2px rgb(255, 255, 255, 0.25))
+    drop-shadow(-1px -2px 2px rgb(255, 255, 255, 0.25))
+    drop-shadow(1px -2px 2px rgb(255, 255, 255, 0.25))
+    drop-shadow(-1px 2px 2px rgb(255, 255, 255, 0.25));
+  --nav-logo-bg: rgba(0, 0, 0, 0.55);
+  --nav-logo-ring-stroke: rgba(0, 0, 0, 0.35);
+  --nav-logo-inner-filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, 0.75))
+    drop-shadow(-2px -2px 2px rgb(0, 0, 0, 0.75));
 }
 :root[color-mode="light"] {
   --bg-img-filter: invert(93%) sepia(7%) brightness(0.9);
@@ -68,16 +80,17 @@
     inset 2px 2px 2px rgba(122, 111, 99, 0.25),
     3px 2px 4px rgba(228, 227, 221, 0.35);
 
-  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(228, 227, 221, 0.5),
-    inset 0 -0.2em 0.2em #7e7163, -0.2em 0 0.2em rgba(228, 227, 221, 0.5),
-    inset -0.2em 0 0.2em #7e7163, 1px 1px 1px #7e7163, inset 1px 1px 1px #7e7163,
-    inset 2px 2px 2px #7e7163, 3px 2px 4px rgb(228, 227, 221, 0.5);
+  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(228, 227, 221, 0.45),
+    inset 0 -0.2em 0.2em #7e7163e2, -0.2em 0 0.2em rgba(228, 227, 221, 0.45),
+    inset -0.2em 0 0.2em #7e7163e2, 1px 1px 1px #7e7163e2,
+    inset 1px 1px 1px #7e7163e2, inset 2px 2px 2px #7e7163e2,
+    3px 2px 4px rgb(228, 227, 221, 0.5);
   --glass-cutout-hover-bg: rgba(228, 227, 221, 0.2);
   --glass-cutout-hover-shadow: inset -0.1em -0.1em 0.5em
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: #3a1a11;
+  --text-color: #3b2f26;
   --text-shadow: -0.5px 1px 0px #9f846f74, 0px 1px 1px rgba(0, 0, 0, 0.35);
 
   --text-color-maroon: #6b4d42;
@@ -109,6 +122,15 @@
   --contact-icon-stroke-high-contrast: #896b369f;
   --sidenav-glass: rgba(255, 255, 255, 0.15);
   --sidenav-bg: #9f9f9f50;
+  --hex-border: 5px 0 3px rgba(122, 111, 99, 0.5) inset,
+    -5px 0 3px rgba(122, 111, 99, 0.5) inset;
+  --nav-logo-filter: drop-shadow(1px 2px 2px rgba(244, 237, 237, 0.5))
+    drop-shadow(-1px -2px 2px rgba(244, 237, 237, 0.5))
+    drop-shadow(1px -2px 2px rgba(244, 237, 237, 0.5))
+    drop-shadow(-1px 2px 2px rgba(244, 237, 237, 0.5));
+  --nav-logo-bg: rgba(12, 6, 1, 0.15);
+  --nav-logo-ring-stroke: #655e5229;
+  --nav-logo-inner-filter: drop-shadow(2px 2px 2px rgb(35, 30, 26));
 }
 @font-face {
   font-family: "Poiret";
@@ -199,8 +221,8 @@ ul {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.7rem;
+  height: 2.7rem;
   padding-left: 0.8rem;
   padding-right: 0.2rem;
   margin-bottom: 0.5rem;
@@ -209,16 +231,6 @@ ul {
   box-shadow: var(--glass-cutout-shadow);
 }
 .burger-menu:hover {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 45px;
-  height: 45px;
-  padding-left: 0.8rem;
-  padding-right: 0.1rem;
-  background-color: var(--glass-cutout-hover-bg);
-  border: 0px;
-  box-shadow: var(--glass-cutout-hover-shadow);
 }
 .burger-line1,
 .burger-line2,
@@ -748,8 +760,7 @@ input:checked + .slider:before {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  box-shadow: 3px 0 3px rgba(122, 111, 99, 0.5) inset,
-    -3px 0 3px rgba(122, 111, 99, 0.5) inset;
+  box-shadow: var(--hex-border);
   transform: rotate(60deg);
 }
 .bg-color {
@@ -761,8 +772,7 @@ input:checked + .slider:before {
   display: block;
   width: 100%;
   height: 100%;
-  box-shadow: -3px 0 3px rgba(122, 111, 99, 0.5) inset,
-    3px 0 3px rgba(122, 111, 99, 0.5) inset;
+  box-shadow: var(--hex-border);
   transform: rotate(60deg);
 }
 
@@ -772,13 +782,22 @@ input:checked + .slider:before {
   display: block;
   width: 100%;
   height: 100%;
-  box-shadow: -3px 0 3px rgba(122, 111, 99, 0.5) inset,
-    3px 0 3px rgba(122, 111, 99, 0.5) inset;
+  box-shadow: var(--hex-border);
   transform: rotate(120deg);
 }
-.hexagon-initials {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  fill: #e4e3ddae;
+.nav-logo {
+  fill: #e4e3ddc7;
+  height: 2.8rem;
+  width: 2.8rem;
+  filter: var(--nav-logo-filter);
+}
+.nav-logo-ring {
+  fill: var(--nav-logo-bg);
+  stroke-width: 6px;
+  stroke: var(--nav-logo-ring-stroke);
+  filter: drop-shadow(2px 2px 2px rgb(44, 38, 33));
+}
+.nav-logo:hover {
+  height: 3rem;
+  width: 3rem;
 }
