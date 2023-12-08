@@ -799,3 +799,6 @@ input:checked + .slider:before {
   stroke: var(--nav-logo-ring-stroke);
   filter: drop-shadow(2px 2px 2px rgb(44, 38, 33));
 }
+#credits a {
+  color: var(--text-color);
+}
