@@ -47,6 +47,8 @@
   --contact-icon-stroke-high-contrast: rgba(255, 242, 215, 0.75);
   --contact-icon-fill: rgba(0, 0, 0, 0.45);
   --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  --sidenav-glass: rgba(255, 255, 255, 0.15);
+  --sidenav-bg: rgba(0, 0, 0, 0.5);
 }
 :root[color-mode="light"] {
   --bg-img-filter: invert(93%) sepia(7%) brightness(0.9);
@@ -75,9 +77,12 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: #6b4d42;
-  --text-shadow: -0.5px 1px 0px #9f846f74, 0px 1px 1px rgba(0, 0, 0, 0.5);
+  --text-color: #3a1a11;
+  --text-shadow: -0.5px 1px 0px #9f846f74, 0px 1px 1px rgba(0, 0, 0, 0.35);
 
+  --text-color-maroon: #6b4d42;
+  --text-color-maroon-shadow: -0.5px 1px 0px #9f846f74,
+    0px 1px 1px rgba(0, 0, 0, 0.5);
   --text-color-brown: #4f301e;
   --text-shadow-brown: -1px 1px 1px #bea9949e, 0px 1px 2px rgba(0, 0, 0, 0.5);
 
@@ -96,12 +101,14 @@
   --icon-stroke: #a5795787;
   --icon-shadow: drop-shadow(1px -1px 2px #5e5243);
   --service-link-color: #897b6c;
-  --service-link-filter: -1px 0px 1px #bf8460, 0px 1px 1px rgba(0, 0, 0, 0.7);
+  --service-link-filter: -0.5px 0px 1px #bf8460, 0px 1px 1px rgba(0, 0, 0, 0.35);
   --headshot-filter: grayscale(50%) sepia(30%);
   --contact-icon-stroke: #a579577a;
   --contact-icon-fill: rgba(239, 237, 223, 0.3);
   --contact-icon-shadow: drop-shadow(1px -1px 2px #8c7860a3);
   --contact-icon-stroke-high-contrast: #896b369f;
+  --sidenav-glass: rgba(255, 255, 255, 0.15);
+  --sidenav-bg: #9f9f9f50;
 }
 @font-face {
   font-family: "Poiret";
@@ -127,8 +134,8 @@ ul {
   list-style-type: none;
 }
 .example {
-  color: rgba(193, 179, 142, 0.75);
-  filter: drop-shadow(1px 1px 1px #ba9e58c8);
+  font-weight: 500;
+  color: var(--service-link-color);
 }
 .example:hover {
   color: rgba(194, 184, 156, 0.75);
@@ -320,7 +327,7 @@ input:checked + .slider:before {
 }
 /* The side navigation menu */
 .sidenav-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--sidenav-bg);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   height: 100%; /* 100% Full-height */
@@ -334,7 +341,7 @@ input:checked + .slider:before {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .sidenav {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--sidenav-glass);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   height: 70%;
@@ -741,9 +748,7 @@ input:checked + .slider:before {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  box-shadow: -2px 0px 1px rgba(255, 255, 255, 0.5),
-    2px 0px 1px rgba(255, 255, 255, 0.5),
-    3px 0 3px rgba(122, 111, 99, 0.5) inset,
+  box-shadow: 3px 0 3px rgba(122, 111, 99, 0.5) inset,
     -3px 0 3px rgba(122, 111, 99, 0.5) inset;
   transform: rotate(60deg);
 }
@@ -775,4 +780,5 @@ input:checked + .slider:before {
   position: absolute;
   left: 20%;
   top: 20%;
+  fill: #e4e3ddae;
 }
