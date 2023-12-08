@@ -43,17 +43,18 @@
   --service-link-filter: drop-shadow(1px 1px 1px #ba9e58c8);
   --headshot-filter: grayscale(60%);
   --contact-icon-stroke: rgba(255, 242, 215, 0.1);
+  --contact-icon-stroke-high-contrast: rgba(255, 242, 215, 0.75);
   --contact-icon-fill: rgba(0, 0, 0, 0.45);
   --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
 }
 :root[color-mode="light"] {
-  --bg-img-filter: invert(100%) sepia(5%);
-  --glass-bg-color: rgba(228, 227, 221, 0.25);
-  --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.5),
+  --bg-img-filter: invert(100%) sepia(10%) brightness(0.8);
+  --glass-bg-color: rgba(228, 227, 221, 0.15);
+  --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.25),
     inset 1px 1px 01.25px rgba(199, 161, 115, 0.35),
-    1px 1px 2px rgba(244, 237, 237, 0.5), 2px 2px 2px rgba(199, 161, 115, 0.2),
+    1px 1px 2px rgba(244, 237, 237, 0.25), 2px 2px 2px rgba(199, 161, 115, 0.2),
     12px 10px 15px rgba(148, 135, 120, 0.5);
-  --glass-cutout-bg: rgba(91, 78, 62, 0.25);
+  --glass-cutout-bg: rgba(136, 116, 96, 0.25);
 
   --glass-cutout-shadow: 0 -0.2em 0.2em rgba(228, 227, 221, 0.35),
     inset 0 -0.2em 0.2em rgba(122, 111, 99, 0.25),
@@ -62,39 +63,38 @@
     inset 2px 2px 2px rgba(122, 111, 99, 0.25),
     3px 2px 4px rgba(228, 227, 221, 0.35);
 
-  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.7),
-    inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
-    -0.2em 0 0.2em rgba(255, 255, 255, 0.5),
-    inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
-    inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
-    3px 2px 4px rgb(255, 255, 255, 0.5);
+  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.5),
+    inset 0 -0.2em 0.2em #7e7163, -0.2em 0 0.2em rgba(255, 255, 255, 0.5),
+    inset -0.2em 0 0.2em #7e7163, 1px 1px 1px #7e7163, inset 1px 1px 1px #7e7163,
+    inset 2px 2px 2px #7e7163, 3px 2px 4px rgb(255, 255, 255, 0.5);
   --glass-cutout-hover-bg: rgba(255, 255, 255, 0.2);
   --glass-cutout-hover-shadow: inset -0.1em -0.1em 0.5em
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: rgb(108, 94, 80);
-  --text-shadow: -1px 0px 1px #cdb473a1, 0px 1px 1px rgba(0, 0, 0, 0.7);
+  --text-color: #6d5746;
+  --text-shadow: -1px 1px 1px #bea9949e, 0px 1px 1px rgba(0, 0, 0, 0.5);
   --logo-inner-shadow: ;
-  --logo-inner-fill: rgba(239, 238, 230, 0.5);
+  --logo-inner-fill: rgba(228, 227, 221, 0.15);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(199, 161, 115, 0.5));
   --logo-initials-shadow: drop-shadow(-1px 1px 1px rgb(84, 74, 63));
-  --logo-initials-stroke: #d2b8a5;
-  --logo-inner-stroke: #d2b8a5;
-  --logo-cutout-stroke: rgba(113, 97, 78, 0.15);
+  --logo-initials-stroke: #c09e84;
+  --logo-inner-stroke: #c09e84;
+  --logo-cutout-stroke: rgba(67, 57, 46, 0.25);
   --logo-cutout-fill: rgba(244, 237, 237, 0.15);
   --burger-lines: rgba(255, 255, 255, 0.7);
   --burger-lines-shadow: -1px 2px 1px rgba(0, 0, 0, 0.15),
     1px 2px 2px rgba(255, 255, 255, 0.25);
-  --icon-fill: rgba(237, 235, 233, 0.5);
+  --icon-fill: rgba(237, 235, 233, 0.35);
   --icon-stroke: #bfa1718a;
   --icon-shadow: drop-shadow(1px -1px 2px #948778);
   --service-link-color: #897b6c;
   --service-link-filter: -1px 0px 1px #bf8460, 0px 1px 1px rgba(0, 0, 0, 0.7);
   --headshot-filter: grayscale(50%) sepia(30%);
-  --contact-icon-stroke: #bfa1718a;
+  --contact-icon-stroke: #bfa17149;
   --contact-icon-fill: rgba(237, 235, 233, 0.5);
-  --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(0, 0, 0, 0.587));
+  --contact-icon-shadow: drop-shadow(1px -1px 2px #948778);
+  --contact-icon-stroke-high-contrast: #896b36ba;
 }
 @font-face {
   font-family: "Poiret";
@@ -551,6 +551,10 @@ input:checked + .slider:before {
   filter: var(--contact-icon-shadow);
   height: 3rem;
   width: 3rem;
+}
+.contact-icon-stroke {
+  stroke: var(--contact-icon-stroke-high-contrast);
+  fill: transparent;
 }
 /* Tablet & Desktop */
 @media (min-width: 992px) {
