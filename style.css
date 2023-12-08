@@ -589,7 +589,7 @@ input:checked + .slider:before {
 /* Tablet & Desktop */
 @media (min-width: 992px) {
   .parallax-bg {
-    background: url("assets/img/saturn2.jpg");
+    background: url("assets/saturn2.jpg");
     background-size: cover;
   }
   .sidenav-expand {
