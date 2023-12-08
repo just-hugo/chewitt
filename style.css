@@ -1,6 +1,5 @@
 :root[color-mode="dark"] {
-  --bg-img: url("/assets/saturn2.webp");
-  --bg-img-desktop: url("/assets/img/saturn2.jpg");
+  --bg-img-filter: invert(0%);
   --glass-bg-color: rgba(80, 80, 80, 0.35);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
@@ -18,57 +17,120 @@
     inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
     inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
     3px 2px 4px rgb(255, 255, 255, 0.5);
-  --glass-cutout-hover-bg: rgba(255, 255, 255, 0.2);
+  --glass-cutout-hover-bg: rgba(93, 85, 66, 0.2);
   --glass-cutout-hover-shadow: inset -0.1em -0.1em 0.5em
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: rgba(255, 255, 255, 0.6);
-  --text-shadow: 0 2px 2px #e0bf6c32, 0 1px 3px rgba(0, 0, 0, 0.75);
+  --text-shadow: -1px 0 1px rgba(224, 191, 108, 0.393),
+    0 1px 3px rgba(0, 0, 0, 0.75);
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
-  --logo-initials-stroke: rgba(181, 158, 94, 0.75);
+  --logo-initials-stroke: rgb(176, 153, 90);
   --logo-inner-fill: rgba(255, 255, 255, 0.1);
   --logo-inner-stroke: rgba(181, 158, 94, 0.75);
   --logo-cutout-stroke: rgba(0, 0, 0, 0.5);
   --logo-cutout-fill: rgba(255, 255, 255, 0.05);
+  --burger-lines: rgba(227, 197, 115, 0.35);
+  --burger-lines-shadow: inset 1px 2px 1px rgba(227, 197, 115, 0.3),
+    1px 2px 3px rgba(0, 0, 0, 1);
+  --slider-bg: rgba(0, 0, 0, 0.6);
+  --icon-fill: rgba(0, 0, 0, 0.5);
+  --icon-stroke: rgba(227, 197, 115, 0.15);
+  --icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  --service-link-color: rgba(193, 179, 142, 0.85);
+  --service-link-filter: drop-shadow(1px 1px 1px #ba9e58c8);
+  --headshot-filter: grayscale(60%);
+  --contact-icon-stroke: rgba(255, 242, 215, 0.1);
+  --contact-icon-stroke-high-contrast: rgba(255, 242, 215, 0.75);
+  --contact-icon-fill: rgba(0, 0, 0, 0.45);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  --sidenav-glass: rgba(255, 255, 255, 0.15);
+  --sidenav-bg: rgba(0, 0, 0, 0.5);
+  --hex-border: 1px 0px 4px rgba(255, 255, 255, 0.5) inset,
+    -1px 0px 4px rgba(255, 255, 255, 0.5) inset,
+    -1px 0 1px rgba(255, 255, 255, 0.35), 1px 0 4px rgba(255, 255, 255, 0.5),
+    5px 0 4px rgba(0, 0, 0, 0.5) inset, -5px 0 4px rgba(0, 0, 0, 0.5) inset;
+  --nav-logo-filter: drop-shadow(1px 2px 2px rgb(255, 255, 255, 0.25))
+    drop-shadow(-1px -2px 2px rgb(255, 255, 255, 0.25))
+    drop-shadow(1px -2px 2px rgb(255, 255, 255, 0.25))
+    drop-shadow(-1px 2px 2px rgb(255, 255, 255, 0.25));
+  --nav-logo-bg: rgba(0, 0, 0, 0.55);
+  --nav-logo-ring-stroke: rgba(0, 0, 0, 0.35);
+  --nav-logo-inner-filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, 0.75))
+    drop-shadow(-2px -2px 2px rgb(0, 0, 0, 0.75));
 }
 :root[color-mode="light"] {
-  --bg-img: url("/assets/saturn1.webp");
-  --bg-img-desktop: url("/assets/img/saturn1.jpg");
-  --glass-bg-color: rgba(255, 255, 255, 0.1);
-  --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
-    inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
-    2px 2px 2px rgba(255, 255, 255, 0.3), 12px 10px 15px rgba(0, 0, 0, 0.6);
-  --glass-cutout-bg: rgba(0, 0, 0, 0.4);
-  --glass-cutout-shadow: 0 -0.2em 0.2em rgba(255, 255, 255, 0.35),
-    inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
-    -0.2em 0 0.2em rgba(255, 255, 255, 0.3),
-    inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
-    inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
-    3px 2px 4px rgb(255, 255, 255, 0.5);
-  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(255, 255, 255, 0.7),
-    inset 0 -0.2em 0.2em rgba(0, 0, 0, 0.5),
-    -0.2em 0 0.2em rgba(255, 255, 255, 0.5),
-    inset -0.2em 0 0.2em rgb(0, 0, 0, 0.3), 1px 1px 1px rgb(0, 0, 0, 0.5),
-    inset 1px 1px 1px rgb(0, 0, 0), inset 2px 2px 2px rgb(0, 0, 0),
-    3px 2px 4px rgb(255, 255, 255, 0.5);
-  --glass-cutout-hover-bg: rgba(255, 255, 255, 0.2);
+  --bg-img-filter: invert(93%) sepia(7%) brightness(0.9);
+  --glass-bg-color: rgba(239, 236, 223, 0.2);
+
+  --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.25),
+    inset 1px 1px 01.25px rgba(217, 187, 150, 0.2),
+    1px 1px 2px rgba(244, 237, 237, 0.25), 2px 2px 2px rgba(199, 161, 115, 0.2),
+    12px 10px 15px rgba(130, 117, 101, 0.5);
+
+  --glass-cutout-bg: rgba(69, 58, 47, 0.25);
+
+  --glass-cutout-shadow: 0 -0.2em 0.2em rgba(228, 227, 221, 0.35),
+    inset 0 -0.2em 0.2em rgba(122, 111, 99, 0.25),
+    -0.2em 0 0.2em rgba(228, 227, 221, 0.35),
+    inset -0.2em 0 0.2em rgba(122, 111, 99, 0.25),
+    inset 2px 2px 2px rgba(122, 111, 99, 0.25),
+    3px 2px 4px rgba(228, 227, 221, 0.35);
+
+  --glass-cutout-shadow-high-contrast: 0 -0.2em 0.2em rgba(228, 227, 221, 0.45),
+    inset 0 -0.2em 0.2em #7e7163e2, -0.2em 0 0.2em rgba(228, 227, 221, 0.45),
+    inset -0.2em 0 0.2em #7e7163e2, 1px 1px 1px #7e7163e2,
+    inset 1px 1px 1px #7e7163e2, inset 2px 2px 2px #7e7163e2,
+    3px 2px 4px rgb(228, 227, 221, 0.5);
+  --glass-cutout-hover-bg: rgba(228, 227, 221, 0.2);
   --glass-cutout-hover-shadow: inset -0.1em -0.1em 0.5em
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: rgba(0, 0, 0, 1);
-  --text-shadow: 0 2px 3px #e0bf6c42, 0 1px 3px rgba(0, 0, 0, 0.3);
-  --logo-inner-shadow: drop-shadow(1px 2px 1px rgba(255, 255, 255, 0.3));
-  --logo-inner-fill: rgba(255, 255, 255, 0.25);
-  --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
-  --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
-  --logo-initials-stroke: rgba(0, 0, 0, 0.5);
-  --logo-inner-stroke: rgba(151, 132, 80, 0.8);
-  --logo-cutout-stroke: rgba(0, 0, 0, 0.15);
-  --logo-cutout-fill: rgba(0, 0, 0, 0.15);
+  --text-color: #3b2f26;
+  --text-shadow: -0.5px 1px 0px #9f846f74, 0px 1px 1px rgba(0, 0, 0, 0.35);
+
+  --text-color-maroon: #6b4d42;
+  --text-color-maroon-shadow: -0.5px 1px 0px #9f846f74,
+    0px 1px 1px rgba(0, 0, 0, 0.5);
+  --text-color-brown: #4f301e;
+  --text-shadow-brown: -1px 1px 1px #bea9949e, 0px 1px 2px rgba(0, 0, 0, 0.5);
+
+  --logo-inner-shadow: ;
+  --logo-inner-fill: rgba(228, 227, 221, 0.15);
+  --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(199, 161, 115, 0.5));
+  --logo-initials-shadow: drop-shadow(-1px 1px 1px rgb(84, 74, 63));
+  --logo-initials-stroke: #c09e84;
+  --logo-inner-stroke: #c09e84;
+  --logo-cutout-stroke: rgba(67, 57, 46, 0.25);
+  --logo-cutout-fill: rgba(244, 237, 237, 0.15);
+  --burger-lines: rgba(255, 255, 255, 0.7);
+  --burger-lines-shadow: -1px 2px 1px rgba(0, 0, 0, 0.15),
+    1px 2px 2px rgba(255, 255, 255, 0.25);
+  --icon-fill: rgba(239, 237, 223, 0.3);
+  --icon-stroke: #a5795787;
+  --icon-shadow: drop-shadow(1px -1px 2px #5e5243);
+  --service-link-color: #897b6c;
+  --service-link-filter: -0.5px 0px 1px #bf8460, 0px 1px 1px rgba(0, 0, 0, 0.35);
+  --headshot-filter: grayscale(50%) sepia(30%);
+  --contact-icon-stroke: #a579577a;
+  --contact-icon-fill: rgba(239, 237, 223, 0.3);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px #8c7860a3);
+  --contact-icon-stroke-high-contrast: #896b369f;
+  --sidenav-glass: rgba(255, 255, 255, 0.15);
+  --sidenav-bg: #9f9f9f50;
+  --hex-border: 5px 0 3px rgba(122, 111, 99, 0.5) inset,
+    -5px 0 3px rgba(122, 111, 99, 0.5) inset;
+  --nav-logo-filter: drop-shadow(1px 2px 2px rgba(244, 237, 237, 0.5))
+    drop-shadow(-1px -2px 2px rgba(244, 237, 237, 0.5))
+    drop-shadow(1px -2px 2px rgba(244, 237, 237, 0.5))
+    drop-shadow(-1px 2px 2px rgba(244, 237, 237, 0.5));
+  --nav-logo-bg: rgba(12, 6, 1, 0.15);
+  --nav-logo-ring-stroke: #655e5229;
+  --nav-logo-inner-filter: drop-shadow(2px 2px 2px rgb(35, 30, 26));
 }
 @font-face {
   font-family: "Poiret";
@@ -94,8 +156,8 @@ ul {
   list-style-type: none;
 }
 .example {
-  color: rgba(193, 179, 142, 0.75);
-  filter: drop-shadow(1px 1px 1px #ba9e58c8);
+  font-weight: 500;
+  color: var(--service-link-color);
 }
 .example:hover {
   color: rgba(194, 184, 156, 0.75);
@@ -106,7 +168,8 @@ ul {
   filter: drop-shadow(1px 1px 1px #86723ec8);
 }
 .parallax-bg {
-  background: var(--bg-img);
+  background-image: url("assets/saturn2.webp");
+  filter: var(--bg-img-filter);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,7 +192,7 @@ ul {
   -webkit-box-shadow: var(--glass-shadow);
   box-shadow: var(--glass-shadow);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(5px);
 }
 .copy {
   font-family: Helvetica, sans-serif;
@@ -154,21 +217,12 @@ ul {
   box-shadow: var(--glass-shadow);
   border-radius: 24px;
 }
-.logo-nav-icon {
-  height: 4.25rem;
-  width: 4.25rem;
-  filter: drop-shadow(1px 0 3px rgba(255, 255, 255, 0.65))
-    drop-shadow(-1px -1px 3px rgba(255, 255, 255, 0.65));
-}
-.text-shadow {
-  filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.75));
-}
 .burger-menu {
   position: relative;
   display: inline-block;
   cursor: pointer;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.7rem;
+  height: 2.7rem;
   padding-left: 0.8rem;
   padding-right: 0.2rem;
   margin-bottom: 0.5rem;
@@ -177,26 +231,17 @@ ul {
   box-shadow: var(--glass-cutout-shadow);
 }
 .burger-menu:hover {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  width: 45px;
-  height: 45px;
-  padding-left: 0.8rem;
-  padding-right: 0.1rem;
-  background-color: var(--glass-cutout-hover-bg);
-  border: 0px;
-  box-shadow: var(--glass-cutout-hover-shadow);
 }
 .burger-line1,
 .burger-line2,
 .burger-line3 {
-  height: 0.18rem;
+  height: 0.2rem;
   margin: 0.19rem 0.55rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #e4e3dd31;
   transition: 0.4s;
-  box-shadow: inset 1px 2px 1px rgba(255, 255, 255, 0.5),
-    1px 2px 3px rgba(0, 0, 0, 1);
+  box-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.35),
+    inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
+    inset -1px 2px 2px rgba(255, 255, 255, 0.3), 3px 2px 3px rgba(0, 0, 0, 0.3);
 }
 /* The switch - the box around the slider */
 .switch {
@@ -253,14 +298,14 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--glass-cutout-bg);
   border-radius: 34px;
   transition: 0.4s;
   z-index: 2;
 }
 .slider:before {
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #e4e3dd4f;
   height: 24px;
   width: 24px;
   position: absolute;
@@ -275,14 +320,14 @@ ul {
   transition: 0.4s;
 }
 .slider:hover::before {
-  background-color: rgba(255, 255, 255, 0.6);
-  height: 26px;
-  width: 26px;
+  background-color: #e4e3dd9d;
+  height: 25px;
+  width: 25px;
   top: 0.15rem;
   bottom: 0.15rem;
 }
 input:checked + .slider {
-  background-color: rgba(90, 90, 90, 0.55);
+  background-color: var(--glass-cutout-bg);
 }
 input:focus + .slider {
   box-shadow: 0 0 3px #0000005d;
@@ -294,7 +339,7 @@ input:checked + .slider:before {
 }
 /* The side navigation menu */
 .sidenav-bg {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--sidenav-bg);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   height: 100%; /* 100% Full-height */
@@ -308,7 +353,7 @@ input:checked + .slider:before {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 .sidenav {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: var(--sidenav-glass);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   height: 70%;
@@ -405,6 +450,7 @@ input:checked + .slider:before {
   fill: var(--logo-initials-stroke);
   stroke-width: 0.5;
   filter: var(--logo-initials-shadow);
+  -webkit-filter: var(--logo-initials-shadow);
 }
 .name {
   font-family: "peignot";
@@ -451,13 +497,15 @@ input:checked + .slider:before {
 }
 .icon {
   margin-top: 1rem;
-  fill: rgba(0, 0, 0, 0.5);
+  fill: var(--icon-fill);
+  stroke: var(--icon-stroke);
   height: 5rem;
   width: 5rem;
-  filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  filter: var(--icon-shadow);
 }
 .card-header {
   border: 0;
+  background-color: transparent;
 }
 .card-title {
   color: var(--text-color);
@@ -494,16 +542,17 @@ input:checked + .slider:before {
 }
 .card-footer {
   border: 0;
+  background-color: transparent;
 }
 .service-more {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   border-width: 0 0px 0.5px 0px;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: var(--service-link-color);
   font-family: Poiret;
-  font-size: 1.3rem;
-  font-weight: 650;
-  color: rgba(193, 179, 142, 0.75);
-  filter: drop-shadow(1px 1px 1px #ba9e58c8);
+  font-size: 1.33rem;
+  font-weight: bolder;
+  color: var(--service-link-color);
+  text-shadow: var(--service-link-filter);
 }
 /* This container is needed to position the front and back side */
 .flip-box-inner {
@@ -525,16 +574,22 @@ input:checked + .slider:before {
   width: 80%;
 }
 .contact-icon {
-  stroke: rgba(255, 242, 215, 0.1);
-  fill: rgba(0, 0, 0, 0.45);
-  filter: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
+  stroke: var(--contact-icon-stroke);
+  stroke-width: 0.5px;
+  fill: var(--contact-icon-fill);
+  filter: var(--contact-icon-shadow);
   height: 3rem;
   width: 3rem;
 }
+.contact-icon-stroke {
+  stroke-width: 1.25px;
+  stroke: var(--contact-icon-stroke-high-contrast);
+  fill: transparent;
+}
 /* Tablet & Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .parallax-bg {
-    background: var(--bg-img-desktop);
+    background: url("assets/img/saturn2.jpg");
     background-size: cover;
   }
   .sidenav-expand {
@@ -670,10 +725,79 @@ input:checked + .slider:before {
 .headshot {
   object-fit: cover;
   object-position: 30%;
-  filter: grayscale(70%);
+  filter: var(--headshot-filter);
   width: 10rem;
   height: 10rem;
   background-color: var(--glass-cutout-bg);
   border: 0px;
   box-shadow: var(--glass-cutout-shadow);
+}
+.text-shadow {
+  filter: drop-shadow(1px 2px 1px rgba(113, 103, 92, 1));
+}
+.hexagon {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 2.5rem;
+  height: calc(2.5rem * 1.1547);
+  margin: 0 auto;
+  transform: rotate(240deg);
+}
+
+.hexagon-wrapper {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: rotate(60deg);
+}
+
+.hex-border {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--hex-border);
+  transform: rotate(60deg);
+}
+.bg-color {
+  background-color: var(--glass-cutout-bg);
+}
+.hex-border:before {
+  content: "\0020";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--hex-border);
+  transform: rotate(60deg);
+}
+
+.hex-border:after {
+  content: "\0020";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: var(--hex-border);
+  transform: rotate(120deg);
+}
+.nav-logo {
+  fill: #e4e3ddc7;
+  height: 2.8rem;
+  width: 2.8rem;
+  filter: var(--nav-logo-filter);
+}
+.nav-logo-ring {
+  fill: var(--nav-logo-bg);
+  stroke-width: 6px;
+  stroke: var(--nav-logo-ring-stroke);
+  filter: drop-shadow(2px 2px 2px rgb(44, 38, 33));
+}
+.nav-logo:hover {
+  height: 3rem;
+  width: 3rem;
 }
