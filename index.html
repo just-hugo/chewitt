@@ -63,6 +63,8 @@
       <div class="row text-center align-items-center mt-1">
         <div class="col-4 align-items-center">
           <svg
+            onmouseover="logoHover()"
+            onmouseout="logoHover()"
             class="nav-logo text-shadow"
             viewBox="0 0 55.496 62.27"
             preserveAspectRatio="xMidYMid"
@@ -182,8 +184,13 @@
           </label>
         </div>
         <div class="col-4">
-          <button class="burger-menu round" onclick="openNav()">
-            <div class="row align-items-center">
+          <button
+            class="burger-menu round"
+            onclick="openNav()"
+            onmouseover="hover()"
+            onmouseout="hover()"
+          >
+            <div class="row align-items-center" id="burger-filling">
               <div class="col-1 burger-line1 round"></div>
               <div class="col-1 burger-line2 round"></div>
               <div class="col-1 burger-line3 round"></div>
@@ -1139,6 +1146,24 @@
       document.getElementById("mySidenav").classList.toggle("sidenav-expand");
       document.getElementById("mySidenav-bg").style.width = "0";
       document.querySelector("body").style.overflow = "visible";
+    }
+  </script>
+
+  <!-- Hamburger hover effect -->
+  <script>
+    function hover() {
+      const outline = document.querySelector(".burger-menu");
+
+      outline.classList.toggle("nav-item-transform");
+    }
+  </script>
+
+  <!-- Nav Logo hover effect -->
+  <script>
+    function logoHover() {
+      const logo = document.querySelector(".nav-logo");
+
+      logo.classList.toggle("nav-item-transform");
     }
   </script>
 
