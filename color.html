@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/ico" href="assets/favicon-32x32.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Components style -->
+    <link rel="stylesheet" href="color.css" />
+
+    <title>Color Palette Tool | Cheyanne Hewitt</title>
+  </head>
+
+  <body>
+    <div class="container-fluid section py-5" id="animations">
+      <div class="row justify-content-center">
+        <div class="col-9 mx-auto mt-5 text-justify">
+          <h1>Animations<br />& Interactions.</h1>
+        </div>
+        <div class="col-9 mt-4">
+          <h3 class="mt-5">Fade in</h3>
+          <p class="animate__animated" id="fadeInText">
+            This animation is often triggered on page load or when a user
+            scrolls, and causes the text on the page to fade in. For an example
+            of what text fading in looks like, click the button.
+          </p>
+          <button class="btn button" onclick="fadeIn()">Show me</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider gradient"></div>
+    <div class="highlight-bg"></div>
+
+    <!-- Bootstrap JavaScript Dependencies section -->
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.min.js"
+      async=""
+    ></script>
+
+    <!-- Hamburger Side Menu activation -->
+    <script>
+      /* Set the width of the side navigation to 250px and the left margin of the page content to 250px; remove scroll from body */
+      function openNav() {
+        document.getElementById("mySidenav").classList.toggle("sidenav-expand");
+        document.getElementById("mySidenav-bg").style.width = "100%";
+        document.querySelector("body").style.overflow = "hidden";
+      }
+
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").classList.toggle("sidenav-expand");
+        document.getElementById("mySidenav-bg").style.width = "0";
+        document.querySelector("body").style.overflow = "visible";
+      }
+    </script>
+
+    <!-- Fade in -->
+    <script>
+      function fadeIn() {
+        const text = document.querySelector("#fadeInText");
+        const animation = "animate__fadeIn";
+
+        text.classList.add(animation);
+
+        text.addEventListener("animationend", () => {
+          text.classList.remove(animation);
+        });
+      }
+    </script>
+
+    <!-- Slide in -->
+    <script>
+      function slideIn() {
+        const leftElement = document.querySelector("#slideLeft");
+        const leftAnimation = "animate__slideInLeft";
+        const rightElement = document.querySelector("#slideRight");
+        const rightAnimation = "animate__slideInRight";
+
+        leftElement.classList.add(leftAnimation);
+        rightElement.classList.add(rightAnimation);
+
+        leftElement.addEventListener("animationend", () => {
+          leftElement.classList.remove(leftAnimation);
+          rightElement.classList.remove(rightAnimation);
+        });
+      }
+    </script>
+
+    <!-- Thumbnail expansion -->
+    <script>
+      const images = document.querySelectorAll("#thumbnail");
+      let imgSrc;
+      // get images src onclick
+      images.forEach((img) => {
+        img.addEventListener("click", (e) => {
+          imgSrc = e.target.src;
+          //run modal function
+          imgModal(imgSrc);
+        });
+      });
+      //creating the modal
+      let imgModal = (src) => {
+        const modal = document.createElement("div");
+        modal.setAttribute("class", "modal");
+        //add the modal to the main section or the parent element
+        document.querySelector("body").append(modal);
+        //adding image to modal
+        const newImage = document.createElement("img");
+        newImage.setAttribute("src", src);
+        newImage.setAttribute("id", "modal-img");
+        //creating the close button
+        const closeBtn = document.createElement("a");
+        closeBtn.setAttribute("class", "btn-close");
+        closeBtn.setAttribute("href", "javascript:void(0)");
+        //close functions
+        closeBtn.onclick = () => {
+          modal.remove();
+          document.querySelector("body").style.overflow = "visible";
+        };
+        document.addEventListener("keydown", function (event) {
+          // Check if the pressed key is the Escape key (key code 27)
+          if (event.key === "Escape") {
+            modal.remove();
+            document.querySelector("body").style.overflow = "visible";
+          }
+        });
+
+        // build modal
+        modal.append(newImage, closeBtn);
+        document.querySelector("body").style.overflow = "hidden";
+      };
+    </script>
+  </body>
+</html>
