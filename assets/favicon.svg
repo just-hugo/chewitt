@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="38px" viewBox="0 0 34 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Polygon</title>
+    <defs>
+        <linearGradient x1="84.3308497%" y1="63.5354646%" x2="19.6828469%" y2="35.0188018%" id="linearGradient-1">
+            <stop stop-color="#C78B4D" offset="0%"></stop>
+            <stop stop-color="#F3C96D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M187.5,56.2886751 L200.356406,63.7113249 C200.665808,63.8899577 200.856406,64.2200847 200.856406,64.5773503 L200.856406,79.4226497 C200.856406,79.7799153 200.665808,80.1100423 200.356406,80.2886751 L187.5,87.7113249 C187.190599,87.8899577 186.809401,87.8899577 186.5,87.7113249 L173.643594,80.2886751 C173.334192,80.1100423 173.143594,79.7799153 173.143594,79.4226497 L173.143594,64.5773503 C173.143594,64.2200847 173.334192,63.8899577 173.643594,63.7113249 L186.5,56.2886751 C186.809401,56.1100423 187.190599,56.1100423 187.5,56.2886751 Z" id="path-2"></path>
+        <filter x="-5.8%" y="-12.0%" width="124.1%" height="136.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="2" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0345547441   0 0 0 0 0.0245219943   0 0 0 0 0.0141548196  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Polygon" transform="translate(-172, -55)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <path stroke="url(#linearGradient-1)" stroke-width="4" d="M187,58.3094011 L198.856406,65.1547005 L198.856406,78.8452995 L187,85.6905989 L175.143594,78.8452995 L175.143594,65.1547005 L187,58.3094011 Z" stroke-linejoin="square"></path>
+            <use stroke="#C78B4D" stroke-width="1" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>
