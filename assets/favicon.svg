@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="34px" height="38px" viewBox="0 0 34 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Polygon</title>
+<svg width="40px" height="46px" viewBox="0 0 40 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
     <defs>
         <linearGradient x1="84.3308497%" y1="63.5354646%" x2="19.6828469%" y2="35.0188018%" id="linearGradient-1">
             <stop stop-color="#C78B4D" offset="0%"></stop>
             <stop stop-color="#F3C96D" offset="100%"></stop>
         </linearGradient>
-        <path d="M187.5,56.2886751 L200.356406,63.7113249 C200.665808,63.8899577 200.856406,64.2200847 200.856406,64.5773503 L200.856406,79.4226497 C200.856406,79.7799153 200.665808,80.1100423 200.356406,80.2886751 L187.5,87.7113249 C187.190599,87.8899577 186.809401,87.8899577 186.5,87.7113249 L173.643594,80.2886751 C173.334192,80.1100423 173.143594,79.7799153 173.143594,79.4226497 L173.143594,64.5773503 C173.143594,64.2200847 173.334192,63.8899577 173.643594,63.7113249 L186.5,56.2886751 C186.809401,56.1100423 187.190599,56.1100423 187.5,56.2886751 Z" id="path-2"></path>
+        <path d="M23.5,7.28867513 L36.3564065,14.7113249 C36.6658075,14.8899577 36.8564065,15.2200847 36.8564065,15.5773503 L36.8564065,30.4226497 C36.8564065,30.7799153 36.6658075,31.1100423 36.3564065,31.2886751 L23.5,38.7113249 C23.1905989,38.8899577 22.8094011,38.8899577 22.5,38.7113249 L9.64359354,31.2886751 C9.33419246,31.1100423 9.14359354,30.7799153 9.14359354,30.4226497 L9.14359354,15.5773503 C9.14359354,15.2200847 9.33419246,14.8899577 9.64359354,14.7113249 L22.5,7.28867513 C22.8094011,7.11004234 23.1905989,7.11004234 23.5,7.28867513 Z" id="path-2"></path>
         <filter x="-5.8%" y="-12.0%" width="124.1%" height="136.5%" filterUnits="objectBoundingBox" id="filter-3">
             <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="2" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
@@ -18,10 +18,15 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Polygon" transform="translate(-172, -55)">
-            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
-            <path stroke="url(#linearGradient-1)" stroke-width="4" d="M187,58.3094011 L198.856406,65.1547005 L198.856406,78.8452995 L187,85.6905989 L175.143594,78.8452995 L175.143594,65.1547005 L187,58.3094011 Z" stroke-linejoin="square"></path>
-            <use stroke="#C78B4D" stroke-width="1" xlink:href="#path-2"></use>
+        <g id="MacBook-Pro-16&quot;" transform="translate(-167, -48)">
+            <g id="Group" transform="translate(164, 48)">
+                <path d="M23.5,0.288675135 L42.4185843,11.2113249 C42.7279854,11.3899577 42.9185843,11.7200847 42.9185843,12.0773503 L42.9185843,33.9226497 C42.9185843,34.2799153 42.7279854,34.6100423 42.4185843,34.7886751 L23.5,45.7113249 C23.1905989,45.8899577 22.8094011,45.8899577 22.5,45.7113249 L3.58141571,34.7886751 C3.27201464,34.6100423 3.08141571,34.2799153 3.08141571,33.9226497 L3.08141571,12.0773503 C3.08141571,11.7200847 3.27201464,11.3899577 3.58141571,11.2113249 L22.5,0.288675135 C22.8094011,0.11004234 23.1905989,0.11004234 23.5,0.288675135 Z" id="Polygon" fill="#4B4B4B"></path>
+                <g id="Polygon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <path stroke="url(#linearGradient-1)" stroke-width="4" d="M23,9.30940108 L34.8564065,16.1547005 L34.8564065,29.8452995 L23,36.6905989 L11.1435935,29.8452995 L11.1435935,16.1547005 L23,9.30940108 Z" stroke-linejoin="square"></path>
+                    <use stroke="#C78B4D" stroke-width="1" xlink:href="#path-2"></use>
+                </g>
+            </g>
         </g>
     </g>
 </svg>
