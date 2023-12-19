@@ -212,7 +212,7 @@ ul {
 .navbar {
   display: block;
   margin-top: 1rem;
-  width: 80%;
+  width: 85%;
   z-index: 1;
   box-shadow: var(--glass-shadow);
   border-radius: 24px;
@@ -427,7 +427,7 @@ input:checked + .slider:before {
 }
 /* Masthead */
 .masthead {
-  width: 80%;
+  width: 85%;
 }
 .logo {
   width: 8rem;
@@ -486,7 +486,7 @@ input:checked + .slider:before {
 }
 /* Service Cards */
 .service-cards {
-  width: 80%;
+  width: 85%;
   margin-top: 2rem;
 }
 .card {
@@ -573,7 +573,7 @@ input:checked + .slider:before {
 }
 /* Contact Card */
 .section {
-  width: 80%;
+  width: 85%;
 }
 .contact-icon {
   stroke: var(--contact-icon-stroke);
@@ -598,8 +598,24 @@ input:checked + .slider:before {
     width: 20vw;
     margin-top: 5%;
   }
+  /* Navbar */
+  .navbar {
+    width: 80%;
+  }
+  /* Masthead */
+  .masthead {
+    width: 80%;
+  }
   .tagline {
     font-size: 1.4rem;
+  }
+  /* Contact Card */
+  .section {
+    width: 80%;
+  }
+  /* Service Cards */
+  .service-cards {
+    width: 80%;
   }
 }
 /* Fade Animation */
