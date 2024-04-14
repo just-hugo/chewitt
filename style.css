@@ -484,6 +484,9 @@ input:checked + .slider:before {
   letter-spacing: 0.05em;
   text-shadow: var(--text-shadow);
 }
+.project-cards {
+  width: 85%;
+}
 /* Service Cards */
 .service-cards {
   width: 85%;
@@ -588,6 +591,24 @@ input:checked + .slider:before {
   stroke: var(--contact-icon-stroke-high-contrast);
   fill: transparent;
 }
+.project-pic1 {
+  object-fit: cover;
+  background-color: var(--glass-cutout-bg);
+  border: 0px;
+  box-shadow: var(--glass-cutout-shadow);
+  width: 9rem;
+  height: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-pic2 {
+  object-fit: cover;
+  background-color: var(--glass-cutout-bg);
+  border: 0px;
+  box-shadow: var(--glass-cutout-shadow);
+  width: 5rem;
+  height: 6rem;
+}
 /* Tablet & Desktop */
 @media (min-width: 992px) {
   .parallax-bg {
@@ -616,6 +637,9 @@ input:checked + .slider:before {
   /* Service Cards */
   .service-cards {
     width: 80%;
+  }
+  .project-cards {
+    width: 50%;
   }
 }
 /* Fade Animation */
