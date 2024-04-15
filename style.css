@@ -66,7 +66,7 @@
   --linkedin: url("assets/16.svg");
   --youtube: url("assets/14.svg");
   --substack: url("assets/18.svg");
-  --social-filter: drop-shadow(2px -2px 2px #f9e0c8b8) grayscale(5%) sepia(20%);
+  --social-filter: drop-shadow(1px -1px 2px #d39e70b8) grayscale(5%) sepia(30%);
 }
 :root[color-mode="light"] {
   --bg-img-filter: invert(90%) sepia(3%) brightness(1);
@@ -630,6 +630,16 @@ input:checked + .slider:before {
   background-image: var(--substack);
   filter: var(--social-filter);
   opacity: 60%;
+}
+.social {
+  font-family: "peignot";
+  font-size: 1.25rem;
+  margin-top: 0%;
+  margin-bottom: 0rem;
+  text-align: center;
+  color: var(--name-color);
+  letter-spacing: 0.1em;
+  text-shadow: var(--text-shadow);
 }
 .project-pic1 {
   filter: var(--project-filter);
