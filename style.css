@@ -169,6 +169,10 @@ body {
 ul {
   list-style-type: none;
 }
+a {
+  color: var(--service-link-color);
+  text-shadow: var(--service-link-filter);
+}
 .example {
   font-weight: 500;
   color: var(--service-link-color);
@@ -643,7 +647,7 @@ input:checked + .slider:before {
 }
 .project-pic1 {
   filter: var(--project-filter);
-  opacity: 70%;
+  opacity: 65%;
   object-fit: cover;
   background-color: var(--glass-cutout-bg);
   border: 0px;
@@ -655,7 +659,7 @@ input:checked + .slider:before {
 }
 .project-pic2 {
   filter: var(--project-filter);
-  opacity: 70%;
+  opacity: 65%;
   object-fit: cover;
   background-color: var(--glass-cutout-bg);
   border: 0px;
@@ -665,7 +669,7 @@ input:checked + .slider:before {
 }
 .project-pic3 {
   filter: var(--project-filter);
-  opacity: 70%;
+  opacity: 65%;
   object-fit: cover;
   background-color: var(--glass-cutout-bg);
   border: 0px;
