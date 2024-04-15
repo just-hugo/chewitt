@@ -144,7 +144,7 @@
   --linkedin: url("assets/13.svg");
   --youtube: url("assets/14.svg");
   --substack: url("assets/15.svg");
-  --social-filter: drop-shadow(1px -1px 2px #ff8f05);
+  --social-filter: drop-shadow(2px -2px 2px #a29588b8) grayscale(15%) sepia(15%);
 }
 @font-face {
   font-family: "Poiret";
