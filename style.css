@@ -169,6 +169,10 @@ body {
 ul {
   list-style-type: none;
 }
+a {
+  color: var(--service-link-color);
+  text-shadow: var(--service-link-filter);
+}
 .example {
   font-weight: 500;
   color: var(--service-link-color);
