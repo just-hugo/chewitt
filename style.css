@@ -107,7 +107,7 @@
   --text-shadow-brown: -1px 1px 1px #bea9949e, 0px 1px 2px rgba(0, 0, 0, 0.5);
 
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(238, 238, 238, 0.35));
-  --logo-inner-fill: rgba(182, 177, 172, 0.2);
+  --logo-inner-fill: rgba(169, 165, 162, 0.2);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(255, 202, 161, 0.2));
   --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(237, 224, 209, 0.5));
   --logo-initials-stroke: #9f827c;
@@ -119,9 +119,9 @@
     1px 2px 2px rgba(255, 255, 255, 0.25);
   --slider-bg: rgba(0, 0, 0, 0.6);
   --slider-knob: rgba(227, 187, 166, 0.3);
-  --icon-fill: rgba(253, 252, 248, 0.33);
+  --icon-fill: rgba(235, 235, 235, 0.33);
   --icon-stroke: #a38d7b57;
-  --icon-shadow: drop-shadow(1px -1px 2px #5e5243);
+  --icon-shadow: drop-shadow(1px -1px 2px #5e4b43f1);
   --service-link-color: #89756c;
   --service-link-filter: -0.5px 0px 1px #cdcdcdca,
     0px 1px 1px rgba(0, 0, 0, 0.35);
