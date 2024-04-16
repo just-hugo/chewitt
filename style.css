@@ -1,6 +1,6 @@
 :root[color-mode="dark"] {
   --bg-img-filter: invert(0%);
-  --glass-bg-color: rgba(104, 102, 101, 0.35);
+  --glass-bg-color: rgba(56, 54, 54, 0.5);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
     2px 2px 2px rgba(255, 255, 255, 0.3), 12px 10px 15px rgba(0, 0, 0, 0.6);
@@ -22,10 +22,10 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: rgba(192, 182, 173, 0.3);
-  --name-color: rgba(255, 98, 0, 0.25);
+  --text-color: rgba(197, 189, 181, 0.3);
+  --name-color: rgba(244, 94, 1, 0.35);
   --text-shadow: -1px 0 1px rgba(220, 210, 186, 0.45),
-    0 1px 3px rgba(0, 0, 0, 0.85);
+    0 1px 2px rgba(0, 0, 0, 0.85);
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
@@ -42,7 +42,7 @@
   --icon-fill: rgba(0, 0, 0, 0.5);
   --icon-stroke: rgba(116, 101, 81, 0.2);
   --icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
-  --service-link-color: rgba(193, 179, 142, 0.85);
+  --service-link-color: rgba(193, 179, 142, 0.5);
   --service-link-filter: drop-shadow(1px 1px 1px #ba9e58c8);
   --headshot-filter: grayscale(65%) sepia(15%);
   --contact-icon-stroke: rgba(255, 242, 215, 0.1);
@@ -96,9 +96,9 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: #7a736e;
+  --text-color: #968a82;
   --name-color: rgba(203, 83, 8, 0.25);
-  --text-shadow: -0.5px 1px 1px #795c438d, 0px 1px 2px rgba(255, 255, 255, 0.35);
+  --text-shadow: -0.5px 1px 1px #9b76578d, 0px 1px 2px rgba(255, 255, 255, 0.35);
 
   --text-color-maroon: #6b4d42;
   --text-color-maroon-shadow: -0.5px 1px 0px #9f846f74,
@@ -485,7 +485,8 @@ input:checked + .slider:before {
 }
 .llc {
   font-family: "peignot";
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 550;
   text-align: center;
   margin-bottom: 2rem;
   color: var(--text-color);
@@ -496,7 +497,7 @@ input:checked + .slider:before {
   margin: 2rem 0;
   padding: 0 0.5rem;
   font-family: "Poiret";
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
   color: var(--text-color);
@@ -572,8 +573,8 @@ input:checked + .slider:before {
   background-color: transparent;
   border-width: 0 0px 0.5px 0px;
   border-color: var(--service-link-color);
-  font-family: Poiret;
-  font-size: 1.33rem;
+  font-family: "peignot";
+  font-size: 1.35rem;
   font-weight: bolder;
   color: var(--service-link-color);
   text-shadow: var(--service-link-filter);
@@ -641,7 +642,7 @@ input:checked + .slider:before {
   margin-top: 0%;
   margin-bottom: 0rem;
   text-align: center;
-  color: var(--name-color);
+  color: var(--text-color);
   letter-spacing: 0.1em;
   text-shadow: var(--text-shadow);
 }
