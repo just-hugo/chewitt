@@ -70,7 +70,7 @@
 }
 :root[color-mode="light"] {
   --bg-img-filter: invert(90%) sepia(3%) brightness(1);
-  --glass-bg-color: rgba(229, 225, 222, 0.35);
+  --glass-bg-color: rgba(170, 168, 168, 0.5);
 
   --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.25),
     inset 1px 1px 01.25px rgba(212, 197, 179, 0.2),
@@ -96,9 +96,9 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: #968a82;
-  --name-color: rgba(203, 83, 8, 0.25);
-  --text-shadow: -0.5px 1px 1px #9b76578d, 0px 1px 2px rgba(255, 255, 255, 0.35);
+  --text-color: #79706a;
+  --name-color: #997b6e;
+  --text-shadow: -0.5px 0 1px #c4b4aa74, 0 0px 1px rgba(0, 0, 0, 0.3);
 
   --text-color-maroon: #6b4d42;
   --text-color-maroon-shadow: -0.5px 1px 0px #9f846f74,
@@ -107,11 +107,11 @@
   --text-shadow-brown: -1px 1px 1px #bea9949e, 0px 1px 2px rgba(0, 0, 0, 0.5);
 
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(238, 238, 238, 0.35));
-  --logo-inner-fill: rgba(254, 250, 245, 0.2);
+  --logo-inner-fill: rgba(182, 177, 172, 0.2);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(255, 202, 161, 0.2));
-  --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(241, 214, 184, 0.5));
-  --logo-initials-stroke: rgba(194, 164, 145, 0.85);
-  --logo-inner-stroke: rgba(206, 174, 154, 0.75);
+  --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(237, 224, 209, 0.5));
+  --logo-initials-stroke: #a18277;
+  --logo-inner-stroke: #9e8e87;
   --logo-cutout-stroke: rgba(58, 48, 41, 0.15);
   --logo-cutout-fill: rgba(95, 82, 66, 0.15);
   --burger-lines: rgba(255, 255, 255, 0.7);
@@ -122,8 +122,9 @@
   --icon-fill: rgba(253, 252, 248, 0.33);
   --icon-stroke: #a38d7b57;
   --icon-shadow: drop-shadow(1px -1px 2px #5e5243);
-  --service-link-color: #897b6c;
-  --service-link-filter: -0.5px 0px 1px #c9a996, 0px 1px 1px rgba(0, 0, 0, 0.35);
+  --service-link-color: #89756c;
+  --service-link-filter: -0.5px 0px 1px #cdcdcdca,
+    0px 1px 1px rgba(0, 0, 0, 0.35);
   --headshot-filter: grayscale(55%) sepia(25%);
   --project-filter: grayscale(65%) sepia(5%);
   --contact-icon-stroke: #b9a18e48;
