@@ -23,7 +23,7 @@
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: rgba(197, 189, 181, 0.3);
-  --name-color: rgba(244, 94, 1, 0.35);
+  --name-color: rgba(224, 99, 21, 0.35);
   --text-shadow: -1px 0 1px rgba(220, 210, 186, 0.45),
     0 1px 2px rgba(0, 0, 0, 0.85);
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
@@ -38,11 +38,11 @@
   --burger-lines-shadow: inset 1px 2px 1px rgba(227, 197, 115, 0.3),
     1px 2px 3px rgba(0, 0, 0, 1);
   --slider-bg: rgba(0, 0, 0, 0.6);
-  --slider-knob: rgba(233, 190, 165, 0.3);
+  --slider-knob: rgba(232, 183, 155, 0.3);
   --icon-fill: rgba(0, 0, 0, 0.5);
   --icon-stroke: rgba(116, 101, 81, 0.2);
   --icon-shadow: drop-shadow(1px -1px 2px rgba(255, 242, 215, 0.587));
-  --service-link-color: rgba(193, 179, 142, 0.5);
+  --service-link-color: rgba(193, 179, 142, 0.45);
   --service-link-filter: drop-shadow(1px 1px 1px #ba9e58c8);
   --headshot-filter: grayscale(65%) sepia(15%);
   --contact-icon-stroke: rgba(255, 242, 215, 0.1);
@@ -475,7 +475,7 @@ input:checked + .slider:before {
 }
 .name {
   font-family: "peignot";
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-top: 0%;
   margin-bottom: 0rem;
   text-align: center;
@@ -484,9 +484,9 @@ input:checked + .slider:before {
   text-shadow: var(--text-shadow);
 }
 .llc {
-  font-family: "peignot";
+  font-family: "Peignot";
   font-size: 1.4rem;
-  font-weight: 550;
+  font-weight: 575;
   text-align: center;
   margin-bottom: 2rem;
   color: var(--text-color);
@@ -497,8 +497,8 @@ input:checked + .slider:before {
   margin: 2rem 0;
   padding: 0 0.5rem;
   font-family: "Poiret";
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 590;
   text-align: center;
   color: var(--text-color);
   letter-spacing: 0.05em;
@@ -574,8 +574,8 @@ input:checked + .slider:before {
   border-width: 0 0px 0.5px 0px;
   border-color: var(--service-link-color);
   font-family: "peignot";
-  font-size: 1.35rem;
-  font-weight: bolder;
+  font-size: 1.4rem;
+  font-weight: 650;
   color: var(--service-link-color);
   text-shadow: var(--service-link-filter);
 }
