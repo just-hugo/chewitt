@@ -121,7 +121,7 @@
   --service-link-color: #89756c;
   --service-link-filter: -0.5px 0px 1px #c8bdae99,
     0px 1px 1px rgba(76, 71, 68, 0.75);
-  --headshot-filter: grayscale(55%) sepia(25%);
+  --headshot-filter: grayscale(60%) sepia(10%);
   --project-filter: grayscale(55%);
   --contact-icon-stroke: #adb5b442;
   --contact-icon-fill: rgba(253, 253, 253, 0.374);
