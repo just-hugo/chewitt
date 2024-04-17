@@ -106,8 +106,8 @@
   --logo-inner-fill: rgba(224, 224, 224, 0.25);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(255, 202, 161, 0.2));
   --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(209, 236, 237, 0.25));
-  --logo-initials-stroke: #9d8c8af3;
-  --logo-inner-stroke: #9e8e87;
+  --logo-initials-stroke: #bca69ef3;
+  --logo-inner-stroke: #bca69ef3;
   --logo-cutout-stroke: rgba(58, 48, 41, 0.15);
   --logo-cutout-fill: rgba(66, 95, 95, 0.15);
   --burger-lines: #986f5cc9;
@@ -123,9 +123,9 @@
     0px 1px 1px rgba(76, 71, 68, 0.75);
   --headshot-filter: grayscale(60%) sepia(10%);
   --project-filter: grayscale(55%);
-  --contact-icon-stroke: #adb5b442;
-  --contact-icon-fill: rgba(253, 253, 253, 0.374);
-  --contact-icon-shadow: drop-shadow(1px -1px 2px #6c7777a3);
+  --contact-icon-stroke: #9a9b9b42;
+  --contact-icon-fill: rgba(233, 233, 233, 0.35);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px #737878a3);
   --contact-icon-stroke-high-contrast: #8d7a5b9f;
   --sidenav-glass: rgba(255, 255, 255, 0.15);
   --sidenav-bg: #9f9f9f50;
