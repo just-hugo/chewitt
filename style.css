@@ -67,6 +67,7 @@
   --youtube: url("assets/14.svg");
   --substack: url("assets/18.svg");
   --social-filter: drop-shadow(1px -1px 2px #d39e70b8) sepia(5%);
+  --project-filter: grayscale(65%);
 }
 :root[color-mode="light"] {
   --bg-img-filter: invert(93%) sepia(3%) brightness(1);
@@ -126,7 +127,7 @@
   --service-link-filter: -0.5px 0px 1px #cdcdcdca,
     0px 1px 1px rgba(0, 0, 0, 0.35);
   --headshot-filter: grayscale(55%) sepia(25%);
-  --project-filter: grayscale(65%) sepia(5%);
+  --project-filter: grayscale(55%);
   --contact-icon-stroke: #adb5b442;
   --contact-icon-fill: rgba(253, 253, 253, 0.374);
   --contact-icon-shadow: drop-shadow(1px -1px 2px #6c7777a3);
