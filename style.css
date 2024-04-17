@@ -30,7 +30,7 @@
   --logo-cutout-shadow: drop-shadow(4px 1px 1px rgba(255, 255, 255, 0.3));
   --logo-initials-shadow: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.3));
   --logo-initials-stroke: rgba(149, 117, 97, 0.872);
-  --logo-inner-fill: rgba(99, 99, 99, 0.1);
+  --logo-inner-fill: rgba(49, 49, 49, 0.152);
   --logo-inner-stroke: rgba(116, 101, 81, 0.98);
   --logo-cutout-stroke: rgba(0, 0, 0, 0.5);
   --logo-cutout-fill: rgba(255, 255, 255, 0.05);
@@ -69,19 +69,18 @@
   --social-filter: drop-shadow(1px -1px 2px #d39e70b8) sepia(5%);
 }
 :root[color-mode="light"] {
-  --bg-img-filter: invert(90%) sepia(3%) brightness(1);
-  --glass-bg-color: rgba(170, 168, 168, 0.5);
+  --bg-img-filter: invert(93%) sepia(3%) brightness(1);
+  --glass-bg-color: rgba(183, 187, 187, 0.4);
 
-  --glass-shadow: inset 2px 2px 01.25px rgba(244, 237, 237, 0.25),
-    inset 1px 1px 01.25px rgba(212, 197, 179, 0.2),
-    1px 1px 2px rgba(244, 237, 237, 0.25), 2px 2px 2px rgba(196, 169, 135, 0.2),
-    12px 10px 15px rgba(129, 124, 118, 0.5);
+  --glass-shadow: inset 2px 2px 01.25px rgba(237, 244, 244, 0.25),
+    inset 1px 1px 01.25px rgba(169, 188, 187, 0.2),
+    1px 1px 2px rgba(227, 240, 240, 0.25), 2px 2px 2px rgba(138, 154, 155, 0.2),
+    12px 10px 15px rgba(91, 95, 95, 0.395);
 
-  --glass-cutout-bg: rgba(69, 58, 47, 0.25);
+  --glass-cutout-bg: rgba(49, 62, 64, 0.25);
 
   --glass-cutout-shadow: 0 -0.2em 0.2em rgba(228, 225, 221, 0.35),
-    inset 0 -0.2em 0.2em rgba(121, 114, 106, 0.25),
-    -0.2em 0 0.2em rgba(112, 108, 106, 0.35),
+    -0.2em 0 0.2em rgba(106, 112, 111, 0.35),
     inset -0.2em 0 0.2em rgba(122, 111, 99, 0.25),
     inset 2px 2px 2px rgba(122, 111, 99, 0.25),
     3px 2px 4px rgba(244, 240, 236, 0.35);
@@ -98,6 +97,7 @@
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
   --text-color: #79706a;
   --name-color: #99786e;
+  --llc-color: ;
   --text-shadow: -0.5px 0 1px #c4b4aa74, 0 0px 1px rgba(0, 0, 0, 0.3);
 
   --text-color-maroon: #6b4d42;
@@ -107,13 +107,13 @@
   --text-shadow-brown: -1px 1px 1px #bea9949e, 0px 1px 2px rgba(0, 0, 0, 0.5);
 
   --logo-inner-shadow: drop-shadow(2px 2px 1px rgba(238, 238, 238, 0.35));
-  --logo-inner-fill: rgba(169, 165, 162, 0.2);
+  --logo-inner-fill: rgba(183, 187, 187, 0.25);
   --logo-cutout-shadow: drop-shadow(1px 1px 1px rgba(255, 202, 161, 0.2));
-  --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(237, 224, 209, 0.5));
-  --logo-initials-stroke: #9f827c;
+  --logo-initials-shadow: drop-shadow(1px 1px 1px rgba(209, 236, 237, 0.25));
+  --logo-initials-stroke: #9d8c8af3;
   --logo-inner-stroke: #9e8e87;
   --logo-cutout-stroke: rgba(58, 48, 41, 0.15);
-  --logo-cutout-fill: rgba(95, 82, 66, 0.15);
+  --logo-cutout-fill: rgba(66, 95, 95, 0.15);
   --burger-lines: rgba(255, 255, 255, 0.7);
   --burger-lines-shadow: 1px 1px 2px rgba(211, 211, 211, 0.5),
     1px 2px 2px rgba(255, 255, 255, 0.25);
@@ -121,15 +121,15 @@
   --slider-knob: rgba(227, 187, 166, 0.3);
   --icon-fill: rgba(235, 235, 235, 0.33);
   --icon-stroke: #a38d7b57;
-  --icon-shadow: drop-shadow(1px -1px 2px #5e4b43f1);
+  --icon-shadow: drop-shadow(1px -1px 2px #474b4bcd);
   --service-link-color: #89756c;
   --service-link-filter: -0.5px 0px 1px #cdcdcdca,
     0px 1px 1px rgba(0, 0, 0, 0.35);
   --headshot-filter: grayscale(55%) sepia(25%);
   --project-filter: grayscale(65%) sepia(5%);
-  --contact-icon-stroke: #b9a18e48;
-  --contact-icon-fill: rgba(252, 249, 241, 0.33);
-  --contact-icon-shadow: drop-shadow(1px -1px 2px #8d7f6fa3);
+  --contact-icon-stroke: #adb5b442;
+  --contact-icon-fill: rgba(253, 253, 253, 0.374);
+  --contact-icon-shadow: drop-shadow(1px -1px 2px #6c7777a3);
   --contact-icon-stroke-high-contrast: #8d7a5b9f;
   --sidenav-glass: rgba(255, 255, 255, 0.15);
   --sidenav-bg: #9f9f9f50;
@@ -145,7 +145,7 @@
   --linkedin: url("assets/13.svg");
   --youtube: url("assets/14.svg");
   --substack: url("assets/15.svg");
-  --social-filter: drop-shadow(1px -2px 2px #705134cc) sepia(20%);
+  --social-filter: drop-shadow(1px -2px 2px #6a625acc) sepia(3%);
 }
 @font-face {
   font-family: "Poiret";
@@ -328,7 +328,11 @@ a {
 }
 .slider:before {
   border-radius: 50%;
-  background-color: var(--slider-knob);
+  background: linear-gradient(
+    0.35turn,
+    rgba(255, 236, 225, 0.4),
+    rgba(212, 157, 129, 0.4)
+  );
   height: 24px;
   width: 24px;
   position: absolute;
@@ -341,6 +345,8 @@ a {
     inset -1px 2px 2px rgba(255, 255, 255, 0.3), 3px 2px 3px rgba(0, 0, 0, 0.3);
 
   transition: 0.4s;
+
+  letter-spacing: 0.1em;
 }
 .slider:hover::before {
   background-color: var(--logo-initials-stroke);
@@ -480,7 +486,9 @@ input:checked + .slider:before {
   margin-top: 0%;
   margin-bottom: 0rem;
   text-align: center;
-  color: var(--name-color);
+  background: -webkit-linear-gradient(#e9d1c4, #9b552d, #e1ab82, #87644a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 0.1em;
   text-shadow: var(--text-shadow);
 }
@@ -490,7 +498,10 @@ input:checked + .slider:before {
   font-weight: 575;
   text-align: center;
   margin-bottom: 2rem;
-  color: var(--text-color);
+  letter-spacing: 0.1em;
+  background: -webkit-linear-gradient(#e5e5e5, #494949, #e5e5e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 0.1em;
   text-shadow: var(--text-shadow);
 }
