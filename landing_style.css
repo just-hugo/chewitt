@@ -132,6 +132,22 @@ p {
   font-size: 1.7rem;
   color: #f99d80;
 }
+blockquote {
+  font-style: oblique 10deg;
+  padding: 1.2em 30px 1.2em 75px;
+  padding-bottom: 0;
+  line-height: 1.6;
+  position: relative;
+}
+blockquote::before {
+  content: "\201C";
+  font-family: Helvetica;
+  font-size: 4em;
+  position: absolute;
+  color: #7e7e7e;
+  left: 10px;
+  top: -10px;
+}
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
