@@ -1,6 +1,6 @@
 :root[color-mode="dark"] {
   --bg-img-filter: invert(0%);
-  --glass-bg-color: rgba(56, 54, 54, 0.5);
+  --glass-bg-color: rgba(61, 58, 58, 0.45);
   --glass-shadow: inset 2px 2px 01.25px rgba(255, 255, 255, 0.3),
     inset 1px 1px 01.25px rgba(0, 0, 0, 0.1), 1px 1px 2px rgba(0, 0, 0, 0.3),
     2px 2px 2px rgba(255, 255, 255, 0.3), 12px 10px 15px rgba(0, 0, 0, 0.6);
@@ -22,7 +22,7 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: rgba(197, 189, 181, 0.3);
+  --text-color: #c5bdb56b;
   --name-color: rgba(224, 99, 21, 0.35);
   --text-shadow: -1px 0 1px rgba(220, 210, 186, 0.45),
     0 1px 2px rgba(0, 0, 0, 0.85);
@@ -92,7 +92,7 @@
       rgba(255, 255, 255, 0.5),
     inset 0.1em 0.1em 0.5em rgb(255, 255, 255, 0.5),
     -0.3em -0.3em 0.5em rgba(0, 0, 0, 0.5), 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.5);
-  --text-color: #6a615b;
+  --text-color: #625a54;
   --name-color: #99786e;
   --llc-color: ;
   --text-shadow: -0.5px 0 1px #c4b4aa74, 0 0px 1px rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@
   --logo-inner-stroke: #bca69ef3;
   --logo-cutout-stroke: rgba(58, 48, 41, 0.15);
   --logo-cutout-fill: rgba(66, 95, 95, 0.15);
-  --burger-lines: #986f5cc9;
+  --burger-lines: #967f74af;
   --burger-lines-shadow: 1px 1px 2px rgba(211, 211, 211, 0.75),
     1px 2px 2px rgba(255, 255, 255, 0.25);
   --slider-bg: rgba(0, 0, 0, 0.6);
