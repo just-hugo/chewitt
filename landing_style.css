@@ -56,40 +56,63 @@ p {
   border-width: 0px;
 }
 .accordion-item:first-of-type .accordion-button {
-  border-radius: 0px;
-  border-top: none;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.112);
+  border-radius: 50px;
   border-bottom: solid;
-  border-width: 3px;
-  border-color: rgb(196, 196, 196);
+  border-width: 1px;
+  border-bottom-color: rgb(196, 196, 196);
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
+    0 1px 25px 0 rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 .accordion-item:last-of-type .accordion-button.collapsed {
-  border-radius: 0px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.112);
+  border-radius: 50px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-bottom-color: rgb(196, 196, 196);
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
+    0 1px 25px 0 rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 .accordion-button {
   background-color: #ffffff;
-  border-top-style: none;
-  border-radius: 0px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.112);
+  border-radius: 50px;
   border-bottom: solid;
-  border-width: 3px;
-  border-color: rgb(196, 196, 196);
+  border-width: 1px;
+  border-bottom-color: rgb(196, 196, 196);
   color: rgb(165, 164, 164);
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 350;
   letter-spacing: 0.03rem;
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
+    0 1px 25px 0 rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 .accordion-button:focus {
-  box-shadow: none;
-  border-width: 3px;
-  border-color: rgb(196, 196, 196);
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.112);
+  border-radius: 50px;
+  border-bottom: solid;
+  border-width: 1px;
+  border-bottom-color: rgb(196, 196, 196);
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
+    0 1px 25px 0 rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 .accordion-button:after {
 }
 .accordion-button:not(.collapsed) {
   background-color: #ffffff;
   color: #f99d80;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.112);
+  border-radius: 50px;
   border-bottom: solid;
-  border-width: 3px;
-  border-color: rgb(196, 196, 196);
+  border-width: 1px;
+  border-bottom-color: rgb(196, 196, 196);
+  box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23),
+    0 1px 25px 0 rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 .accordion-body {
   margin: 1rem 0.25rem;
@@ -108,6 +131,22 @@ p {
 .accordion-body button:hover {
   font-size: 1.7rem;
   color: #f99d80;
+}
+blockquote {
+  font-style: oblique 10deg;
+  padding: 1.2em 30px 1.2em 75px;
+  padding-bottom: 0;
+  line-height: 1.6;
+  position: relative;
+}
+blockquote::before {
+  content: "\201C";
+  font-family: Helvetica;
+  font-size: 4em;
+  position: absolute;
+  color: #7e7e7e;
+  left: 10px;
+  top: -10px;
 }
 @keyframes gradient-animation {
   0% {
